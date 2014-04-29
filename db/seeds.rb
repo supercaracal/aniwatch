@@ -55,6 +55,6 @@ Lineup.create([
   {title: 'ドラゴンボール改', start_time: '09:00:00', channel_id: _8ch,  day_of_week_id: 日},
   {title: 'ワンピース', start_time: '09:30:00', channel_id: _8ch,  day_of_week_id: 日},
   {title: '極黒のブリュンヒルデ', start_time: '22:00:00', channel_id: _9ch,  day_of_week_id: 日},
-  {title: 'キャプテン・アース', start_time: '22:30:00', channel_id: _9ch,  day_of_week_id: 日},
+  {title: 'キャプテン・アース', start_time: '23:30:00', channel_id: _9ch,  day_of_week_id: 日},
   {title: 'SuperGT', start_time: '23:30:00', channel_id: _7ch,  day_of_week_id: 日},
 ])

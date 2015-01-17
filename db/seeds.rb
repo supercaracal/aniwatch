@@ -30,8 +30,6 @@ _BS11 = Channel.create({name: 'BS11',         code: 'BS11'}).id
 Lineup.create([
   {title: 'ユリ熊嵐', start_time: '00:30:00', channel_id: _9ch,  day_of_week_id: 火},
   {title: 'ガンダムビルドファイターズトライ', start_time: '18:00:00', channel_id: _7ch,  day_of_week_id: 水},
-  {title: '艦これ', start_time: '01:00:00', channel_id: _9ch,  day_of_week_id: 木},
-  {title: '新妹魔王の契約者', start_time: '01:30:00', channel_id: _9ch,  day_of_week_id: 木},
   {title: '寄生獣 セイの格率', start_time: '01:30:00', channel_id: _4ch,  day_of_week_id: 木},
   {title: 'ポケモン', start_time: '19:00:00', channel_id: _7ch,  day_of_week_id: 木},
   {title: 'NARUTO疾風伝', start_time: '19:30:00', channel_id: _7ch,  day_of_week_id: 木},

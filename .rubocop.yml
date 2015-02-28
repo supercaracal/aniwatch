@@ -1,0 +1,22 @@
+LineLength:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+AsciiComments:
+  Enabled: false
+
+LiteralInInterpolation:
+  Exclude:
+    - 'spec/**/*'
+
+NumericLiterals:
+  Enabled: false
+
+AllCops:
+  RunRailsCops: true
+  Exclude:
+    - '.bundle/**/*'
+    - 'vendor/bundle/**/*'
+    - 'db/seeds.rb'

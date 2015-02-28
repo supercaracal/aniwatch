@@ -1,18 +1,12 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.2.0'
 
-# Use mysql as the database for Active Record
-group :development, :test do
-  gem 'mysql2'
-end
-
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
+# Use postgresql as the database for Active Record
+gem 'pg'
+gem 'rails_12factor'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -56,5 +50,7 @@ group :development do
   gem 'pry-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'rb-readline', :require => false
+  gem 'rb-readline', require: false
 end
+
+gem 'dotenv-rails', groups: [:development, :test]

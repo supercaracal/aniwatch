@@ -1,20 +1,20 @@
 class HomeController < ApplicationController
   def index
     @day_of_weeks = DayOfWeek.all.reduce do |x, y|
-      x = {x.id => x} unless x.class.to_s == 'Hash'
+      x = { x.id => x } unless x.class.to_s == 'Hash'
       x[y.id] = y
       x
     end
     @channels = Channel.all.reduce do |x, y|
-      x = {x.id => x} unless x.class.to_s == 'Hash'
+      x = { x.id => x } unless x.class.to_s == 'Hash'
       x[y.id] = y
       x
     end
     @lineups = Lineup.all.reduce do |x, y|
       if x.class.to_s != 'Hash'
         r = [:mon, :tue, :wed, :thu, :fri, :sat, :sun].reduce do |x, y|
-          x = {x => {:midnight => [], :daytime => [], :sunset => [], :night => []}} unless x.class.to_s == 'Hash'
-          x[y] = {:midnight => [], :daytime => [], :sunset => [], :night => []}
+          x = { x => { midnight: [], daytime: [], sunset: [], night: [] } } unless x.class.to_s == 'Hash'
+          x[y] = { midnight: [], daytime: [], sunset: [], night: [] }
           x
         end
         day_of_week_code = @day_of_weeks[x.day_of_week_id].code.to_sym
@@ -36,13 +36,13 @@ class HomeController < ApplicationController
   end
 
   def convert_time_to_slot(minute)
-    if 0 <= minute and minute < 60 * 4
+    if 0 <= minute && minute < 60 * 4
       :midnight
-    elsif 60 * 4 <= minute and minute < 60 * 16
+    elsif 60 * 4 <= minute && minute < 60 * 16
       :daytime
-    elsif 60 * 16 <= minute and minute < 60 * 19
+    elsif 60 * 16 <= minute && minute < 60 * 19
       :sunset
-    elsif 60 * 19 <= minute and minute < 60 * 24
+    elsif 60 * 19 <= minute && minute < 60 * 24
       :night
     else
       :unknown

@@ -12,29 +12,27 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20131006142809) do
-
-  create_table "channels", force: true do |t|
-    t.string   "code"
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table 'channels', force: true do |t|
+    t.string 'code'
+    t.string 'name'
+    t.datetime 'created_at'
+    t.datetime 'updated_at'
   end
 
-  create_table "day_of_weeks", force: true do |t|
-    t.string   "code"
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table 'day_of_weeks', force: true do |t|
+    t.string 'code'
+    t.string 'name'
+    t.datetime 'created_at'
+    t.datetime 'updated_at'
   end
 
-  create_table "lineups", force: true do |t|
-    t.string   "title"
-    t.time     "start_time"
-    t.integer  "channel_id"
-    t.integer  "day_of_week_id"
-    t.integer  "point"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table 'lineups', force: true do |t|
+    t.string 'title'
+    t.time 'start_time'
+    t.integer 'channel_id'
+    t.integer 'day_of_week_id'
+    t.integer 'point'
+    t.datetime 'created_at'
+    t.datetime 'updated_at'
   end
-
 end

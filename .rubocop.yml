@@ -20,3 +20,4 @@ AllCops:
     - '.bundle/**/*'
     - 'vendor/bundle/**/*'
     - 'db/seeds.rb'
+    - 'Guardfile'

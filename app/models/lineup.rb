@@ -5,18 +5,16 @@ class Lineup < ActiveRecord::Base
   DAY_OF_WEEK_CODES = %i(mon tue wed thu fri sat sun).freeze
 
   def self.all_to_hash(day_of_weeks)
-    all.each_with_object(create_empty_time_tables) do |item, memo|
+    all.each_with_object(create_empty_slots) do |item, memo|
       day_of_week_code = day_of_weeks[item.day_of_week_id].code.to_sym
       slot_sym = convert_time_to_slot(convert_time_to_minute(item.start_time))
       memo[day_of_week_code][slot_sym].push(item)
-      memo
     end
   end
 
-  def self.create_empty_time_tables
+  def self.create_empty_slots
     DAY_OF_WEEK_CODES.each_with_object({}) do |item, memo|
       memo[item] = { midnight: [], daytime: [], sunset: [], night: [] }
-      memo
     end
   end
 

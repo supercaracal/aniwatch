@@ -11,8 +11,6 @@ rvm:
 before_install:
   - gem install bundler
   - gem install rubocop
-before_script:
-  - psql -c 'create database travis_ci_test;' -U postgres
 script:
   - RAILS_ENV=test bundle exec rake db:setup
   - RAILS_ENV=test bundle exec rake spec

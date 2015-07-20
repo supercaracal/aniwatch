@@ -23,7 +23,8 @@ development:
 test:
   adapter: postgresql
   database: aniwatch2_test
-  username: postgres
+  username: insecure
+  password: insecure
 
 production:
   adapter: postgresql

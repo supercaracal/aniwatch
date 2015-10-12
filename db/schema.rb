@@ -17,27 +17,32 @@ ActiveRecord::Schema.define(version: 20131006142809) do
   enable_extension "plpgsql"
 
   create_table "channels", force: :cascade do |t|
-    t.string   "code"
-    t.string   "name"
+    t.string   "code",       null: false
+    t.string   "name",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "day_of_weeks", force: :cascade do |t|
-    t.string   "code"
-    t.string   "name"
+    t.string   "code",       null: false
+    t.string   "name",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "lineups", force: :cascade do |t|
-    t.string   "title"
-    t.time     "start_time"
-    t.integer  "channel_id"
-    t.integer  "day_of_week_id"
+    t.string   "title",          null: false
+    t.time     "start_time",     null: false
+    t.integer  "channel_id",     null: false
+    t.integer  "day_of_week_id", null: false
     t.integer  "point"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "lineups", ["channel_id"], name: "index_lineups_on_channel_id", using: :btree
+  add_index "lineups", ["day_of_week_id"], name: "index_lineups_on_day_of_week_id", using: :btree
+
+  add_foreign_key "lineups", "channels"
+  add_foreign_key "lineups", "day_of_weeks"
 end

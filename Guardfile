@@ -77,6 +77,6 @@ guard :rspec, cmd: 'bundle exec rspec' do
 end
 
 guard :rubocop, all_on_start: false, cli: ['--format', 'clang', '--rails'] do
-  watch(%r{.+\.rb$})
+  watch(/.+\.rb\z/)
   watch(%r{(?:.+/)?\.rubocop\.yml$}) { |m| File.dirname(m[0]) }
 end

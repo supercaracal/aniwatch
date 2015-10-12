@@ -19,5 +19,6 @@ AllCops:
   Exclude:
     - '.bundle/**/*'
     - 'vendor/bundle/**/*'
+    - 'bin/*'
     - 'db/seeds.rb'
-    - 'Guardfile'
+    - 'db/schema.rb'

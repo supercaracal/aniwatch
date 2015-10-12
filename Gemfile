@@ -57,6 +57,7 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'rspec-rails'
   gem 'guard-rspec'
+  gem 'guard-rubocop'
   gem 'factory_girl_rails'
   gem 'capybara'
 end

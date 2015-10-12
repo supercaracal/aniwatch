@@ -3,15 +3,17 @@ sudo: false
 notifications:
   email: false
 addons:
-  postgresql: "9.3"
+  postgresql: "9.4"
 env:
   - SECRET_KEY_BASE=3726902eb363750966ae9879eff39e77f0c7508b7e2128365fcc9c65c02d113c04dbf571cc83dbf49967b0ddb1e57cdcd88f0195652662586ce92d0601811f04
 rvm:
   - 2.2.3
 before_install:
   - gem install bundler
+  - gem install rspec
   - gem install rubocop
 script:
-  - RAILS_ENV=test bundle exec rake db:setup
+  - RAILS_ENV=test bundle exec rake db:migrate:reset
+  - RAILS_ENV=test bundle exec rake db:seed
   - RAILS_ENV=test bundle exec rake spec
   - rubocop --rails --fail-level=W

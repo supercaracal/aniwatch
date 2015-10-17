@@ -63,3 +63,4 @@ group :development, :test do
 end
 
 gem 'slim-rails'
+gem 'puma'

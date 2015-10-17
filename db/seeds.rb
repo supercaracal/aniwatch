@@ -30,7 +30,6 @@ _BS11 = Channel.create(name: 'BS11',         code: 'BS11').id
 Lineup.create([
   { title: '落第騎士の英雄譚', start_time: '00:30:00', channel_id: _9ch,  day_of_week_id: 月 },
   { title: 'ワンパンマン', start_time: '01:00:00', channel_id: _7ch,  day_of_week_id: 月 },
-  { title: 'おそ松さん', start_time: '01:30:00', channel_id: _9ch,  day_of_week_id: 火 },
   { title: 'ゆるゆり さん☆ハイ', start_time: '02:00:00', channel_id: _9ch,  day_of_week_id: 火 },
   { title: '緋弾のアリアAA', start_time: '00:30:00', channel_id: _9ch,  day_of_week_id: 水 },
   { title: 'アニサン劇場', start_time: '01:00:00', channel_id: _9ch,  day_of_week_id: 水 },

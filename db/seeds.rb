@@ -49,6 +49,7 @@ Lineup.create([
   { title: '牙狼 紅蓮ノ月', start_time: '01:30:00', channel_id: _7ch,  day_of_week_id: 土 },
   { title: 'K RETURN OF KINGS', start_time: '02:00:00', channel_id: _6ch,  day_of_week_id: 土 },
   { title: 'FAIRY TAIL', start_time: '10:30:00', channel_id: _7ch,  day_of_week_id: 土 },
+  { title: '終わりのセラフ', start_time: '22:00:00', channel_id: _9ch,  day_of_week_id: 土 },
   { title: '学園都市アスタリスク', start_time: '23:30:00', channel_id: _9ch,  day_of_week_id: 土 },
   { title: '終物語', start_time: '00:00:00', channel_id: _9ch,  day_of_week_id: 日 },
   { title: 'ワールドトリガー', start_time: '06:30:00', channel_id: _5ch,  day_of_week_id: 日 },

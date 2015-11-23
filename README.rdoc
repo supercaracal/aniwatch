@@ -1,1 +1,0 @@
-{<img src="https://travis-ci.org/supercaracal/aniwatch2.svg" alt="Build Status" />}[https://travis-ci.org/supercaracal/aniwatch2]

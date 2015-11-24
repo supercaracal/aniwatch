@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature 'Home' do
+feature 'GET /' do
   given(:footer_content) { 'PocaPocaUnty' }
   background { visit root_path }
 

@@ -1,0 +1,27 @@
+doctype html
+html lang="ja"
+  head
+    meta charset="utf-8"
+    title Aniwatch
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    = favicon_link_tag '/assets/favicon.ico'
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  body
+    #wrap
+      .navbar.navbar-inverse.navbar-static-top role="navigation"
+        .container
+          .navbar-header
+            a.navbar-brand href="javascript:void 0;" Aniwatch
+      .container
+        = yield
+    #footer
+      .container.text-center
+        p.text-muted
+          = Time.new.strftime('%Y')
+          | 年
+          = Time.new.strftime('%m').to_i / 3 + (Time.new.strftime('%m').to_i % 3 === 0 ? 0 : 1)
+          | Q
+          | &nbsp;
+          a href="https://github.com/supercaracal/aniwatch2" PocaPocaUnty

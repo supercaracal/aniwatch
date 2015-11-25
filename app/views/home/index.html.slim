@@ -1,0 +1,25 @@
+.row
+  .col-md-12
+    .table-responsive
+      table.table.table-striped.table-bordered
+        thead
+          tr
+            th
+              span.glyphicon.glyphicon-thumbs-up
+              | +
+              = Lineup.count
+            th
+              span.label.label-danger 深夜
+            th
+              span.label.label-info 日中
+            th
+              span.label.label-success 夕方
+            th
+              span.label.label-warning 夜
+        tbody
+        - @day_of_weeks.each do |day_of_week_id, day_of_week|
+          tr
+            th
+              span.badge #{day_of_week.name}
+            - %i(midnight daytime sunset night).each do |x|
+              = render partial: 'td', locals: { day_of_week: day_of_week, slot: x }

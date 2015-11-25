@@ -1,9 +1,0 @@
-<td>
-<% @lineups[day_of_week.code.to_sym][slot].each do |x| %>
-    <div>
-        <strong<% if 0 < x.point.to_i %> style="font-size: <%= x.point %>px;"<% end %>><%= x.title %></strong>
-        <%= x.start_time.strftime('%H:%M') %>
-        [<%= @channels[x.channel_id].code %>]<%= @channels[x.channel_id].name %>
-    </div>
-<% end %>
-</td>

@@ -1,0 +1,14 @@
+td
+  - @lineups[day_of_week.code.to_sym][slot].each do |x|
+    div
+      - if 0 < x.point.to_i
+        strong style="font-size: #{x.point}px;" #{x.title}
+      - else
+        strong #{x.title}
+      | &nbsp;
+      = x.start_time.strftime('%H:%M')
+      | &nbsp;
+      | [
+      = @channels[x.channel_id].code
+      | ]
+      = @channels[x.channel_id].name

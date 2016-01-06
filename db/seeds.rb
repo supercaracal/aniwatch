@@ -28,6 +28,10 @@ _BS11 = Channel.create(name: 'BS11',         code: 'BS11').id
 日 = DayOfWeek.create(name: '日', code: 'sun').id
 
 Lineup.create([
+  { title: '灰と幻想のグリムガル', start_time: '00:30:00', channel_id: _9ch,  day_of_week_id: 月 },
+  { title: 'シュヴァルツェス マーケン', start_time: '01:00:00', channel_id: _7ch,  day_of_week_id: 月 },
+  { title: '最弱無敗の神装機竜', start_time: '00:30:00', channel_id: _9ch,  day_of_week_id: 火 },
+  { title: '蒼の彼方のフォーリズム', start_time: '02:00:00', channel_id: _7ch,  day_of_week_id: 火 },
   { title: '銀魂', start_time: '18:00:00', channel_id: _7ch,  day_of_week_id: 水 },
   { title: '聖闘士星矢 the lost canvas 冥王神話', start_time: '19:30:00', channel_id: _9ch,  day_of_week_id: 水 },
   { title: '無彩限のファントム・ワールド', start_time: '00:00:00', channel_id: _9ch,  day_of_week_id: 木 },

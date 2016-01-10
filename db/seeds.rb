@@ -6,18 +6,19 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-_1ch =  Channel.create(name: 'NHK総合',      code: '1ch').id
-_2ch =  Channel.create(name: 'Eテレ',        code: '2ch').id
-_4ch =  Channel.create(name: '日本テレビ',   code: '4ch').id
-_5ch =  Channel.create(name: 'テレビ朝日',   code: '5ch').id
-_6ch =  Channel.create(name: 'TBSテレビ',    code: '6ch').id
-_7ch =  Channel.create(name: 'テレビ東京',   code: '7ch').id
-_8ch =  Channel.create(name: 'フジテレビ',   code: '8ch').id
-_9ch =  Channel.create(name: 'TOKYO MX',     code: '9ch').id
-_3ch =  Channel.create(name: 'テレ玉',       code: '10ch').id
-_BS3 =  Channel.create(name: 'BSプレミアム', code: 'BS3').id
-_BS8 =  Channel.create(name: 'BSフジ',       code: 'BS8').id
-_BS11 = Channel.create(name: 'BS11',         code: 'BS11').id
+_1ch =   Channel.create(name: 'NHK総合',      code: '1ch').id
+_2ch =   Channel.create(name: 'Eテレ',        code: '2ch').id
+_4ch =   Channel.create(name: '日本テレビ',   code: '4ch').id
+_5ch =   Channel.create(name: 'テレビ朝日',   code: '5ch').id
+_6ch =   Channel.create(name: 'TBSテレビ',    code: '6ch').id
+_7ch =   Channel.create(name: 'テレビ東京',   code: '7ch').id
+_8ch =   Channel.create(name: 'フジテレビ',   code: '8ch').id
+_9ch =   Channel.create(name: 'TOKYO MX',     code: '9ch').id
+_3ch =   Channel.create(name: 'テレ玉',       code: '10ch').id
+_103ch = Channel.create(name: 'BSプレミアム', code: '103').id
+_161ch = Channel.create(name: 'BS-TBS',       code: '161').id
+_181ch = Channel.create(name: 'BSフジ',       code: '181').id
+_211ch = Channel.create(name: 'BS11',         code: '211').id
 
 月 = DayOfWeek.create(name: '月', code: 'mon').id
 火 = DayOfWeek.create(name: '火', code: 'tue').id
@@ -35,6 +36,7 @@ Lineup.create([
   { title: '銀魂', start_time: '18:00:00', channel_id: _7ch,  day_of_week_id: 水 },
   { title: '聖闘士星矢 the lost canvas 冥王神話', start_time: '19:30:00', channel_id: _9ch,  day_of_week_id: 水 },
   { title: '無彩限のファントム・ワールド', start_time: '00:00:00', channel_id: _9ch,  day_of_week_id: 木 },
+  { title: 'この素晴らしい世界に祝福を！', start_time: '01:00:00', channel_id: _9ch,  day_of_week_id: 木 },
   { title: 'ハルチカ ハルタとチカは青春する', start_time: '01:30:00', channel_id: _9ch,  day_of_week_id: 木 },
   { title: 'ポケモン', start_time: '19:00:00', channel_id: _7ch,  day_of_week_id: 木 },
   { title: 'NARUTO疾風伝', start_time: '19:30:00', channel_id: _7ch,  day_of_week_id: 木 },
@@ -42,22 +44,23 @@ Lineup.create([
   { title: '少女たちは荒野を目指す', start_time: '22:30:00', channel_id: _9ch,  day_of_week_id: 木 },
   { title: 'ルパン三世', start_time: '02:00:00', channel_id: _4ch,  day_of_week_id: 金 },
   { title: '僕だけがいない街', start_time: '02:00:00', channel_id: _8ch,  day_of_week_id: 金 },
-  { title: 'ファンタシースターオンライン2 ジ アニメーション', start_time: '02:00:00', channel_id: _6ch,  day_of_week_id: 金 },
   { title: '暗殺教室', start_time: '02:30:00', channel_id: _8ch,  day_of_week_id: 金 },
-  { title: 'だがしかし', start_time: '02:30:00', channel_id: _6ch,  day_of_week_id: 金 },
   { title: 'ディバインゲート', start_time: '22:30:00', channel_id: _9ch,  day_of_week_id: 金 },
   { title: 'ウルトラスーパーアニメタイム', start_time: '23:00:00', channel_id: _9ch,  day_of_week_id: 金 },
   { title: 'ヘヴィーオブジェクト', start_time: '00:30:00', channel_id: _9ch,  day_of_week_id: 土 },
   { title: 'GATE(ゲート) 自衛隊 彼の地にて、斯く戦えり', start_time: '01:00:00', channel_id: _9ch,  day_of_week_id: 土 },
   { title: '牙狼 紅蓮ノ月', start_time: '01:30:00', channel_id: _7ch,  day_of_week_id: 土 },
+  { title: '亜人', start_time: '02:00:00', channel_id: _6ch,  day_of_week_id: 土 },
   { title: '昭和元禄落語心中', start_time: '02:30:00', channel_id: _6ch,  day_of_week_id: 土 },
   { title: 'FAIRY TAIL', start_time: '10:30:00', channel_id: _7ch,  day_of_week_id: 土 },
   { title: 'ブブキ・ブランキ', start_time: '22:00:00', channel_id: _9ch,  day_of_week_id: 土 },
   { title: 'ラクエンロジック', start_time: '22:30:00', channel_id: _9ch,  day_of_week_id: 土 },
   { title: 'デュラララ!!x2 結', start_time: '23:30:00', channel_id: _9ch,  day_of_week_id: 土 },
+  { title: 'ファンタシースターオンライン2 ジ アニメーション', start_time: '01:00:00', channel_id: _161ch,  day_of_week_id: 日 },
+  { title: 'だがしかし', start_time: '01:30:00', channel_id: _161ch,  day_of_week_id: 日 },
   { title: '霊剣山 星屑たちの宴', start_time: '01:30:00', channel_id: _9ch,  day_of_week_id: 日 },
   { title: 'ナースウィッチ小麦ちゃんR', start_time: '02:30:00', channel_id: _4ch,  day_of_week_id: 日 },
-  { title: '紅殻のパンドラ', start_time: '03:00:00', channel_id: _BS11,  day_of_week_id: 日 },
+  { title: '紅殻のパンドラ', start_time: '03:00:00', channel_id: _211ch,  day_of_week_id: 日 },
   { title: 'ワールドトリガー', start_time: '06:30:00', channel_id: _5ch,  day_of_week_id: 日 },
   { title: 'ドラゴンボール超', start_time: '09:00:00', channel_id: _8ch,  day_of_week_id: 日 },
   { title: 'ワンピース', start_time: '09:30:00', channel_id: _8ch,  day_of_week_id: 日 },

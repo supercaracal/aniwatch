@@ -16,4 +16,4 @@ script:
   - RAILS_ENV=test bundle exec rake db:migrate:reset
   - RAILS_ENV=test bundle exec rake db:seed
   - RAILS_ENV=test bundle exec rake spec
-  - rubocop --rails --fail-level=W
+  - rubocop --fail-level=W

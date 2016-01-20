@@ -14,8 +14,10 @@ LiteralInInterpolation:
 NumericLiterals:
   Enabled: false
 
+Rails:
+  Enabled: true
+
 AllCops:
-  RunRailsCops: true
   Exclude:
     - '.bundle/**/*'
     - 'vendor/bundle/**/*'

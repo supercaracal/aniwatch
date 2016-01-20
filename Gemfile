@@ -53,6 +53,10 @@ group :development do
   gem 'rb-readline'
 end
 
+group :test do
+  gem 'codeclimate-test-reporter', require: nil
+end
+
 group :development, :test do
   gem 'dotenv-rails'
   gem 'rspec-rails'

@@ -9,14 +9,14 @@ html lang="ja"
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
-    #wrap
+    .content-wrap
       .navbar.navbar-inverse.navbar-static-top role="navigation"
         .container-fluid
           .navbar-header
             a.navbar-brand href="javascript:void 0;" Aniwatch
       .container-fluid
         = yield
-    #footer
+    .footer
       .container.text-center
         p.text-muted
           = Time.new.strftime('%Y')

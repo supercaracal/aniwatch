@@ -9,7 +9,7 @@ class Lineup < ActiveRecord::Base
       all.each_with_object(create_empty_slots) do |item, memo|
         day_of_week_code = day_of_weeks[item.day_of_week_id].code.to_sym
         slot_sym = convert_time_to_slot(convert_time_to_minute(item.start_time))
-        memo[day_of_week_code][slot_sym].push(item)
+        memo[day_of_week_code][slot_sym].push(item) if slot_sym.present?
       end
     end
 
@@ -28,7 +28,6 @@ class Lineup < ActiveRecord::Base
       return :daytime if daytime?(minute)
       return :sunset if sunset?(minute)
       return :night if night?(minute)
-      :unknown
     end
 
     def midnight?(minute)

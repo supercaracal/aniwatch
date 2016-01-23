@@ -20,13 +20,13 @@ ch161 = Channel.create(name: 'BS-TBS', code: '161')
 _ch181 = Channel.create(name: 'BSフジ', code: '181')
 _ch211 = Channel.create(name: 'BS11', code: '211')
 
-mon = DayOfWeek.create(name: 'mon', code: 'mon')
-tue = DayOfWeek.create(name: 'tue', code: 'tue')
-wed = DayOfWeek.create(name: 'wed', code: 'wed')
-thu = DayOfWeek.create(name: 'thu', code: 'thu')
-fri = DayOfWeek.create(name: 'fri', code: 'fri')
-sat = DayOfWeek.create(name: 'sat', code: 'sat')
-sun = DayOfWeek.create(name: 'sun', code: 'sun')
+mon = DayOfWeek.create(name: '月', code: 'mon')
+tue = DayOfWeek.create(name: '火', code: 'tue')
+wed = DayOfWeek.create(name: '水', code: 'wed')
+thu = DayOfWeek.create(name: '木', code: 'thu')
+fri = DayOfWeek.create(name: '金', code: 'fri')
+sat = DayOfWeek.create(name: '土', code: 'sat')
+sun = DayOfWeek.create(name: '日', code: 'sun')
 
 Lineup.create([
   { title: '灰と幻想のグリムガル', start_time: '00:30:00', channel: ch9, day_of_week: mon },

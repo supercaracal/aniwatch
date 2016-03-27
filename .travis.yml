@@ -3,7 +3,7 @@ sudo: false
 notifications:
   email: false
 addons:
-  postgresql: "9.5"
+  postgresql: "9.4"
   code_climate:
     repo_token: "96b0a00d9fbb060ff9c0bcd3b9d7b331bad32250dbb9b9258b9d0553534209c2"
 env:

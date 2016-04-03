@@ -31,11 +31,11 @@ class Lineup < ActiveRecord::Base
     end
 
     def midnight?(minute)
-      0 <= minute && minute < 60 * 4
+      0 <= minute && minute < 60 * 5
     end
 
     def daytime?(minute)
-      60 * 4 <= minute && minute < 60 * 16
+      60 * 5 <= minute && minute < 60 * 16
     end
 
     def sunset?(minute)

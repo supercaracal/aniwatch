@@ -29,6 +29,7 @@ sat = DayOfWeek.create(name: '土', code: 'sat')
 sun = DayOfWeek.create(name: '日', code: 'sun')
 
 Lineup.create([
+  { title: '三者三葉', start_time: '00:00:00', channel: ch9, day_of_week: mon },
   { title: 'くまみこ', start_time: '00:30:00', channel: ch9, day_of_week: mon },
   { title: 'Re:ゼロから始める異世界生活', start_time: '01:30:00', channel: ch7, day_of_week: mon },
   { title: 'ばくおん!!', start_time: '00:00:00', channel: ch9, day_of_week: tue },

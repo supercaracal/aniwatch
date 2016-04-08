@@ -4,8 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def welcome
-    @day_of_weeks = DayOfWeek.all_to_hash
-    @channels = Channel.all_to_hash
-    @lineups = Lineup.all_to_hash(@day_of_weeks)
+    @day_of_weeks = DayOfWeek.includes(lineups: :channel)
   end
 end

@@ -67,4 +67,5 @@ group :development, :test do
 end
 
 gem 'slim-rails'
+gem 'draper'
 gem 'puma'

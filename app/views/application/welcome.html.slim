@@ -17,9 +17,12 @@
             th
               span.label.label-warning 夜
         tbody
-        - @day_of_weeks.each do |day_of_week_id, day_of_week|
+        - @day_of_weeks.each do |day_of_week|
           tr
             th
               span.badge #{day_of_week.name}
-            - %i(midnight daytime sunset night).each do |x|
-              = render partial: 'td', locals: { day_of_week: day_of_week, slot: x }
+            - slot = day_of_week.build_slot
+            td = render partial: 'td', locals: { lineups: slot.midnight }
+            td = render partial: 'td', locals: { lineups: slot.daytime }
+            td = render partial: 'td', locals: { lineups: slot.sunset }
+            td = render partial: 'td', locals: { lineups: slot.night }

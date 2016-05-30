@@ -14,10 +14,14 @@ LiteralInInterpolation:
 NumericLiterals:
   Enabled: false
 
+FrozenStringLiteralComment:
+  Enabled: false
+
 Rails:
   Enabled: true
 
 AllCops:
+  TargetRubyVersion: 2.3
   Exclude:
     - '.bundle/**/*'
     - 'vendor/bundle/**/*'

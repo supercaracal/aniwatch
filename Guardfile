@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
@@ -32,7 +34,7 @@
 #  * zeus: 'zeus rspec' (requires the server to be started separately)
 #  * 'just' rspec: 'rspec'
 
-guard :rspec, cmd: 'bundle exec rspec' do
+guard :rspec, cmd: "GEM_HOME=#{Gem.default_path.find { |path| path =~ %r{rbenv\/versions} }} bin/rspec" do
   require 'guard/rspec/dsl'
   dsl = Guard::RSpec::Dsl.new(self)
 

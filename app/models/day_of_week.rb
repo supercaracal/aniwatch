@@ -1,4 +1,4 @@
-class DayOfWeek < ActiveRecord::Base
+class DayOfWeek < ApplicationRecord
   has_many :lineups
 
   class Slot

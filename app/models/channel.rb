@@ -1,3 +1,3 @@
-class Channel < ActiveRecord::Base
+class Channel < ApplicationRecord
   has_many :lineups
 end

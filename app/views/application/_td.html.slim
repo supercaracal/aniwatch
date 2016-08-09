@@ -1,5 +1,9 @@
-- lineups.each do |lineup|
-  - lineup = lineup.decorate
-  div
-    strong style="font-size: #{lineup.point || 14}px;" #{lineup.title}
-    span = lineup.association_text
+- if lineups.present?
+  ul.list-unstyled
+    - lineups.each do |lineup|
+      - lineup = lineup.decorate
+      li
+        strong style="font-size: #{lineup.point || 14}px;" #{lineup.title}
+        span.text-muted = lineup.association_text
+- else
+  span.text-muted --

@@ -71,4 +71,4 @@ gem 'puma'
 
 # https://github.com/drapergem/draper/issues/697
 # https://github.com/drapergem/draper/issues/681
-gem 'draper', github: 'drapergem/draper'
+gem 'draper', git: 'https://github.com/drapergem/draper.git'

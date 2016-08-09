@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/drapergem/draper.git
+  remote: https://github.com/drapergem/draper.git
   revision: 45e18569d9631710f889d75d49f971fb60d5cbcd
   specs:
     draper (3.0.0.pre1)

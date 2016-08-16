@@ -4,7 +4,9 @@
       thead
         tr
           th
-            span.tag.tag-pill.tag-default +#{Lineup.count}
+            span
+              | &#10004;
+              = Lineup.count
           th
             span.tag.tag-danger 深夜
           th

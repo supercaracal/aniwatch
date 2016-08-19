@@ -288,7 +288,7 @@ DEPENDENCIES
   pg
   pry-rails
   puma
-  rails (= 5.0.0.1)
+  rails
   rails_12factor
   rb-readline
   rspec-rails

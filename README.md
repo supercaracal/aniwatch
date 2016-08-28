@@ -1,4 +1,4 @@
-# Aniwatch2
+# Aniwatch
 
 ## What's this?
 
@@ -7,7 +7,7 @@ This is my weekly television schedule. It is updated every three months.
 ## Development
 
 ```
-$ git clone git@github.com:supercaracal/aniwatch2.git
+$ git clone https://github.com/supercaracal/aniwatch.git
 ```
 
 ```

@@ -5,7 +5,7 @@ notifications:
 addons:
   postgresql: "9.4"
   code_climate:
-    repo_token: "96b0a00d9fbb060ff9c0bcd3b9d7b331bad32250dbb9b9258b9d0553534209c2"
+    repo_token: "2890b837cc0aa8583b1ab866b022a8947e94cbe07621a323a3c8afd2714df6f6"
 env:
   - SECRET_KEY_BASE=3726902eb363750966ae9879eff39e77f0c7508b7e2128365fcc9c65c02d113c04dbf571cc83dbf49967b0ddb1e57cdcd88f0195652662586ce92d0601811f04
 rvm:

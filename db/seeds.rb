@@ -45,7 +45,7 @@ Lineup.create(
     { title: 'ポケモン', start_time: '19:00:00', channel: ch7, day_of_week: thu },
     { title: 'NARUTO疾風伝', start_time: '19:30:00', channel: ch7, day_of_week: thu },
     { title: 'フリップフラッパーズ', start_time: '22:00:00', channel: ch9, day_of_week: thu },
-    { title: '競女!!!!!!!!', start_time: '23:30:00', channel: ch9, day_of_week: thu },
+    { title: '船を編む', start_time: '01:30:00', channel: ch8, day_of_week: fri },
     { title: '私がモテてどうすんだ', start_time: '02:00:00', channel: ch6, day_of_week: fri },
     { title: 'ガーリッシュナンバー', start_time: '02:30:00', channel: ch6, day_of_week: fri },
     { title: 'DRIFTERS', start_time: '23:00:00', channel: ch9, day_of_week: fri },

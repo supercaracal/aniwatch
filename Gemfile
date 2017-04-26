@@ -47,9 +47,9 @@ end
 # gem 'debugger', group: [:development, :test]
 
 group :development do
-  gem 'pry-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'pry-rails'
   gem 'rb-readline'
 end
 
@@ -58,16 +58,16 @@ group :test do
 end
 
 group :development, :test do
+  gem 'capybara'
   gem 'dotenv-rails'
-  gem 'rspec-rails'
+  gem 'factory_girl_rails'
   gem 'guard-rspec'
   gem 'guard-rubocop'
-  gem 'factory_girl_rails'
-  gem 'capybara'
+  gem 'rspec-rails'
 end
 
-gem 'slim-rails'
 gem 'puma'
+gem 'slim-rails'
 
 # https://github.com/drapergem/draper/issues/697
 # https://github.com/drapergem/draper/issues/681

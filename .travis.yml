@@ -19,3 +19,5 @@ script:
   - RAILS_ENV=test bundle exec rake db:seed
   - RAILS_ENV=test bundle exec rake spec
   - rubocop --fail-level=W
+after_success:
+  - bundle exec codeclimate-test-reporter

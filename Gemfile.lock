@@ -294,6 +294,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails
   sdoc
+  simplecov
   slim-rails
   uglifier
 

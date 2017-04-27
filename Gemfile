@@ -54,7 +54,8 @@ group :development do
 end
 
 group :test do
-  gem 'codeclimate-test-reporter', require: nil
+  gem 'codeclimate-test-reporter'
+  gem 'simplecov', require: false
 end
 
 group :development, :test do

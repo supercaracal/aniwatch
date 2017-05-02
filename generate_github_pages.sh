@@ -6,6 +6,7 @@ export SECRET_KEY_BASE=$(bin/rails secret)
 
 readonly DISABLE_LOG='Rails.logger.level = 5'
 readonly FETCH_HTML='Rails.application.call("REQUEST_METHOD" => "GET", "rack.input" => "").third.each { |b| puts b }'
+readonly RAILS_CMD="${DISABLE_LOG}; ${FETCH_HTML}"
 
 bin/rails db:setup
 
@@ -15,5 +16,4 @@ rm docs/*
 bin/rails assets:precompile
 mv public/assets/* docs/
 
-rails_cmd="${DISABLE_LOG}; ${FETCH_HTML}"
-bin/rails runner -e production "$rails_cmd" | sed -e 's#/assets/#/aniwatch/#g' > docs/index.html
+bin/rails runner "$RAILS_CMD" | sed -e 's#/assets/#/aniwatch/#g' > docs/index.html

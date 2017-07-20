@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
@@ -52,7 +50,7 @@ guard :rspec, cmd: "GEM_HOME=#{Gem.default_path.find { |path| path =~ %r{rbenv\/
   dsl.watch_spec_files_for(ruby.lib_files)
 
   # Rails files
-  rails = dsl.rails(view_extensions: %w(erb haml slim))
+  rails = dsl.rails(view_extensions: %w[erb haml slim])
   dsl.watch_spec_files_for(rails.app_files)
   dsl.watch_spec_files_for(rails.views)
 

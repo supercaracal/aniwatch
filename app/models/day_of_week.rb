@@ -8,7 +8,7 @@ class DayOfWeek < ApplicationRecord
       end
 
       def midnight?
-        0 <= @minute && @minute < 60 * 5
+        @minute >= 0 && @minute < 60 * 5
       end
 
       def daytime?

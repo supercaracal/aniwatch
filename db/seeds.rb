@@ -36,7 +36,6 @@ Lineup.create(
     { title: '恋と嘘', start_time: '00:00:00', channel: ch9, day_of_week: tue },
     { title: '天使の3P!', start_time: '00:30:00', channel: ch9, day_of_week: tue },
     { title: '異世界食堂', start_time: '01:30:00', channel: ch7, day_of_week: tue },
-    { title: 'アホガール', start_time: '23:00:00', channel: ch9, day_of_week: tue },
     { title: '徒然チルドレン', start_time: '23:15:00', channel: ch9, day_of_week: tue },
     { title: 'NEW GAME!!', start_time: '00:30:00', channel: ch9, day_of_week: wed },
     { title: 'ナナマルサンバツ', start_time: '02:00:00', channel: ch4, day_of_week: wed },

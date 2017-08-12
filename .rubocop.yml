@@ -1,3 +1,6 @@
+---
+require: 'rubocop-rspec'
+
 LineLength:
   Enabled: false
 

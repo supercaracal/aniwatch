@@ -65,6 +65,7 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'guard-rubocop'
   gem 'rspec-rails'
+  gem 'rubocop-rspec'
 end
 
 gem 'puma'

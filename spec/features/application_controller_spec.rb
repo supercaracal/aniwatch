@@ -1,14 +1,15 @@
 require 'rails_helper'
 
-feature 'GET /' do
-  given(:footer_content) { 'PocaPocaUnty' }
-  background { visit root_path }
+describe ApplicationController do
+  let(:footer_content) { 'PocaPocaUnty' }
 
-  scenario 'TOPにアクセスすると200が返る' do
+  before { visit root_path }
+
+  it 'TOPにアクセスすると200が返る' do
     expect(page.status_code).to eq(200)
   end
 
-  scenario 'TOPにアクセスするとコンテンツが表示される' do
+  it 'TOPにアクセスするとコンテンツが表示される' do
     expect(page).to have_content(footer_content)
   end
 end

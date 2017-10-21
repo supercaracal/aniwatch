@@ -1,33 +1,28 @@
 ---
 require: 'rubocop-rspec'
 
-LineLength:
-  Enabled: false
-
-Documentation:
-  Enabled: false
-
-AsciiComments:
-  Enabled: false
-
-LiteralInInterpolation:
+AllCops:
+  TargetRubyVersion: 2.4
+  DisplayCopNames: true
   Exclude:
-    - 'spec/**/*'
-
-NumericLiterals:
-  Enabled: false
-
-FrozenStringLiteralComment:
-  Enabled: false
+    - '.bundle/**/*'
+    - 'vendor/bundle/**/*'
+    - 'db/schema.rb'
 
 Rails:
   Enabled: true
 
-AllCops:
-  TargetRubyVersion: 2.3
-  Exclude:
-    - '.bundle/**/*'
-    - 'vendor/bundle/**/*'
-    - 'bin/*'
-    - 'db/seeds.rb'
-    - 'db/schema.rb'
+Metrics/LineLength:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false

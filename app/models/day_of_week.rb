@@ -1,5 +1,5 @@
 class DayOfWeek < ApplicationRecord
-  has_many :lineups
+  has_many :lineups, dependent: :restrict_with_exception
 
   class Slot
     class SlotTime

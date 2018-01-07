@@ -62,6 +62,7 @@ Lineup.create(
     { title: 'キリングバイツ', start_time: '02:30:00', channel: ch6, day_of_week: sat },
     { title: '七つの大罪 戒めの復活', start_time: '06:30:00', channel: ch6, day_of_week: sat },
     { title: 'ダーリン・イン・ザ・フランキス', start_time: '23:30:00', channel: ch9, day_of_week: sat },
+    { title: 'カーニバル・ファンタズム', start_time: '00:00:00', channel: ch9, day_of_week: sun },
     { title: 'スロウスタート', start_time: '00:30:00', channel: ch9, day_of_week: sun },
     { title: 'ポプテピピック', start_time: '01:00:00', channel: ch9, day_of_week: sun },
     { title: '魔法使いの嫁', start_time: '01:30:00', channel: ch9, day_of_week: sun },

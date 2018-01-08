@@ -33,7 +33,6 @@ sun = DayOfWeek.create(name: '日', code: 'sun')
 Lineup.create(
   [
     { title: '刻刻', start_time: '00:30:00', channel: ch9, day_of_week: mon },
-    { title: '三ツ星カラーズ', start_time: '01:30:00', channel: ch9, day_of_week: mon },
     { title: '銀魂', start_time: '02:00:00', channel: ch7, day_of_week: mon },
     { title: 'からかい上手の高木さん', start_time: '23:00:00', channel: ch9, day_of_week: mon },
     { title: 'バジリスク桜花忍法帖', start_time: '00:00:00', channel: ch9, day_of_week: tue },

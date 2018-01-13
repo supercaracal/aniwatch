@@ -45,11 +45,9 @@ Lineup.create(
     { title: 'ヴァイオレット・エヴァーガーデン', start_time: '00:00:00', channel: ch9, day_of_week: thu },
     { title: 'ポケモン', start_time: '19:00:00', channel: ch7, day_of_week: thu },
     { title: 'ラーメン大好き小泉さん', start_time: '22:00:00', channel: ch9, day_of_week: thu },
-    { title: 'メルヘン・メドヘン', start_time: '22:30:00', channel: ch9, day_of_week: thu },
     { title: 'ゆるキャン', start_time: '23:30:00', channel: ch9, day_of_week: thu },
     { title: 'デスマーチからはじまる異世界狂想曲', start_time: '00:00:00', channel: ch9, day_of_week: fri },
     { title: '恋は雨上がりのように', start_time: '01:00:00', channel: ch8, day_of_week: fri },
-    { title: 'ミイラの飼い方', start_time: '02:00:00', channel: ch6, day_of_week: fri },
     { title: '覇穹 封神演義', start_time: '22:00:00', channel: ch9, day_of_week: fri },
     { title: 'ハクメイとミコチ', start_time: '22:30:00', channel: ch9, day_of_week: fri },
     { title: 'グランクレスト戦記', start_time: '00:00:00', channel: ch9, day_of_week: sat },
@@ -62,11 +60,9 @@ Lineup.create(
     { title: 'ダーリン・イン・ザ・フランキス', start_time: '23:30:00', channel: ch9, day_of_week: sat },
     { title: 'カーニバル・ファンタズム', start_time: '00:00:00', channel: ch9, day_of_week: sun },
     { title: 'スロウスタート', start_time: '00:30:00', channel: ch9, day_of_week: sun },
-    { title: 'ポプテピピック', start_time: '01:00:00', channel: ch9, day_of_week: sun },
     { title: '魔法使いの嫁', start_time: '01:30:00', channel: ch9, day_of_week: sun },
     { title: 'ドラゴンボール超', start_time: '09:00:00', channel: ch8, day_of_week: sun },
     { title: 'ワンピース', start_time: '09:30:00', channel: ch8, day_of_week: sun },
-    { title: '伊藤潤二コレクション', start_time: '22:00:00', channel: ch9, day_of_week: sun },
     { title: 'citrus', start_time: '23:30:00', channel: ch9, day_of_week: sun },
     { title: 'SuperGT', start_time: '23:30:00', channel: ch7, day_of_week: sun }
   ]

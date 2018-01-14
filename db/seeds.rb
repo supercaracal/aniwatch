@@ -41,6 +41,7 @@ Lineup.create(
     { title: '怪獣娘2', start_time: '21:54:00', channel: ch9, day_of_week: tue },
     { title: '宇宙よりも遠い場所', start_time: '23:00:00', channel: ch9, day_of_week: tue },
     { title: 'オーバーロードII', start_time: '00:30:00', channel: ch9, day_of_week: wed },
+    { title: '斉木楠雄のpsy難', start_time: '01:30:00', channel: ch7, day_of_week: wed },
     { title: 'BORUTO', start_time: '18:00:00', channel: ch7, day_of_week: wed },
     { title: 'ヴァイオレット・エヴァーガーデン', start_time: '00:00:00', channel: ch9, day_of_week: thu },
     { title: 'ポケモン', start_time: '19:00:00', channel: ch7, day_of_week: thu },

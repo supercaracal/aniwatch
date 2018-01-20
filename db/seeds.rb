@@ -6,7 +6,7 @@
 # cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 # Mayor.create(name: 'Emanuel', city: cities.first)
 
-# rubocop:disable Metrics/UselessAssignment
+# rubocop:disable Lint/UselessAssignment
 ch1 = Channel.create(name: 'NHK総合', code: '1ch')
 ch2 = Channel.create(name: 'Eテレ', code: '2ch')
 ch4 = Channel.create(name: '日本テレビ', code: '4ch')
@@ -28,7 +28,7 @@ thu = DayOfWeek.create(name: '木', code: 'thu')
 fri = DayOfWeek.create(name: '金', code: 'fri')
 sat = DayOfWeek.create(name: '土', code: 'sat')
 sun = DayOfWeek.create(name: '日', code: 'sun')
-# rubocop:enable Metrics/UselessAssignment
+# rubocop:enable Lint/UselessAssignment
 
 Lineup.create(
   [

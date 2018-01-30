@@ -29,5 +29,7 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'guard-rubocop'
   gem 'rspec-rails'
+  gem 'rubocop', require: false
   gem 'rubocop-rspec'
+  gem 'slim_lint'
 end

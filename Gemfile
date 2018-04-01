@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.4.2'
+ruby '2.5.0'
 
 gem 'draper'
 gem 'jbuilder'
@@ -18,18 +18,18 @@ group :development do
 end
 
 group :test do
-  gem 'codeclimate-test-reporter'
-  gem 'simplecov', require: false
-end
-
-group :development, :test do
   gem 'capybara'
-  gem 'dotenv-rails'
-  gem 'factory_girl_rails'
+  gem 'codeclimate-test-reporter'
+  gem 'factory_bot_rails'
   gem 'guard-rspec'
   gem 'guard-rubocop'
   gem 'rspec-rails'
   gem 'rubocop', require: false
   gem 'rubocop-rspec'
+  gem 'simplecov', require: false
   gem 'slim_lint'
+end
+
+group :development, :test do
+  gem 'dotenv-rails'
 end

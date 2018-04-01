@@ -8,7 +8,7 @@ addons:
 env:
   - "SECRET_KEY_BASE=3726902eb363750966ae9879eff39e77f0c7508b7e2128365fcc9c65c02d113c04dbf571cc83dbf49967b0ddb1e57cdcd88f0195652662586ce92d0601811f04"
 rvm:
-  - "2.4.2"
+  - "2.5.0"
 before_install:
   - "gem update --system"
   - "gem install bundler"

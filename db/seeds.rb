@@ -74,7 +74,6 @@ Lineup.create(
     { title: 'ダーリン・イン・ザ・フランキス', start_time: '23:30:00', channel: ch9, day_of_week: sat },
     { title: 'Sord Art Online Alternative Gun Gale Online', start_time: '00:00:00', channel: ch9, day_of_week: sun },
     { title: 'ペルソナ5', start_time: '00:30:00', channel: ch9, day_of_week: sun },
-    { title: 'LOST SONG', start_time: '01:30:00', channel: ch9, day_of_week: sun },
     { title: 'ゲゲゲの鬼太郎', start_time: '09:00:00', channel: ch8, day_of_week: sun },
     { title: 'ワンピース', start_time: '09:30:00', channel: ch8, day_of_week: sun },
     { title: 'Caligula', start_time: '23:30:00', channel: ch9, day_of_week: sun },

@@ -34,9 +34,7 @@ Lineup.create(
   [
     { title: 'ウマ娘', start_time: '00:00:00', channel: ch9, day_of_week: mon },
     { title: '食戟のソーマ 餐の皿', start_time: '00:30:00', channel: ch9, day_of_week: mon },
-    { title: 'デビルズライン', start_time: '01:30:00', channel: ch9, day_of_week: mon },
     { title: 'Cutie Honey Universe', start_time: '19:00:00', channel: ch9, day_of_week: mon },
-    { title: '実験品家族', start_time: '19:30:00', channel: ch9, day_of_week: mon },
     { title: 'ゴールデンカムイ', start_time: '23:00:00', channel: ch9, day_of_week: mon },
     { title: 'バジリスク桜花忍法帖', start_time: '00:00:00', channel: ch9, day_of_week: tue },
     { title: '蒼天の拳 REGENESIS', start_time: '00:30:00', channel: ch9, day_of_week: tue },
@@ -76,7 +74,6 @@ Lineup.create(
     { title: 'ペルソナ5', start_time: '00:30:00', channel: ch9, day_of_week: sun },
     { title: 'ゲゲゲの鬼太郎', start_time: '09:00:00', channel: ch8, day_of_week: sun },
     { title: 'ワンピース', start_time: '09:30:00', channel: ch8, day_of_week: sun },
-    { title: 'Caligula', start_time: '23:30:00', channel: ch9, day_of_week: sun },
     { title: 'SuperGT', start_time: '23:30:00', channel: ch7, day_of_week: sun }
   ]
 )

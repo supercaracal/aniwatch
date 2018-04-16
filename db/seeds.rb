@@ -34,7 +34,6 @@ Lineup.create(
   [
     { title: 'ウマ娘', start_time: '00:00:00', channel: ch9, day_of_week: mon },
     { title: '食戟のソーマ 餐の皿', start_time: '00:30:00', channel: ch9, day_of_week: mon },
-    { title: 'Cutie Honey Universe', start_time: '19:00:00', channel: ch9, day_of_week: mon },
     { title: 'ゴールデンカムイ', start_time: '23:00:00', channel: ch9, day_of_week: mon },
     { title: 'バジリスク桜花忍法帖', start_time: '00:00:00', channel: ch9, day_of_week: tue },
     { title: '蒼天の拳 REGENESIS', start_time: '00:30:00', channel: ch9, day_of_week: tue },

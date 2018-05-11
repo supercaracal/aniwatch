@@ -55,7 +55,6 @@ Lineup.create(
     { title: 'BORUTO', start_time: '19:30:00', channel: ch7, day_of_week: thu },
     { title: '銀河英雄伝説 Die Neue These', start_time: '22:30:00', channel: ch9, day_of_week: thu },
     { title: 'ひそねとまそたん', start_time: '00:00:00', channel: ch9, day_of_week: fri },
-    { title: '奴隷区', start_time: '01:00:00', channel: ch9, day_of_week: fri },
     { title: 'メガロボクス', start_time: '01:30:00', channel: ch6, day_of_week: fri },
     { title: '覇穹 封神演義', start_time: '22:00:00', channel: ch9, day_of_week: fri },
     { title: 'フルメタル・パニック! Invisible Victory', start_time: '22:30:00', channel: ch9, day_of_week: fri },

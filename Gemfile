@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.5.1'
 
+gem 'bootsnap', require: false
 gem 'draper'
 gem 'jbuilder'
 gem 'jquery-rails'

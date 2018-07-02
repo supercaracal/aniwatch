@@ -34,6 +34,7 @@ Lineup.create(
   [
     { title: 'はねバド!', start_time: '00:00:00', channel: ch9, day_of_week: mon },
     { title: 'バキ', start_time: '00:30:00', channel: ch9, day_of_week: mon },
+    { title: '銀魂', start_time: '01:30:00', channel: ch7, day_of_week: mon },
     { title: '幽遊白書', start_time: '19:00:00', channel: ch9, day_of_week: mon },
     { title: '悪偶 天才人形', start_time: '00:00:00', channel: ch9, day_of_week: tue },
     { title: '蒼天の拳 REGENESIS', start_time: '00:30:00', channel: ch9, day_of_week: tue },
@@ -67,7 +68,7 @@ Lineup.create(
     { title: 'ワンピース', start_time: '09:30:00', channel: ch8, day_of_week: sun },
     { title: 'ISLAND', start_time: '22:00:00', channel: ch9, day_of_week: sun },
     { title: 'プラネット・ウィズ', start_time: '22:30:00', channel: ch9, day_of_week: sun },
-    { title: 'あしびあそばせ', start_time: '23:30:00', channel: ch9, day_of_week: sun },
+    { title: 'あそびあそばせ', start_time: '23:30:00', channel: ch9, day_of_week: sun },
     { title: 'SuperGT', start_time: '23:30:00', channel: ch7, day_of_week: sun }
   ]
 )

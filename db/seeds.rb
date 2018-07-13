@@ -36,7 +36,6 @@ Lineup.create(
     { title: 'バキ', start_time: '00:30:00', channel: ch9, day_of_week: mon },
     { title: '銀魂', start_time: '01:30:00', channel: ch7, day_of_week: mon },
     { title: '幽遊白書', start_time: '19:00:00', channel: ch9, day_of_week: mon },
-    { title: '悪偶 天才人形', start_time: '00:00:00', channel: ch9, day_of_week: tue },
     { title: 'あっくんとカノジョ', start_time: '01:00:00', channel: ch9, day_of_week: tue },
     { title: '邪神ちゃんドロップキック', start_time: '01:05:00', channel: ch9, day_of_week: tue },
     { title: 'ガンダムビルドダイバーズ', start_time: '18:00:00', channel: ch7, day_of_week: tue },
@@ -44,7 +43,6 @@ Lineup.create(
     { title: 'アイドルマスターシンデレラガールズ劇場', start_time: '21:55:00', channel: ch9, day_of_week: tue },
     { title: 'オーバーロードIII', start_time: '00:30:00', channel: ch9, day_of_week: wed },
     { title: 'ルパン三世Part5', start_time: '01:30:00', channel: ch4, day_of_week: wed },
-    { title: 'Back Street Girls', start_time: '01:40:00', channel: ch9, day_of_week: wed },
     { title: '中間管理録トネガワ', start_time: '02:00:00', channel: ch4, day_of_week: wed },
     { title: '重神機パンドーラ', start_time: '23:30:00', channel: ch9, day_of_week: wed },
     { title: 'Free! Dive to the future', start_time: '00:00:00', channel: ch9, day_of_week: thu },
@@ -60,7 +58,6 @@ Lineup.create(
     { title: '七星のスバル', start_time: '02:00:00', channel: ch6, day_of_week: fri },
     { title: 'ちおちゃんの通学路', start_time: '22:00:00', channel: ch9, day_of_week: fri },
     { title: '殺戮の天使', start_time: '22:30:00', channel: ch9, day_of_week: fri },
-    { title: '暦物語', start_time: '00:00:00', channel: ch9, day_of_week: sat },
     { title: 'ハイスコアガール', start_time: '00:30:00', channel: ch9, day_of_week: sat },
     { title: 'ロードオブヴァーミリオン', start_time: '00:30:00', channel: ch9, day_of_week: sat },
     { title: 'はるかなレシーブ', start_time: '01:40:00', channel: ch9, day_of_week: sat },
@@ -75,7 +72,6 @@ Lineup.create(
     { title: 'ワンピース', start_time: '09:30:00', channel: ch8, day_of_week: sun },
     { title: 'ISLAND', start_time: '22:00:00', channel: ch9, day_of_week: sun },
     { title: 'プラネット・ウィズ', start_time: '22:30:00', channel: ch9, day_of_week: sun },
-    { title: 'あそびあそばせ', start_time: '23:30:00', channel: ch9, day_of_week: sun },
     { title: 'SuperGT', start_time: '23:30:00', channel: ch7, day_of_week: sun }
   ]
 )

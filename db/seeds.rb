@@ -60,7 +60,6 @@ Lineup.create(
     { title: 'ちおちゃんの通学路', start_time: '22:00:00', channel: ch9, day_of_week: fri },
     { title: '殺戮の天使', start_time: '22:30:00', channel: ch9, day_of_week: fri },
     { title: 'ハイスコアガール', start_time: '00:30:00', channel: ch9, day_of_week: sat },
-    { title: 'ロードオブヴァーミリオン', start_time: '00:30:00', channel: ch9, day_of_week: sat },
     { title: 'はるかなレシーブ', start_time: '01:40:00', channel: ch9, day_of_week: sat },
     { title: 'ハッピーシュガーライフ', start_time: '02:00:00', channel: ch6, day_of_week: sat },
     { title: 'ぐらんぶる', start_time: '02:30:00', channel: ch6, day_of_week: sat },

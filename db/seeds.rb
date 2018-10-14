@@ -45,6 +45,7 @@ Lineup.create(
     { title: '風が強く吹いている', start_time: '01:30:00', channel: ch4, day_of_week: wed },
     { title: 'CONCEPTION', start_time: '01:40:00', channel: ch9, day_of_week: wed },
     { title: '中間管理録トネガワ', start_time: '02:00:00', channel: ch4, day_of_week: wed },
+    { title: 'INGRESS', start_time: '01:00:00', channel: ch8, day_of_week: thu },
     { title: 'RErideD', start_time: '01:00:00', channel: ch9, day_of_week: thu },
     { title: '俺が好きなのは妹だけど妹じゃない', start_time: '01:30:00', channel: ch9, day_of_week: thu },
     { title: 'からくりサーカス', start_time: '22:30:00', channel: ch9, day_of_week: thu },

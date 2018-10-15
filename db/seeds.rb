@@ -33,8 +33,8 @@ sun = DayOfWeek.create(name: '日', code: 'sun')
 Lineup.create(
   [
     { title: 'アニマエール!', start_time: '00:00:00', channel: ch9, day_of_week: mon },
+    { title: 'ツルネ', start_time: '00:10:00', channel: ch1, day_of_week: mon },
     { title: 'バキ', start_time: '00:30:00', channel: ch9, day_of_week: mon },
-    { title: '進撃の巨人', start_time: '00:30:00', channel: ch1, day_of_week: mon },
     { title: 'ゴールデンカムイ', start_time: '23:00:00', channel: ch9, day_of_week: mon },
     { title: '転生したらスライムだった件', start_time: '00:00:00', channel: ch9, day_of_week: tue },
     { title: '蒼天の拳REGENESIS', start_time: '00:30:00', channel: ch9, day_of_week: tue },

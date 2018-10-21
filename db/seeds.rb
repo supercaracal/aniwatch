@@ -59,7 +59,6 @@ Lineup.create(
     { title: 'となりの吸血鬼さん', start_time: '22:00:00', channel: ch9, day_of_week: sat },
     { title: '青春ブタ野郎はバニーガール先輩の夢を見ない', start_time: '23:30:00', channel: ch9, day_of_week: sat },
     { title: 'Sword Art Online Alicization', start_time: '00:00:00', channel: ch9, day_of_week: sun },
-    { title: 'ベルゼブブ嬢のお気に召すまま。', start_time: '00:30:00', channel: ch9, day_of_week: sun },
     { title: 'SSSS GRIDMAN', start_time: '01:00:00', channel: ch9, day_of_week: sun },
     { title: 'ゴブリンスレイヤー', start_time: '01:30:00', channel: ch9, day_of_week: sun },
     { title: 'うちのメイドがウザすぎる!', start_time: '03:00:00', channel: ch211, day_of_week: sun },

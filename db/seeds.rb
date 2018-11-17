@@ -33,7 +33,6 @@ sun = DayOfWeek.create(name: '日', code: 'sun')
 Lineup.create(
   [
     { title: 'アニマエール!', start_time: '00:00:00', channel: ch9, day_of_week: mon },
-    { title: 'ツルネ', start_time: '00:10:00', channel: ch1, day_of_week: mon },
     { title: 'バキ', start_time: '00:30:00', channel: ch9, day_of_week: mon },
     { title: 'ゴールデンカムイ', start_time: '23:00:00', channel: ch9, day_of_week: mon },
     { title: '転生したらスライムだった件', start_time: '00:00:00', channel: ch9, day_of_week: tue },
@@ -42,7 +41,6 @@ Lineup.create(
     { title: 'おとなの防具屋さん', start_time: '01:25:00', channel: ch9, day_of_week: tue },
     { title: 'ブラッククローバー', start_time: '18:30:00', channel: ch7, day_of_week: tue },
     { title: '東京喰種:re', start_time: '23:00:00', channel: ch9, day_of_week: tue },
-    { title: '風が強く吹いている', start_time: '01:30:00', channel: ch4, day_of_week: wed },
     { title: 'CONCEPTION', start_time: '01:40:00', channel: ch9, day_of_week: wed },
     { title: '中間管理録トネガワ', start_time: '02:00:00', channel: ch4, day_of_week: wed },
     { title: 'INGRESS', start_time: '01:00:00', channel: ch8, day_of_week: thu },

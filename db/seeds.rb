@@ -52,7 +52,6 @@ Lineup.create(
     { title: 'とある魔術の禁書目録III', start_time: '00:30:00', channel: ch9, day_of_week: sat },
     { title: 'ジョジョの奇妙な冒険 黄金の嵐', start_time: '01:00:00', channel: ch9, day_of_week: sat },
     { title: '宇宙戦艦ヤマト2202', start_time: '01:20:00', channel: ch7, day_of_week: sat },
-    { title: '寄宿学校のジュリエット', start_time: '01:40:00', channel: ch6, day_of_week: sat },
     { title: '色づく世界の明日から', start_time: '02:10:00', channel: ch6, day_of_week: sat },
     { title: 'となりの吸血鬼さん', start_time: '22:00:00', channel: ch9, day_of_week: sat },
     { title: '青春ブタ野郎はバニーガール先輩の夢を見ない', start_time: '23:30:00', channel: ch9, day_of_week: sat },

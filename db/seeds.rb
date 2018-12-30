@@ -48,8 +48,6 @@ Lineup.create(
     { title: 'ワンピース', start_time: '09:30:00', channel: ch8, day_of_week: sun },
     { title: 'BORUTO', start_time: '17:30:00', channel: ch7, day_of_week: sun },
     { title: 'ポケモン', start_time: '18:00:00', channel: ch7, day_of_week: sun },
-    { title: 'ユリシーズ ジャンヌ・ダルクと錬金の騎士', start_time: '22:00:00', channel: ch9, day_of_week: sun },
-    { title: 'DOUBLE DECKER!', start_time: '22:30:00', channel: ch9, day_of_week: sun },
     { title: 'SuperGT', start_time: '23:30:00', channel: ch7, day_of_week: sun }
   ]
 )

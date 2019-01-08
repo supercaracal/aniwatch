@@ -34,11 +34,8 @@ Lineup.create(
   [
     { title: 'みにとじ', start_time: '21:54:00', channel: ch9, day_of_week: mon },
     { title: 'どろろ', start_time: '22:00:00', channel: ch9, day_of_week: mon },
-    { title: 'エガオノダイカ', start_time: '22:30:00', channel: ch9, day_of_week: mon },
     { title: 'モブサイコ100II', start_time: '23:00:00', channel: ch9, day_of_week: mon },
     { title: '転生したらスライムだった件', start_time: '00:00:00', channel: ch9, day_of_week: tue },
-    { title: 'ぱすてるメモリーズ', start_time: '00:30:00', channel: ch9, day_of_week: tue },
-    { title: '上野さんは不器用', start_time: '01:05:00', channel: ch9, day_of_week: tue },
     { title: 'けものフレンズ2', start_time: '02:00:00', channel: ch7, day_of_week: tue },
     { title: 'ブラッククローバー', start_time: '18:30:00', channel: ch7, day_of_week: tue },
     { title: 'サークレット・プリンセス', start_time: '23:00:00', channel: ch9, day_of_week: tue },

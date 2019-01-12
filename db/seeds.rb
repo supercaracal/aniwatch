@@ -49,7 +49,6 @@ Lineup.create(
     { title: 'とある魔術の禁書目録III', start_time: '00:30:00', channel: ch9, day_of_week: sat },
     { title: 'ジョジョの奇妙な冒険 黄金の嵐', start_time: '01:00:00', channel: ch9, day_of_week: sat },
     { title: '宇宙戦艦ヤマト2202', start_time: '01:20:00', channel: ch7, day_of_week: sat },
-    { title: '魔法少女特殊戦あすか', start_time: '02:15:00', channel: ch6, day_of_week: sat },
     { title: 'かぐや様は告らせたい', start_time: '23:30:00', channel: ch9, day_of_week: sat },
     { title: 'Sword Art Online Alicization', start_time: '00:00:00', channel: ch9, day_of_week: sun },
     { title: 'えんどろ～', start_time: '01:00:00', channel: ch9, day_of_week: sun },

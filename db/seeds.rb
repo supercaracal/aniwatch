@@ -32,6 +32,7 @@ sun = DayOfWeek.create(name: '日', code: 'sun')
 
 Lineup.create(
   [
+    { title: 'マナリアフレンズ', start_time: '00:30:00', channel: ch9, day_of_week: mon },
     { title: 'みにとじ', start_time: '21:54:00', channel: ch9, day_of_week: mon },
     { title: 'どろろ', start_time: '22:00:00', channel: ch9, day_of_week: mon },
     { title: 'モブサイコ100II', start_time: '23:00:00', channel: ch9, day_of_week: mon },

@@ -42,6 +42,7 @@ Lineup.create(
     { title: 'ワンパンマン', start_time: '01:30:00', channel: ch7, day_of_week: wed },
     { title: 'この世の果で恋を唄う少女YU-NO', start_time: '22:00:00', channel: ch9, day_of_week: wed },
     { title: '世話やきキツネの仙狐さん', start_time: '23:30:00', channel: ch9, day_of_week: wed },
+    { title: 'Carole and Tuesday', start_time: '01:00:00', channel: ch8, day_of_week: thu },
     { title: '盾の勇者の成り上がり', start_time: '01:00:00', channel: ch9, day_of_week: thu },
     { title: 'からくりサーカス', start_time: '22:30:00', channel: ch9, day_of_week: thu },
     { title: '賢者の孫', start_time: '23:30:00', channel: ch9, day_of_week: thu },

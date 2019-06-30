@@ -37,7 +37,6 @@ Lineup.create(
     { title: 'ブラッククローバー', start_time: '18:30:00', channel: ch7, day_of_week: tue },
     { title: '手品先輩', start_time: '23:00:00', channel: ch9, day_of_week: tue },
     { title: 'ソウナンですか?', start_time: '23:15:00', channel: ch9, day_of_week: tue },
-    { title: '異世界かるてっと', start_time: '00:30:00', channel: ch9, day_of_week: wed },
     { title: 'ワンパンマン', start_time: '01:30:00', channel: ch7, day_of_week: wed },
     { title: 'この世の果で恋を唄う少女YU-NO', start_time: '22:00:00', channel: ch9, day_of_week: wed },
     { title: 'ダンベル何キロ持てる?', start_time: '23:30:00', channel: ch9, day_of_week: wed },

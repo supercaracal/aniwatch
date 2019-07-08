@@ -35,6 +35,7 @@ Lineup.create(
     { title: 'ビジネスフィッシュ', start_time: '00:00:00', channel: ch9, day_of_week: mon },
     { title: 'ヴィンランド・サガ', start_time: '00:10:00', channel: ch1, day_of_week: mon },
     { title: 'ナカノヒトゲノム', start_time: '00:30:00', channel: ch9, day_of_week: mon },
+    { title: 'BEM', start_time: '01:30:00', channel: ch7, day_of_week: mon },
     { title: 'かつて神だった獣たちへ', start_time: '23:00:00', channel: ch9, day_of_week: mon },
     { title: 'コップクラフト', start_time: '00:00:00', channel: ch9, day_of_week: tue },
     { title: 'ありふれた職業で世界最強', start_time: '00:30:00', channel: ch9, day_of_week: tue },

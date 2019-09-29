@@ -29,6 +29,20 @@ $ bin/rails s -b 0.0.0.0
 $ bin/guard
 ```
 
+## Test
+
+```
+$ bin/rspec
+```
+
+```
+$ bin/rubocop
+```
+
+```
+$ bin/slim-lint app/views/
+```
+
 ## Production
 
 ```

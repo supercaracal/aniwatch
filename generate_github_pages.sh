@@ -8,7 +8,7 @@ readonly DISABLE_LOG='Rails.logger.level = 5'
 readonly FETCH_HTML='Rails.application.call("REQUEST_METHOD" => "GET", "rack.input" => "").third.each { |b| puts b }'
 readonly RAILS_CMD="${DISABLE_LOG}; ${FETCH_HTML}"
 
-bin/rails db:setup
+bin/rails db:prepare
 
 mkdir -p docs
 rm docs/*

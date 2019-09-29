@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.6.2'
+ruby '2.6.4'
 
 gem 'bootsnap', require: false
 gem 'draper'
@@ -25,6 +25,7 @@ group :test do
   gem 'guard-rubocop'
   gem 'rspec-rails'
   gem 'rubocop', require: false
+  gem 'rubocop-performance'
   gem 'rubocop-rspec'
   gem 'simplecov', require: false
   gem 'slim_lint'

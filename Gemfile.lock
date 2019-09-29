@@ -232,6 +232,8 @@ GEM
       rainbow (>= 2.2.2, < 4.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.7)
+    rubocop-performance (1.4.1)
+      rubocop (>= 0.71.0)
     rubocop-rspec (1.36.0)
       rubocop (>= 0.68.1)
     ruby-progressbar (1.10.1)
@@ -309,6 +311,7 @@ DEPENDENCIES
   rb-readline
   rspec-rails
   rubocop
+  rubocop-performance
   rubocop-rspec
   sass-rails
   simplecov
@@ -317,7 +320,7 @@ DEPENDENCIES
   uglifier
 
 RUBY VERSION
-   ruby 2.6.2p47
+   ruby 2.6.4p104
 
 BUNDLED WITH
-   1.17.2
+   1.17.3

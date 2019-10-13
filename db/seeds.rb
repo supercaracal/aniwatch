@@ -46,6 +46,7 @@ Lineup.create(
     { title: '超人高校生たちは異世界でも余裕で生き抜くようです！', start_time: '22:30:00', channel: ch9, day_of_week: thu },
     { title: 'アズールレーン', start_time: '23:30:00', channel: ch9, day_of_week: thu },
     { title: 'アサシンズプライド', start_time: '00:00:00', channel: ch9, day_of_week: fri },
+    { title: 'PSYCHO-PASS 3', start_time: '01:30:00', channel: ch8, day_of_week: fri },
     { title: 'ノー・ガンズ・ライフ', start_time: '01:30:00', channel: ch6, day_of_week: fri },
     { title: 'Dr.STONE', start_time: '22:00:00', channel: ch9, day_of_week: fri },
     { title: 'GRANBLUE FANTASY 2', start_time: '00:00:00', channel: ch9, day_of_week: sat },

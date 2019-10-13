@@ -61,7 +61,6 @@ Lineup.create(
     { title: 'ガンダムビルドダイバーズRe:RISE', start_time: '19:00:00', channel: ch211, day_of_week: sat },
     { title: 'Fate/Grand Order 絶対魔獣戦線バビロニア', start_time: '23:30:00', channel: ch9, day_of_week: sat },
     { title: 'Sword Art Online Alicization War of Underworld', start_time: '00:00:00', channel: ch9, day_of_week: sun },
-    { title: '戦x恋', start_time: '01:30:00', channel: ch9, day_of_week: sun },
     { title: 'ゲゲゲの鬼太郎', start_time: '09:00:00', channel: ch8, day_of_week: sun },
     { title: 'ワンピース', start_time: '09:30:00', channel: ch8, day_of_week: sun },
     { title: 'BORUTO', start_time: '17:30:00', channel: ch7, day_of_week: sun },

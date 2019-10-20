@@ -38,6 +38,7 @@ Lineup.create(
     { title: 'PSO2', start_time: '22:30:00', channel: ch9, day_of_week: mon },
     { title: '私、能力は平均値でって言ったよね!', start_time: '00:00:00', channel: ch9, day_of_week: tue },
     { title: 'ブラッククローバー', start_time: '18:30:00', channel: ch7, day_of_week: tue },
+    { title: 'ちはやふる', start_time: '01:30:00', channel: ch4, day_of_week: wed },
     { title: '七つの大罪', start_time: '18:00:00', channel: ch7, day_of_week: wed },
     { title: '慎重勇者', start_time: '23:30:00', channel: ch9, day_of_week: wed },
     { title: '俺を好きなのはお前だけかよ', start_time: '00:03:00', channel: ch9, day_of_week: thu },

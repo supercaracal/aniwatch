@@ -41,7 +41,7 @@ Lineup.create(
     { title: 'ちはやふる', start_time: '01:30:00', channel: ch4, day_of_week: wed },
     { title: '七つの大罪', start_time: '18:00:00', channel: ch7, day_of_week: wed },
     { title: '慎重勇者', start_time: '23:30:00', channel: ch9, day_of_week: wed },
-    { title: '俺を好きなのはお前だけかよ', start_time: '00:03:00', channel: ch9, day_of_week: thu },
+    { title: '俺を好きなのはお前だけかよ', start_time: '00:30:00', channel: ch9, day_of_week: thu },
     { title: '旗揚！けものみち', start_time: '01:00:00', channel: ch9, day_of_week: thu },
     { title: 'BEASTARS', start_time: '01:00:00', channel: ch8, day_of_week: thu },
     { title: '超人高校生たちは異世界でも余裕で生き抜くようです！', start_time: '22:30:00', channel: ch9, day_of_week: thu },

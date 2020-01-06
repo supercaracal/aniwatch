@@ -32,7 +32,8 @@ sun = DayOfWeek.create(name: '日', code: 'sun')
 
 Lineup.create(
   [
-    { title: 'ID:INVADED', start_time: '00:00:00', channel: ch9, day_of_week: mon },
+    { title: 'ドロヘドロ', start_time: '00:00:00', channel: ch7, day_of_week: mon },
+    { title: 'ID:INVADED', start_time: '00:30:00', channel: ch9, day_of_week: mon },
     { title: '映像研には手を出すな!', start_time: '00:10:00', channel: ch1, day_of_week: mon },
     { title: 'へやキャン', start_time: '21:54:00', channel: ch9, day_of_week: mon },
     { title: 'pet', start_time: '22:00:00', channel: ch9, day_of_week: mon },

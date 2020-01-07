@@ -22,6 +22,7 @@ func TestCamelize(t *testing.T) {
 		TestCase{"", ""},
 		TestCase{"123", "123"},
 		TestCase{"AAA", "AAA"},
+		TestCase{"a", "A"},
 	}
 	for _, c := range cases {
 		actual := camelize(c.v)

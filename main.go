@@ -186,17 +186,23 @@ func responseInternalServerError(w http.ResponseWriter) {
 }
 
 func camelize(v string) string {
+	if v == "" {
+		return ""
+	}
+	if v[0] < 'a' || 'z' < v[0] {
+		return v
+	}
 	return fmt.Sprintf("%s%s", string(v[0]-32), v[1:])
 }
 
-func calcQuarter(now time.Time) int {
+func calcQuarter(t time.Time) int {
 	var offset int
-	if now.Month()%3 == 0 {
+	if t.Month()%3 == 0 {
 		offset = 0
 	} else {
 		offset = 1
 	}
-	return int(now.Month())/3 + offset
+	return int(t.Month())/3 + offset
 }
 
 func timeToSlot(t time.Time) (s string) {

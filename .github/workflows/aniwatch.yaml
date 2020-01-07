@@ -1,0 +1,32 @@
+---
+# @see https://help.github.com/ja/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions
+name: aniwatch
+on: [push]
+jobs:
+  ci:
+    name: CI
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        os: ["ubuntu-latest"]
+        go-ver: ["1.13"]
+    runs-on: ${{ matrix.os }}
+    env:
+      GOPATH: "/tmp/gopath"
+    steps:
+      - name: Set up Go
+        uses: actions/setup-go@v1
+        with:
+          go-version: ${{ matrix.go-ver }}
+      - name: Check out code into the Go module directory
+        uses: actions/checkout@v1
+      - name: Set up GOPATH
+        run: mkdir -p /tmp/gopath
+      - name: Get dependencies
+        run: go get golang.org/x/lint/golint
+      - name: Build
+        run: make build
+      - name: Test
+        run: make test
+      - name: Lint
+        run: make lint

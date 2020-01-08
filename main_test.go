@@ -74,12 +74,13 @@ func TestTimeToSlot(t *testing.T) {
 		TestCase{"2020-01-01T19:00:00Z", "night"},
 		TestCase{"2020-01-01T23:59:59Z", "night"},
 	}
+	initialize()
 	for _, c := range cases {
 		argTime, err := time.Parse(time.RFC3339, c.timeStr)
 		if err != nil {
 			t.Fatal(err)
 		}
-		actual := timeToSlot(argTime)
+		actual := timeToSlot(argTime, data)
 		if c.expected != actual {
 			t.Errorf("expected=%s, actual=%s", c.expected, actual)
 		}

@@ -25,10 +25,10 @@ day-of-week:
   - { id: 'sat', name: '土' }
   - { id: 'sun', name: '日' }
 slot-of-day:
-  - { id: 'midnight', name: '深夜', color: 'danger'  }
-  - { id: 'daytime',  name: '日中', color: 'info'    }
-  - { id: 'sunset',   name: '夕方', color: 'success' }
-  - { id: 'night',    name: '夜',   color: 'warning' }
+  - { id: 'midnight', name: '深夜', color: 'danger',  from: 0,  to: 5  }
+  - { id: 'daytime',  name: '日中', color: 'info',    from: 5,  to: 16 }
+  - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
+  - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
   - { title: 'ドロヘドロ', start_time: '00:00', channel: ch7, day_of_week: mon }
   - { title: 'ID:INVADED', start_time: '00:30', channel: ch9, day_of_week: mon }

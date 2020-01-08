@@ -44,6 +44,8 @@ type Data struct {
 		ID    string `yaml:"id"`
 		Name  string `yaml:"name"`
 		Color string `yaml:"color"`
+		From  int    `yaml:"from"`
+		To    int    `yaml:"to"`
 	} `yaml:"slot-of-day"`
 	Lineups []struct {
 		Title         string `yaml:"title"`
@@ -205,18 +207,14 @@ func calcQuarter(t time.Time) int {
 	return int(t.Month())/3 + offset
 }
 
-func timeToSlot(t time.Time) (s string) {
+func timeToSlot(t time.Time, d *Data) string {
 	m := t.Hour()*60 + t.Minute()
-	if m >= 0 && m < 60*5 {
-		s = "midnight"
-	} else if 60*5 <= m && m < 60*16 {
-		s = "daytime"
-	} else if 60*16 <= m && m < 60*19 {
-		s = "sunset"
-	} else if 60*19 <= m && m < 60*24 {
-		s = "night"
+	for _, s := range d.SlotOfDay {
+		if 60*s.From <= m && m < 60*s.To {
+			return s.ID
+		}
 	}
-	return
+	return "unknown"
 }
 
 func buildLineupsPerDaySlot(d *Data) (LineupsPerDaySlot, error) {
@@ -237,7 +235,7 @@ func buildLineupsPerDaySlot(d *Data) (LineupsPerDaySlot, error) {
 			Start:   e.StartTime,
 			Channel: d.TvChannel[e.ChannelCode],
 		}
-		s := timeToSlot(t)
+		s := timeToSlot(t, d)
 		v[e.DayOfWeekCode][s] = append(v[e.DayOfWeekCode][s], l)
 	}
 

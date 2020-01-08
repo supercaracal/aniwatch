@@ -124,7 +124,7 @@ func TestServerFeatures(t *testing.T) {
 		t.Errorf("expected=%d, actual=%d", http.StatusOK, resp.StatusCode)
 	}
 
-	if !strings.Contains(body, "PocaPocaUnty") {
-		t.Errorf("'%s' is not found in\n```\n%s```\n", "PocaPocaUnty", body)
+	if !strings.Contains(body, "</body>") {
+		t.Errorf("'%s' is not found in\n```\n%s```\n", "</body>", body)
 	}
 }

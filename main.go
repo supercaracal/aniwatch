@@ -253,7 +253,7 @@ func rootHandler(w http.ResponseWriter, r *http.Request) {
 	d := TmplData{
 		Data:              data,
 		Title:             camelize(data.AppName),
-		Quarter:           fmt.Sprintf("%d年%dQ", now.Year(), calcQuarter(now)),
+		Quarter:           fmt.Sprintf("%d-%dQ", now.Year(), calcQuarter(now)),
 		LineupCount:       len(data.Lineups),
 		LineupsPerDaySlot: l,
 	}

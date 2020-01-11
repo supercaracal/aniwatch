@@ -61,7 +61,6 @@ lineups:
   - { title: 'ランウェイで笑って', start_time: '02:30', channel: ch6, day_of_week: sat }
   - { title: '僕のヒーローアカデミア', start_time: '17:30', channel: ch4, day_of_week: sat }
   - { title: '魔入りました！入間くん', start_time: '17:30', channel: ch2, day_of_week: sat }
-  - { title: 'ガンダムビルドダイバーズRe:RISE', start_time: '19:00', channel: ch211, day_of_week: sat }
   - { title: '22/7', start_time: '23:00', channel: ch9, day_of_week: sat }
   - { title: 'Fate/Grand Order 絶対魔獣戦線バビロニア', start_time: '23:30', channel: ch9, day_of_week: sat }
   - { title: 'マギアレコード', start_time: '00:00', channel: ch9, day_of_week: sun }

@@ -55,7 +55,6 @@ lineups:
   - { title: '理系が恋に落ちたので証明してみた。', start_time: '00:30', channel: ch9, day_of_week: sat }
   - { title: 'どるふろ 狂乱編', start_time: '01:00', channel: ch9, day_of_week: sat }
   - { title: 'とある科学の超電磁砲T', start_time: '01:05', channel: ch9, day_of_week: sat }
-  - { title: '織田シナモン信長', start_time: '01:30', channel: ch7, day_of_week: sat }
   - { title: 'ケンガンアシュラ', start_time: '01:30', channel: ch9, day_of_week: sat }
   - { title: '歌舞伎町シャーロック', start_time: '02:00', channel: ch6, day_of_week: sat }
   - { title: 'はてなイリュージョン', start_time: '02:00', channel: ch9, day_of_week: sat }

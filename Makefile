@@ -16,7 +16,7 @@ test:
 
 lint:
 	go vet
-	$$GOPATH/bin/golint -set_exit_status
+	golint -set_exit_status
 
 clean:
 	@rm -f server main

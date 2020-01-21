@@ -1,4 +1,4 @@
-![](https://github.com/supercaracal/aniwatch/workflows/aniwatch/badge.svg)
+![](https://github.com/supercaracal/aniwatch/workflows/CI/badge.svg)
 
 ```
 $ make

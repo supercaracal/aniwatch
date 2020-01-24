@@ -1,12 +1,8 @@
 SHELL := /bin/bash
 
-all:
-	@$(MAKE) --no-print-directory build
-	@$(MAKE) --no-print-directory test
-	@$(MAKE) --no-print-directory lint
+all: build test lint
 
-build:
-	@$(MAKE) --no-print-directory server
+build: server
 
 server: main.go
 	go build -ldflags="-s -w" -trimpath -o $@

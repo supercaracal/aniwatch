@@ -1,10 +1,11 @@
-SHELL := /bin/bash
+SHELL    := /bin/bash
+BIN_NAME := server
 
 all: build test lint
 
-build: server
+build: ${BIN_NAME}
 
-server: main.go
+${BIN_NAME}: main.go
 	go build -ldflags="-s -w" -trimpath -o $@
 
 test:
@@ -15,6 +16,6 @@ lint:
 	golint -set_exit_status
 
 clean:
-	@rm -f server main
+	@rm -f ${BIN_NAME} main
 
 .PHONY: all build test lint clean

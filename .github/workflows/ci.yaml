@@ -1,7 +1,10 @@
 ---
 # @see https://help.github.com/ja/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions
 name: CI
-on: [push]
+on:
+  push:
+    branches:
+      - "*"
 jobs:
   test:
     name: Test

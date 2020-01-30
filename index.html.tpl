@@ -21,14 +21,14 @@
               <tr>
                 <th><span>&#10004;{{.LineupCount}}</span></th>
                 {{range .Data.SlotOfDay}}
-                  <th><span class="badge badge-{{.Color}}">{{.Name}}</span></th>
+                  <th scope="col"><span class="badge badge-{{.Color}}">{{.Name}}</span></th>
                 {{end}}
               </tr>
             </thead>
             <tbody>
               {{range .Data.DayOfWeek}}
                 <tr>
-                  <th><span class="badge badge-pill badge-light">{{.Name}}</span></th>
+                  <th scope="row"><span class="badge badge-pill badge-light">{{.Name}}</span></th>
                   {{with $slots := index $.LineupsPerDaySlot .ID}}
                     {{range $.Data.SlotOfDay}}
                       <td>

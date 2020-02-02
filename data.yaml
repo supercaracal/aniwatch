@@ -42,7 +42,6 @@ lineups:
   - { title: 'ブラッククローバー', start_time: '18:30', channel: ch7, day_of_week: tue }
   - { title: '7SEEDS', start_time: '23:00', channel: ch9, day_of_week: tue }
   - { title: '異世界かるてっと2', start_time: '00:30', channel: ch9, day_of_week: wed }
-  - { title: 'バビロン', start_time: '01:30', channel: ch9, day_of_week: wed }
   - { title: 'ちはやふる', start_time: '01:30', channel: ch4, day_of_week: wed }
   - { title: '七つの大罪', start_time: '18:00', channel: ch7, day_of_week: wed }
   - { title: '魔術士オーフェンはぐれ旅', start_time: '22:00', channel: ch9, day_of_week: wed }
@@ -66,7 +65,6 @@ lineups:
   - { title: '22/7', start_time: '23:00', channel: ch9, day_of_week: sat }
   - { title: 'Fate/Grand Order 絶対魔獣戦線バビロニア', start_time: '23:30', channel: ch9, day_of_week: sat }
   - { title: 'マギアレコード', start_time: '00:00', channel: ch9, day_of_week: sun }
-  - { title: '異種族レビュアーズ', start_time: '01:30', channel: ch9, day_of_week: sun }
   - { title: '虚構推理', start_time: '01:30', channel: ch5, day_of_week: sun }
   - { title: 'ゲゲゲの鬼太郎', start_time: '09:00', channel: ch8, day_of_week: sun }
   - { title: 'ワンピース', start_time: '09:30', channel: ch8, day_of_week: sun }

@@ -39,7 +39,7 @@ lineups:
   - { title: '神之塔', start_time: '00:30', channel: ch9, day_of_week: thu }
   - { title: 'BNA', start_time: '01:00', channel: ch8, day_of_week: thu }
   - { title: 'プランダラ', start_time: '01:00', channel: ch9, day_of_week: thu }
-  - { title: '八男って、それはないでしょう！', start_time: '23:00', channel: ch9, day_of_week: thu }
+  - { title: '八男って、それはないでしょう！', start_time: '22:30', channel: ch9, day_of_week: thu }
   - { title: '球詠', start_time: '23:30', channel: ch9, day_of_week: thu }
   - { title: 'かくしごと', start_time: '00:00', channel: ch9, day_of_week: fri }
   - { title: '富豪刑事', start_time: '01:00', channel: ch8, day_of_week: fri }

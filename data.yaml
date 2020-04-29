@@ -35,6 +35,7 @@ lineups:
   - { title: 'プリンセスコネクト! Re:Dive', start_time: '00:30', channel: ch9, day_of_week: tue }
   - { title: "邪神ちゃんドロップキック\'", start_time: '01:15', channel: ch9, day_of_week: tue }
   - { title: 'ブラッククローバー', start_time: '18:30', channel: ch7, day_of_week: tue }
+  - { title: 'ガンダムビルドダイバーズRe:RISE', start_time: '22:30', channel: ch9, day_of_week: tue }
   - { title: '放課後ていぼう日誌', start_time: '00:30', channel: ch9, day_of_week: wed }
   - { title: '神之塔', start_time: '00:30', channel: ch9, day_of_week: thu }
   - { title: 'BNA', start_time: '01:00', channel: ch8, day_of_week: thu }

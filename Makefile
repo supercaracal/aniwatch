@@ -3,17 +3,15 @@ BIN_NAME := server
 
 all: build test lint
 
-build: ${BIN_NAME}
-
-${BIN_NAME}: main.go
-	go build -ldflags="-s -w" -trimpath -o $@
+build:
+	go build -ldflags="-s -w" -trimpath -tags timetzdata -o ${BIN_NAME}
 
 test:
-	go test
+	go test ./...
 
 lint:
-	go vet
-	golint -set_exit_status
+	go vet ./...
+	golint -set_exit_status ./...
 
 clean:
 	@rm -f ${BIN_NAME} main

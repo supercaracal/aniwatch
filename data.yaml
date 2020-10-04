@@ -30,17 +30,21 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
-  - { title: 'NOBLESSE', start_time: '22:00', channel: ch9, day_of_week: mon }
-  - { title: 'The God of high school', start_time: '00:00', channel: ch9, day_of_week: tue }
-  - { title: 'バキ 大擂台賽編', start_time: '00:30', channel: ch9, day_of_week: tue }
+  - { title: 'ゴールデンカムイ', start_time: '23:00', channel: ch9, day_of_week: mon }
+  - { title: '魔王城でおやすみ', start_time: '02:00', channel: ch7, day_of_week: tue }
   - { title: 'ブラッククローバー', start_time: '18:30', channel: ch7, day_of_week: tue }
-  - { title: 'ジビエート', start_time: '22:00', channel: ch9, day_of_week: wed }
-  - { title: 'Re:ゼロから始める異世界生活', start_time: '23:30', channel: ch9, day_of_week: wed }
-  - { title: '神様になった日', start_time: '00:30', channel: ch9, day_of_week: thu }
+  - { title: '池袋ウェストゲートパーク', start_time: '00:30', channel: ch9, day_of_week: wed }
+  - { title: 'くまクマ熊ベアー', start_time: '23:30', channel: ch9, day_of_week: wed }
+  - { title: 'NOBLESSE', start_time: '00:00', channel: ch9, day_of_week: thu }
+  - { title: 'Strike Witches Road to Berin', start_time: '01:00', channel: ch9, day_of_week: thu }
   - { title: 'Great pretender', start_time: '01:00', channel: ch9, day_of_week: thu }
-  - { title: '番組内容未定', start_time: '22:00', channel: ch9, day_of_week: thu }
+  - { title: 'キミと僕の最後の戦場、あるいは世界が始まる聖戦', start_time: '01:30', channel: ch9, day_of_week: thu }
+  - { title: 'ぐらぶるっ!', start_time: '21:54', channel: ch9, day_of_week: thu }
   - { title: 'ひぐらしのなく頃に', start_time: '23:30', channel: ch9, day_of_week: thu }
+  - { title: 'アクダマドライブ', start_time: '00:30', channel: ch9, day_of_week: fri }
   - { title: 'アサルトリリィBOUQUET', start_time: '01:30', channel: ch6, day_of_week: fri }
+  - { title: '安達としまむら', start_time: '02:00', channel: ch6, day_of_week: fri }
+  - { title: 'ポケットモンスター', start_time: '19:00', channel: ch7, day_of_week: fri }
   - { title: '100万の命の上に俺は立っている', start_time: '22:00', channel: ch9, day_of_week: fri }
   - { title: '魔女の旅々', start_time: '22:30', channel: ch9, day_of_week: fri }
   - { title: 'ダンジョンに出会いを求めるのは間違っているだろうかIII', start_time: '00:30', channel: ch9, day_of_week: sat }
@@ -48,9 +52,12 @@ lineups:
   - { title: 'トニカクカワイイ', start_time: '01:05', channel: ch9, day_of_week: sat }
   - { title: '呪術廻戦', start_time: '01:30', channel: ch6, day_of_week: sat }
   - { title: '炎炎ノ消防隊 弐ノ章', start_time: '02:00', channel: ch6, day_of_week: sat }
+  - { title: 'ドラゴンクエスト ダイの大冒険', start_time: '09:30', channel: ch7, day_of_week: sat }
   - { title: '半妖の夜叉姫', start_time: '17:30', channel: ch4, day_of_week: sat }
   - { title: '戦翼のシグルドリーヴァ', start_time: '23:30', channel: ch9, day_of_week: sat }
-  - { title: '魔法科高校の劣等生 来訪者編', start_time: '00:00', channel: ch9, day_of_week: sun }
+  - { title: '神様になった日', start_time: '00:00', channel: ch9, day_of_week: sun }
+  - { title: '魔法科高校の劣等生 来訪者編', start_time: '00:30', channel: ch9, day_of_week: sun }
+  - { title: '体操ザムライ', start_time: '01:30', channel: ch5, day_of_week: sun }
   - { title: 'いわかける!', start_time: '02:00', channel: ch5, day_of_week: sun }
   - { title: 'ワンピース', start_time: '09:30', channel: ch8, day_of_week: sun }
   - { title: 'BORUTO', start_time: '17:30', channel: ch7, day_of_week: sun }

@@ -24,7 +24,7 @@ jobs:
           go-version: ${{ matrix.go-ver }}
 
       - name: Add $GOPATH/bin to $PATH
-        run: echo "::add-path::$(go env GOPATH)/bin"
+        run: echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
 
       - name: Get dependencies
         run: go get golang.org/x/lint/golint

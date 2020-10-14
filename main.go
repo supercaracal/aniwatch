@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"net/http"
 	"os"
@@ -68,6 +69,9 @@ func serve(option *config.Option, logger *config.Logger) error {
 func main() {
 	logger := config.NewLogger()
 	option := config.NewOption()
+
+	flag.IntVar(&option.Port, "port", option.Port, "listen port number")
+	flag.Parse()
 
 	err := setUpRouting(logger)
 	if err != nil {

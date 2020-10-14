@@ -1,4 +1,4 @@
-module aniwatch
+module github.com/supercaracal/aniwatch
 
 go 1.15
 

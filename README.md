@@ -2,6 +2,6 @@
 
 ```
 $ make
-$ ./server
-$ curl http://localhost:3000 > docs/index.html
+$ ./aniwatch
+$ curl http://127.0.0.1:3000 > docs/index.html
 ```

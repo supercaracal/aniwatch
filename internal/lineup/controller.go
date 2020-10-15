@@ -32,7 +32,6 @@ func NewController(data *data.Data, logger *config.Logger) (*Lineup, error) {
 
 // Index is
 func (reso *Lineup) Index(w http.ResponseWriter, r *http.Request) {
-	now := time.Now()
 	lineups, err := buildLineupsPerDaySlot(reso.data)
 	if err != nil {
 		reso.logger.Err.Println(fmt.Errorf("Failed to build lineups: %w", err))
@@ -40,13 +39,7 @@ func (reso *Lineup) Index(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	indexData := &IndexData{
-		Data:              reso.data,
-		Title:             camelize(reso.data.AppName),
-		Quarter:           fmt.Sprintf("%d-%dQ", now.Year(), calcQuarter(now)),
-		LineupCount:       len(reso.data.Lineups),
-		LineupsPerDaySlot: lineups,
-	}
+	indexData := newIndexData(reso, lineups, time.Now())
 	err = reso.indexTmpl.renderIndex(w, indexData)
 	if err != nil {
 		reso.logger.Err.Println(fmt.Errorf("Failed to render html file (%s): %w", reso.indexTmpl.path, err))

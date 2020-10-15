@@ -3,7 +3,7 @@ package lineup
 import (
 	"fmt"
 	"html/template"
-	"net/http"
+	"io"
 	"path/filepath"
 
 	"github.com/supercaracal/aniwatch/internal/data"
@@ -29,7 +29,7 @@ type IndexData struct {
 	Title             string
 	Quarter           string
 	LineupCount       int
-	LineupsPerDaySlot LineupsPerDaySlot
+	LineupsPerDaySlot *LineupsPerDaySlot
 }
 
 type viewTmpl struct {
@@ -49,6 +49,6 @@ func newIndexTemplate() (*viewTmpl, error) {
 	}, nil
 }
 
-func (t *viewTmpl) renderIndex(w http.ResponseWriter, d *IndexData) error {
+func (t *viewTmpl) renderIndex(w io.Writer, d *IndexData) error {
 	return t.tmpl.ExecuteTemplate(w, filepath.Base(t.path), d)
 }

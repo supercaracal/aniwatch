@@ -19,6 +19,7 @@ type Option struct {
 	Protocol       string
 	BindingAddress string
 	Port           int
+	Print          bool
 }
 
 // NewOption is
@@ -29,5 +30,6 @@ func NewOption() *Option {
 		Protocol:       defaultProtocol,
 		BindingAddress: defaultBindingAddress,
 		Port:           defaultPort,
+		Print:          false,
 	}
 }

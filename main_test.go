@@ -9,11 +9,18 @@ import (
 	"time"
 
 	"github.com/supercaracal/aniwatch/internal/config"
+	"github.com/supercaracal/aniwatch/internal/data"
+	"github.com/supercaracal/aniwatch/internal/routing"
 )
 
 func TestServerFeatures(t *testing.T) {
+	dat, err := data.Load(dataFilePath)
+	if err != nil {
+		t.Fatal(err)
+	}
+
 	logger := config.NewFakeLogger()
-	err := setUpRouting(logger)
+	err = routing.SetUp(logger, dat, contentDir)
 	if err != nil {
 		t.Fatal(err)
 	}

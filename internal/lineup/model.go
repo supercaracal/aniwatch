@@ -11,7 +11,7 @@ const (
 	baseDate = "2020-01-01"
 )
 
-func buildLineupsPerDaySlot(d *data.Data) (LineupsPerDaySlot, error) {
+func buildLineupsPerDaySlot(d *data.Data) (*LineupsPerDaySlot, error) {
 	v := LineupsPerDaySlot{}
 	for _, e := range d.DayOfWeek {
 		v[e.ID] = map[string][]Row{}
@@ -33,7 +33,17 @@ func buildLineupsPerDaySlot(d *data.Data) (LineupsPerDaySlot, error) {
 		v[e.DayOfWeekCode][s] = append(v[e.DayOfWeekCode][s], l)
 	}
 
-	return v, nil
+	return &v, nil
+}
+
+func newIndexData(reso *Lineup, lineups *LineupsPerDaySlot, now time.Time) *IndexData {
+	return &IndexData{
+		Data:              reso.data,
+		Title:             camelize(reso.data.AppName),
+		Quarter:           fmt.Sprintf("%d-%dQ", now.Year(), calcQuarter(now)),
+		LineupCount:       len(reso.data.Lineups),
+		LineupsPerDaySlot: lineups,
+	}
 }
 
 func camelize(v string) string {

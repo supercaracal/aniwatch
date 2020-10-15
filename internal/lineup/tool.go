@@ -1,29 +1,31 @@
 package lineup
 
 import (
-	"io"
+	"bytes"
 	"time"
 
 	"github.com/supercaracal/aniwatch/internal/data"
 )
 
-// Print is
-func Print(dat *data.Data, w io.Writer) error {
+// GetIndexHTML is
+func GetIndexHTML(dat *data.Data) (*bytes.Buffer, error) {
+	var buf bytes.Buffer
+
 	indexTmpl, err := newIndexTemplate()
 	if err != nil {
-		return err
+		return nil, err
 	}
 
 	lineups, err := buildLineupsPerDaySlot(dat)
 	if err != nil {
-		return err
+		return nil, err
 	}
 
 	indexData := newIndexData(dat, lineups, time.Now())
-	err = indexTmpl.render(w, indexData)
+	err = indexTmpl.render(&buf, indexData)
 	if err != nil {
-		return err
+		return nil, err
 	}
 
-	return nil
+	return &buf, nil
 }

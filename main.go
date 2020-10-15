@@ -1,7 +1,6 @@
 package main
 
 import (
-	"bytes"
 	"flag"
 	"fmt"
 	"os"
@@ -42,18 +41,6 @@ func serve(option *config.Option, logger *config.Logger) error {
 	return nil
 }
 
-func printLineupContent(dat *data.Data) error {
-	var buf bytes.Buffer
-
-	err := lineup.Print(dat, &buf)
-	if err != nil {
-		return err
-	}
-
-	fmt.Print(buf.String())
-	return nil
-}
-
 func main() {
 	logger := config.NewLogger()
 	option := config.NewOption()
@@ -68,10 +55,11 @@ func main() {
 	}
 
 	if option.Print {
-		err := printLineupContent(dat)
+		buf, err := lineup.GetIndexHTML(dat)
 		if err != nil {
 			logger.Err.Fatal(err)
 		}
+		fmt.Print(buf.String())
 		os.Exit(0)
 	}
 

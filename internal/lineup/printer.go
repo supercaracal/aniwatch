@@ -20,7 +20,7 @@ func Print(dat *data.Data, w io.Writer) error {
 	}
 
 	indexData := newIndexData(dat, lineups, time.Now())
-	err = indexTmpl.renderIndex(w, indexData)
+	err = indexTmpl.render(w, indexData)
 	if err != nil {
 		return err
 	}

@@ -38,17 +38,18 @@ type viewTmpl struct {
 }
 
 func newIndexTemplate() (*viewTmpl, error) {
-	tmpl, err := template.ParseFiles(indexTmplPath)
-	if err != nil {
-		return nil, fmt.Errorf("Failed to parse template file (%s): %w", indexTmplPath, err)
-	}
-
-	return &viewTmpl{
-		tmpl: tmpl,
-		path: indexTmplPath,
-	}, nil
+	return newTemplate(indexTmplPath)
 }
 
-func (t *viewTmpl) renderIndex(w io.Writer, d *IndexData) error {
+func newTemplate(tmplPath string) (*viewTmpl, error) {
+	tmpl, err := template.ParseFiles(tmplPath)
+	if err != nil {
+		return nil, fmt.Errorf("Failed to parse template file (%s): %w", tmplPath, err)
+	}
+
+	return &viewTmpl{tmpl: tmpl, path: tmplPath}, nil
+}
+
+func (t *viewTmpl) render(w io.Writer, d *IndexData) error {
 	return t.tmpl.ExecuteTemplate(w, filepath.Base(t.path), d)
 }

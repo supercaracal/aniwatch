@@ -40,7 +40,7 @@ func (reso *Lineup) Index(w http.ResponseWriter, r *http.Request) {
 	}
 
 	indexData := newIndexData(reso.data, lineups, time.Now())
-	err = reso.indexTmpl.renderIndex(w, indexData)
+	err = reso.indexTmpl.render(w, indexData)
 	if err != nil {
 		reso.logger.Err.Println(fmt.Errorf("Failed to render html file (%s): %w", reso.indexTmpl.path, err))
 		responseInternalServerError(w)

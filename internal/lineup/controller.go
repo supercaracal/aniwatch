@@ -17,14 +17,14 @@ type Lineup struct {
 }
 
 // NewController is
-func NewController(data *data.Data, logger *config.Logger) (*Lineup, error) {
+func NewController(dat *data.Data, logger *config.Logger) (*Lineup, error) {
 	indexTmpl, err := newIndexTemplate()
 	if err != nil {
 		return nil, err
 	}
 
 	return &Lineup{
-		data:      data,
+		data:      dat,
 		logger:    logger,
 		indexTmpl: indexTmpl,
 	}, nil
@@ -39,7 +39,7 @@ func (reso *Lineup) Index(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	indexData := newIndexData(reso, lineups, time.Now())
+	indexData := newIndexData(reso.data, lineups, time.Now())
 	err = reso.indexTmpl.renderIndex(w, indexData)
 	if err != nil {
 		reso.logger.Err.Println(fmt.Errorf("Failed to render html file (%s): %w", reso.indexTmpl.path, err))

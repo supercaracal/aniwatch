@@ -1,11 +1,14 @@
 package main
 
 import (
+	"bytes"
 	"flag"
+	"fmt"
 	"os"
 
 	"github.com/supercaracal/aniwatch/internal/config"
 	"github.com/supercaracal/aniwatch/internal/data"
+	"github.com/supercaracal/aniwatch/internal/lineup"
 	"github.com/supercaracal/aniwatch/internal/routing"
 	"github.com/supercaracal/aniwatch/internal/server"
 )
@@ -39,6 +42,18 @@ func serve(option *config.Option, logger *config.Logger) error {
 	return nil
 }
 
+func printLineupContent(dat *data.Data) error {
+	var buf bytes.Buffer
+
+	err := lineup.Print(dat, &buf)
+	if err != nil {
+		return err
+	}
+
+	fmt.Print(buf.String())
+	return nil
+}
+
 func main() {
 	logger := config.NewLogger()
 	option := config.NewOption()
@@ -50,6 +65,14 @@ func main() {
 	dat, err := data.Load(dataFilePath)
 	if err != nil {
 		logger.Err.Fatal(err)
+	}
+
+	if option.Print {
+		err := printLineupContent(dat)
+		if err != nil {
+			logger.Err.Fatal(err)
+		}
+		os.Exit(0)
 	}
 
 	err = routing.SetUp(logger, dat, contentDir)

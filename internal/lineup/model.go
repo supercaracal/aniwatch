@@ -36,12 +36,12 @@ func buildLineupsPerDaySlot(d *data.Data) (*LineupsPerDaySlot, error) {
 	return &v, nil
 }
 
-func newIndexData(reso *Lineup, lineups *LineupsPerDaySlot, now time.Time) *IndexData {
+func newIndexData(dat *data.Data, lineups *LineupsPerDaySlot, now time.Time) *IndexData {
 	return &IndexData{
-		Data:              reso.data,
-		Title:             camelize(reso.data.AppName),
+		Data:              dat,
+		Title:             camelize(dat.AppName),
 		Quarter:           fmt.Sprintf("%d-%dQ", now.Year(), calcQuarter(now)),
-		LineupCount:       len(reso.data.Lineups),
+		LineupCount:       len(dat.Lineups),
 		LineupsPerDaySlot: lineups,
 	}
 }

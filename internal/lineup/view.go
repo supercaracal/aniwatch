@@ -50,6 +50,6 @@ func newTemplate(tmplPath string) (*viewTmpl, error) {
 	return &viewTmpl{tmpl: tmpl, path: tmplPath}, nil
 }
 
-func (t *viewTmpl) render(w io.Writer, d *IndexData) error {
-	return t.tmpl.ExecuteTemplate(w, filepath.Base(t.path), d)
+func (t *viewTmpl) render(w io.Writer, dat interface{}) error {
+	return t.tmpl.ExecuteTemplate(w, filepath.Base(t.path), dat)
 }

@@ -11,15 +11,15 @@ const (
 	baseDate = "2020-01-01"
 )
 
-func buildLineupsPerDaySlot(d *data.Data) (*LineupsPerDaySlot, error) {
+func buildLineupsPerDaySlot(dat *data.Data) (*LineupsPerDaySlot, error) {
 	v := LineupsPerDaySlot{}
-	for _, e := range d.DayOfWeek {
+	for _, e := range dat.DayOfWeek {
 		v[e.ID] = map[string][]Row{}
-		for _, x := range d.SlotOfDay {
+		for _, x := range dat.SlotOfDay {
 			v[e.ID][x.ID] = []Row{}
 		}
 	}
-	for _, e := range d.Lineups {
+	for _, e := range dat.Lineups {
 		t, err := time.Parse(time.RFC3339, fmt.Sprintf("%sT%s:00Z", baseDate, e.StartTime))
 		if err != nil {
 			return nil, err
@@ -27,9 +27,9 @@ func buildLineupsPerDaySlot(d *data.Data) (*LineupsPerDaySlot, error) {
 		l := Row{
 			Title:   e.Title,
 			Start:   e.StartTime,
-			Channel: d.TvChannel[e.ChannelCode],
+			Channel: dat.TvChannel[e.ChannelCode],
 		}
-		s := d.GetSlot(t)
+		s := dat.GetSlot(t)
 		v[e.DayOfWeekCode][s] = append(v[e.DayOfWeekCode][s], l)
 	}
 

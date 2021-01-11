@@ -32,7 +32,6 @@ slot-of-day:
 lineups:
   - { title: '無職転生', start_time: '00:00', channel: ch9, day_of_week: mon }
   - { title: '進撃の巨人', start_time: '00:10', channel: ch1, day_of_week: mon }
-  - { title: 'EX-ARM', start_time: '01:00', channel: ch9, day_of_week: mon }
   - { title: 'のんのんびより', start_time: '02:00', channel: ch7, day_of_week: mon }
   - { title: '7SEEDS', start_time: '22:30', channel: ch9, day_of_week: mon }
   - { title: 'たとえば...物語', start_time: '23:00', channel: ch9, day_of_week: mon }

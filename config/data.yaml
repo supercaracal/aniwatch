@@ -46,7 +46,6 @@ lineups:
   - { title: '七つの大罪', start_time: '18:00', channel: ch7, day_of_week: wed }
   - { title: '魔術士オーフェンはぐれ旅', start_time: '22:00', channel: ch9, day_of_week: wed }
   - { title: 'Re:ゼロから始める異世界生活', start_time: '23:30', channel: ch9, day_of_week: wed }
-  - { title: '回復術士のやり直し', start_time: '01:00', channel: ch9, day_of_week: thu }
   - { title: 'BEASTARS', start_time: '01:30', channel: ch8, day_of_week: thu }
   - { title: 'Dr.STONE', start_time: '22:30', channel: ch9, day_of_week: thu }
   - { title: 'ゆるキャン', start_time: '23:30', channel: ch9, day_of_week: thu }

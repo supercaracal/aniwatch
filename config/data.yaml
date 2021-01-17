@@ -34,7 +34,7 @@ lineups:
   - { title: '進撃の巨人', start_time: '00:10', channel: ch1, day_of_week: mon }
   - { title: 'のんのんびより', start_time: '02:00', channel: ch7, day_of_week: mon }
   - { title: '7SEEDS', start_time: '22:30', channel: ch9, day_of_week: mon }
-  - { title: 'たとえば...物語', start_time: '23:00', channel: ch9, day_of_week: mon }
+  - { title: 'ラスダン物語', start_time: '23:00', channel: ch9, day_of_week: mon }
   - { title: 'ウマ娘', start_time: '00:00', channel: ch9, day_of_week: tue }
   - { title: '裏世界ピクニック', start_time: '00:30', channel: ch9, day_of_week: tue }
   - { title: 'アズールレーン びそくぜんしん!', start_time: '01:00', channel: ch9, day_of_week: tue }
@@ -66,5 +66,6 @@ lineups:
   - { title: 'ワールドトリガー', start_time: '01:30', channel: ch5, day_of_week: sun }
   - { title: 'ワンピース', start_time: '09:30', channel: ch8, day_of_week: sun }
   - { title: 'BORUTO', start_time: '17:30', channel: ch7, day_of_week: sun }
+  - { title: '八十亀ちゃんかんさつにっき3', start_time: '21:55', channel: ch211, day_of_week: sun }
   - { title: '怪物事変', start_time: '22:00', channel: ch9, day_of_week: sun }
   - { title: 'SuperGT', start_time: '23:30', channel: ch7, day_of_week: sun }

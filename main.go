@@ -8,7 +8,6 @@ import (
 	"github.com/supercaracal/aniwatch/internal/config"
 	"github.com/supercaracal/aniwatch/internal/data"
 	"github.com/supercaracal/aniwatch/internal/lineup"
-	"github.com/supercaracal/aniwatch/internal/routing"
 	"github.com/supercaracal/aniwatch/internal/server"
 )
 
@@ -17,24 +16,18 @@ const (
 	dataFilePath = "config/data.yaml"
 )
 
-func serve(option *config.Option, logger *config.Logger) error {
-	app, err := server.NewAppServer(option.Timeout, option.Protocol, option.BindingAddress, option.Port)
-	if err != nil {
-		return err
-	}
-
-	go func(s *server.AppServer, l *config.Logger) {
-		l.Info.Println("Starting up the server")
-		err := s.Start()
-		if err != nil {
-			l.Err.Fatal(err)
+func serve(app *server.AppServer, logger *config.Logger) error {
+	go func(app *server.AppServer, logger *config.Logger) {
+		logger.Info.Println("Starting up the server")
+		if err := app.Start(); err != nil {
+			logger.Err.Print(err)
 		}
 	}(app, logger)
 
 	app.Wait()
+
 	logger.Info.Println("Shutting down the server")
-	err = app.Stop()
-	if err != nil {
+	if err := app.Stop(); err != nil {
 		return err
 	}
 
@@ -63,13 +56,23 @@ func main() {
 		os.Exit(0)
 	}
 
-	err = routing.SetUp(logger, dat, contentDir)
+	mux, err := server.NewServeMux(logger, dat, contentDir)
 	if err != nil {
 		logger.Err.Fatal(err)
 	}
 
-	err = serve(option, logger)
+	app, err := server.NewAppServer(
+		option.Timeout,
+		option.Protocol,
+		option.BindingAddress,
+		option.Port,
+		mux,
+	)
 	if err != nil {
+		logger.Err.Fatal(err)
+	}
+
+	if err := serve(app, logger); err != nil {
 		logger.Err.Fatal(err)
 	}
 

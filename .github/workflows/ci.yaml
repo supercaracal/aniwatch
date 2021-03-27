@@ -12,14 +12,14 @@ jobs:
     strategy:
       matrix:
         os: ["ubuntu-latest"]
-        go-ver: ["1.15"]
+        go-ver: ["1.16"]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Check out code
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Set up Go
-        uses: actions/setup-go@v1
+        uses: actions/setup-go@v2
         with:
           go-version: ${{ matrix.go-ver }}
 
@@ -28,6 +28,9 @@ jobs:
 
       - name: Get dependencies
         run: go get golang.org/x/lint/golint
+
+      - name: Build
+        run: make build
 
       - name: Test
         run: make test

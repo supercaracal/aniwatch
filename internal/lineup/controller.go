@@ -9,42 +9,50 @@ import (
 	"github.com/supercaracal/aniwatch/internal/data"
 )
 
-// Lineup is
-type Lineup struct {
+// Controller is
+type Controller struct {
 	data      *data.Data
 	logger    *config.Logger
 	indexTmpl *viewTmpl
 }
 
 // NewController is
-func NewController(dat *data.Data, logger *config.Logger) (*Lineup, error) {
+func NewController(dat *data.Data, logger *config.Logger) (*Controller, error) {
 	indexTmpl, err := newIndexTemplate()
 	if err != nil {
 		return nil, err
 	}
 
-	return &Lineup{
+	return &Controller{
 		data:      dat,
 		logger:    logger,
 		indexTmpl: indexTmpl,
 	}, nil
 }
 
+// Exec is
+func (ctrl *Controller) Exec(w http.ResponseWriter, r *http.Request) {
+	if r.Method == http.MethodGet {
+		ctrl.Index(w, r)
+		return
+	}
+
+	http.NotFound(w, r)
+}
+
 // Index is
-func (reso *Lineup) Index(w http.ResponseWriter, r *http.Request) {
-	lineups, err := buildLineupsPerDaySlot(reso.data)
+func (ctrl *Controller) Index(w http.ResponseWriter, r *http.Request) {
+	lineups, err := buildLineupsPerDaySlot(ctrl.data)
 	if err != nil {
-		reso.logger.Err.Println(fmt.Errorf("Failed to build lineups: %w", err))
+		ctrl.logger.Err.Println(fmt.Errorf("Failed to build lineups: %w", err))
 		responseInternalServerError(w)
 		return
 	}
 
-	indexData := newIndexData(reso.data, lineups, time.Now())
-	err = reso.indexTmpl.render(w, indexData)
-	if err != nil {
-		reso.logger.Err.Println(fmt.Errorf("Failed to render html file (%s): %w", reso.indexTmpl.path, err))
+	indexData := newIndexData(ctrl.data, lineups, time.Now())
+	if err := ctrl.indexTmpl.render(w, indexData); err != nil {
+		ctrl.logger.Err.Println(fmt.Errorf("Failed to render html file (%s): %w", ctrl.indexTmpl.path, err))
 		responseInternalServerError(w)
-		return
 	}
 }
 

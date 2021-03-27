@@ -10,7 +10,7 @@ import (
 
 	"github.com/supercaracal/aniwatch/internal/config"
 	"github.com/supercaracal/aniwatch/internal/data"
-	"github.com/supercaracal/aniwatch/internal/routing"
+	"github.com/supercaracal/aniwatch/internal/server"
 )
 
 func TestServerFeatures(t *testing.T) {
@@ -20,12 +20,12 @@ func TestServerFeatures(t *testing.T) {
 	}
 
 	logger := config.NewFakeLogger()
-	err = routing.SetUp(logger, dat, contentDir)
+	mux, err := server.NewServeMux(logger, dat, contentDir)
 	if err != nil {
 		t.Fatal(err)
 	}
 
-	ts := httptest.NewServer(http.DefaultServeMux)
+	ts := httptest.NewServer(mux)
 	defer ts.Close()
 
 	hc := &http.Client{Timeout: 3 * time.Second}

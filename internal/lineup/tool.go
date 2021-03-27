@@ -22,8 +22,7 @@ func GetIndexHTML(dat *data.Data) (*bytes.Buffer, error) {
 	}
 
 	indexData := newIndexData(dat, lineups, time.Now())
-	err = indexTmpl.render(&buf, indexData)
-	if err != nil {
+	if err := indexTmpl.render(&buf, indexData); err != nil {
 		return nil, err
 	}
 

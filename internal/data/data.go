@@ -41,8 +41,7 @@ func Load(path string) (*Data, error) {
 	}
 
 	var d Data
-	err = yaml.UnmarshalStrict(content, &d)
-	if err != nil {
+	if err := yaml.UnmarshalStrict(content, &d); err != nil {
 		return nil, fmt.Errorf("Failed to unmarshal data file: %w", err)
 	}
 

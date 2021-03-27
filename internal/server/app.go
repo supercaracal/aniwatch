@@ -23,13 +23,7 @@ type AppServer struct {
 }
 
 // NewAppServer is
-func NewAppServer(
-	timeout time.Duration,
-	proto string,
-	addr string,
-	port int,
-) (*AppServer, error) {
-
+func NewAppServer(timeout time.Duration, proto string, addr string, port int, mux http.Handler) (*AppServer, error) {
 	tcpAddr, err := net.ResolveTCPAddr(proto, fmt.Sprintf("%s:%d", addr, port))
 	if err != nil {
 		return nil, fmt.Errorf("Failed to resolve addr: %w", err)
@@ -44,6 +38,7 @@ func NewAppServer(
 		ReadTimeout:    timeout,
 		WriteTimeout:   timeout,
 		MaxHeaderBytes: maxHeaderBytes,
+		Handler:        mux,
 	}
 
 	return &AppServer{
@@ -61,12 +56,15 @@ func (app *AppServer) Start() error {
 // Wait is
 func (app *AppServer) Wait() {
 	c := make(chan os.Signal, 1)
-	signal.Notify(c, syscall.SIGTERM, os.Interrupt)
+	signal.Notify(c, syscall.SIGTERM, syscall.SIGINT, os.Interrupt)
 	<-c
+	signal.Stop(c)
+	close(c)
 }
 
 // Stop is
 func (app *AppServer) Stop() error {
+	app.server.SetKeepAlivesEnabled(false)
 	ctx, cancel := context.WithTimeout(context.Background(), shutdownTimeout)
 	defer cancel()
 	return app.server.Shutdown(ctx)

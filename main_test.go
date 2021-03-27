@@ -13,14 +13,18 @@ import (
 	"github.com/supercaracal/aniwatch/internal/server"
 )
 
+const (
+	timeout = 3 * time.Second
+	text    = "</body>"
+)
+
 func TestServerFeatures(t *testing.T) {
 	dat, err := data.Load(dataFilePath)
 	if err != nil {
 		t.Fatal(err)
 	}
 
-	logger := config.NewFakeLogger()
-	mux, err := server.MakeServeMux(logger, dat, contentDir)
+	mux, err := server.MakeServeMux(config.NewFakeLogger(), dat, contentDir)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -28,30 +32,28 @@ func TestServerFeatures(t *testing.T) {
 	ts := httptest.NewServer(mux)
 	defer ts.Close()
 
-	hc := &http.Client{Timeout: 3 * time.Second}
-
-	req, err := http.NewRequest("GET", ts.URL, nil)
+	req, err := http.NewRequest(http.MethodGet, ts.URL, nil)
 	if err != nil {
 		t.Fatal(err)
 	}
 
+	hc := &http.Client{Timeout: timeout}
 	resp, err := hc.Do(req)
 	if err != nil {
 		t.Fatal(err)
 	}
 	defer resp.Body.Close()
 
+	if resp.StatusCode != http.StatusOK {
+		t.Errorf("want=%d, got=%d", http.StatusOK, resp.StatusCode)
+	}
+
 	bytes, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		t.Fatal(err)
 	}
-	body := string(bytes)
 
-	if resp.StatusCode != http.StatusOK {
-		t.Errorf("expected=%d, actual=%d", http.StatusOK, resp.StatusCode)
-	}
-
-	if !strings.Contains(body, "</body>") {
-		t.Errorf("'%s' is not found in\n```\n%s```\n", "</body>", body)
+	if body := string(bytes); !strings.Contains(body, text) {
+		t.Errorf("'%s' is not found in\n```\n%s```\n", text, body)
 	}
 }

@@ -33,15 +33,14 @@ func NewController(dat *data.Data, logger *config.Logger) (*Controller, error) {
 // Exec is
 func (ctrl *Controller) Exec(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodGet {
-		ctrl.Index(w, r)
+		ctrl.index(w, r)
 		return
 	}
 
 	http.NotFound(w, r)
 }
 
-// Index is
-func (ctrl *Controller) Index(w http.ResponseWriter, r *http.Request) {
+func (ctrl *Controller) index(w http.ResponseWriter, r *http.Request) {
 	lineups, err := buildLineupsPerDaySlot(ctrl.data)
 	if err != nil {
 		ctrl.logger.Err.Println(fmt.Errorf("Failed to build lineups: %w", err))

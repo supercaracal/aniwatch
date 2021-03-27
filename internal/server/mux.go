@@ -7,10 +7,11 @@ import (
 	"github.com/supercaracal/aniwatch/internal/config"
 	"github.com/supercaracal/aniwatch/internal/data"
 	"github.com/supercaracal/aniwatch/internal/lineup"
+	"github.com/supercaracal/aniwatch/internal/middleware"
 )
 
 // NewServeMux is
-func NewServeMux(logger *config.Logger, dat *data.Data, contentDir string) (*http.ServeMux, error) {
+func NewServeMux(logger *config.Logger, dat *data.Data, contentDir string) (http.Handler, error) {
 	mux := http.NewServeMux()
 
 	if err := setUpRoot(mux, logger, dat); err != nil {
@@ -19,7 +20,10 @@ func NewServeMux(logger *config.Logger, dat *data.Data, contentDir string) (*htt
 
 	setUpStaticContents(mux, dat, contentDir)
 
-	return mux, nil
+	var h http.Handler = mux
+	h = middleware.AccessLog(h, logger.Info)
+
+	return h, nil
 }
 
 func setUpRoot(mux *http.ServeMux, logger *config.Logger, dat *data.Data) error {

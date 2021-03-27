@@ -51,10 +51,12 @@ func Load(path string) (*Data, error) {
 // GetSlot is
 func (d *Data) GetSlot(t time.Time) string {
 	m := t.Hour()*60 + t.Minute()
+
 	for _, s := range d.SlotOfDay {
 		if 60*s.From <= m && m < 60*s.To {
 			return s.ID
 		}
 	}
+
 	return "unknown"
 }

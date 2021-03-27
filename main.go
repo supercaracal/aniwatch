@@ -56,7 +56,7 @@ func main() {
 		os.Exit(0)
 	}
 
-	mux, err := server.NewServeMux(logger, dat, contentDir)
+	mux, err := server.MakeServeMux(logger, dat, contentDir)
 	if err != nil {
 		logger.Err.Fatal(err)
 	}

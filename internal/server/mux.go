@@ -10,8 +10,8 @@ import (
 	"github.com/supercaracal/aniwatch/internal/middleware"
 )
 
-// NewServeMux is
-func NewServeMux(logger *config.Logger, dat *data.Data, contentDir string) (http.Handler, error) {
+// MakeServeMux is
+func MakeServeMux(logger *config.Logger, dat *data.Data, contentDir string) (http.Handler, error) {
 	mux := http.NewServeMux()
 
 	if err := setUpRoot(mux, logger, dat); err != nil {

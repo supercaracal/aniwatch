@@ -20,7 +20,7 @@ func TestServerFeatures(t *testing.T) {
 	}
 
 	logger := config.NewFakeLogger()
-	mux, err := server.NewServeMux(logger, dat, contentDir)
+	mux, err := server.MakeServeMux(logger, dat, contentDir)
 	if err != nil {
 		t.Fatal(err)
 	}

@@ -7,7 +7,6 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
-	"sync"
 	"syscall"
 	"time"
 )
@@ -58,40 +57,16 @@ func (app *AppServer) Serve() error {
 	signal.Notify(c, syscall.SIGTERM, syscall.SIGINT, os.Interrupt)
 	defer signal.Stop(c)
 
-	var (
-		wg             sync.WaitGroup
-		upErr, downErr error
-	)
-
-	wg.Add(1)
-	go func(c chan<- os.Signal) {
-		defer wg.Done()
-		upErr = app.server.Serve(app.listener)
-		if upErr == nil || upErr == http.ErrServerClosed {
-			upErr = nil
-			return
-		}
-		c <- syscall.SIGTERM
-	}(c)
-
-	wg.Add(1)
 	go func(c <-chan os.Signal) {
-		defer wg.Done()
 		<-c
 		app.server.SetKeepAlivesEnabled(false)
 		ctx, cancel := context.WithTimeout(context.Background(), shutdownTimeout)
 		defer cancel()
-		downErr = app.server.Shutdown(ctx)
+		app.server.Shutdown(ctx)
 	}(c)
 
-	wg.Wait()
-
-	if upErr != nil {
-		return upErr
-	}
-
-	if downErr != nil {
-		return downErr
+	if err := app.server.Serve(app.listener); err != nil && err != http.ErrServerClosed {
+		return err
 	}
 
 	return nil

@@ -1,5 +1,5 @@
 SHELL    := /bin/bash
-BIN_NAME := aniwatch
+BIN_NAME := server
 
 all: build test lint
 

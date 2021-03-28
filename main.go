@@ -12,6 +12,7 @@ import (
 )
 
 const (
+	rootDir      = "."
 	contentDir   = "docs"
 	dataFilePath = "config/data.yaml"
 )
@@ -30,7 +31,7 @@ func main() {
 	}
 
 	if option.Print {
-		buf, err := lineup.GetIndexHTML(dat)
+		buf, err := lineup.GetIndexHTML(dat, rootDir)
 		if err != nil {
 			logger.Err.Fatal(err)
 		}
@@ -38,7 +39,7 @@ func main() {
 		os.Exit(0)
 	}
 
-	mux, err := server.MakeServeMux(logger, dat, contentDir)
+	mux, err := server.MakeServeMux(logger, dat, rootDir, contentDir)
 	if err != nil {
 		logger.Err.Fatal(err)
 	}
@@ -48,11 +49,11 @@ func main() {
 		option.Protocol,
 		option.BindingAddress,
 		option.Port,
-		mux,
 	)
 	if err != nil {
 		logger.Err.Fatal(err)
 	}
+	app.WithServeMux(mux)
 
 	logger.Info.Println("Hello")
 	if err := app.Serve(); err != nil {

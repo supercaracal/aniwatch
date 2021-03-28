@@ -37,8 +37,8 @@ type viewTmpl struct {
 	path string
 }
 
-func newIndexTemplate() (*viewTmpl, error) {
-	return newTemplate(indexTmplPath)
+func newIndexTemplate(rootDir string) (*viewTmpl, error) {
+	return newTemplate(fmt.Sprintf("%s/%s", rootDir, indexTmplPath))
 }
 
 func newTemplate(tmplPath string) (*viewTmpl, error) {

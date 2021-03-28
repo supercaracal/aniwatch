@@ -17,8 +17,8 @@ type Controller struct {
 }
 
 // NewController is
-func NewController(dat *data.Data, logger *config.Logger) (*Controller, error) {
-	indexTmpl, err := newIndexTemplate()
+func NewController(dat *data.Data, logger *config.Logger, rootDir string) (*Controller, error) {
+	indexTmpl, err := newIndexTemplate(rootDir)
 	if err != nil {
 		return nil, err
 	}

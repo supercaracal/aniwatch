@@ -11,10 +11,10 @@ import (
 )
 
 // MakeServeMux is
-func MakeServeMux(logger *config.Logger, dat *data.Data, contentDir string) (http.Handler, error) {
+func MakeServeMux(logger *config.Logger, dat *data.Data, rootDir, contentDir string) (http.Handler, error) {
 	mux := http.NewServeMux()
 
-	if err := setUpRoot(mux, logger, dat); err != nil {
+	if err := setUpRoot(mux, logger, dat, rootDir); err != nil {
 		return nil, err
 	}
 
@@ -26,8 +26,8 @@ func MakeServeMux(logger *config.Logger, dat *data.Data, contentDir string) (htt
 	return h, nil
 }
 
-func setUpRoot(mux *http.ServeMux, logger *config.Logger, dat *data.Data) error {
-	ctrl, err := lineup.NewController(dat, logger)
+func setUpRoot(mux *http.ServeMux, logger *config.Logger, dat *data.Data, rootDir string) error {
+	ctrl, err := lineup.NewController(dat, logger, rootDir)
 	if err != nil {
 		return err
 	}

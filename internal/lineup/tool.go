@@ -8,10 +8,10 @@ import (
 )
 
 // GetIndexHTML is
-func GetIndexHTML(dat *data.Data) (*bytes.Buffer, error) {
+func GetIndexHTML(dat *data.Data, rootDir string) (*bytes.Buffer, error) {
 	var buf bytes.Buffer
 
-	indexTmpl, err := newIndexTemplate()
+	indexTmpl, err := newIndexTemplate(rootDir)
 	if err != nil {
 		return nil, err
 	}

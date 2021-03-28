@@ -1,4 +1,4 @@
-package main
+package test
 
 import (
 	"io/ioutil"
@@ -14,17 +14,20 @@ import (
 )
 
 const (
-	timeout = 3 * time.Second
-	text    = "</body>"
+	timeout      = 3 * time.Second
+	text         = "</body>"
+	rootDir      = ".."
+	contentDir   = "../docs"
+	dataFilePath = "../config/data.yaml"
 )
 
-func TestServerFeatures(t *testing.T) {
+func TestRootPage(t *testing.T) {
 	dat, err := data.Load(dataFilePath)
 	if err != nil {
 		t.Fatal(err)
 	}
 
-	mux, err := server.MakeServeMux(config.NewFakeLogger(), dat, contentDir)
+	mux, err := server.MakeServeMux(config.NewFakeLogger(), dat, rootDir, contentDir)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -34,13 +37,15 @@ func TestServerFeatures(t *testing.T) {
 
 	req, err := http.NewRequest(http.MethodGet, ts.URL, nil)
 	if err != nil {
-		t.Fatal(err)
+		t.Error(err)
+		return
 	}
 
 	hc := &http.Client{Timeout: timeout}
 	resp, err := hc.Do(req)
 	if err != nil {
-		t.Fatal(err)
+		t.Error(err)
+		return
 	}
 	defer resp.Body.Close()
 
@@ -50,7 +55,8 @@ func TestServerFeatures(t *testing.T) {
 
 	bytes, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		t.Fatal(err)
+		t.Error(err)
+		return
 	}
 
 	if body := string(bytes); !strings.Contains(body, text) {

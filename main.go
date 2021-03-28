@@ -16,24 +16,6 @@ const (
 	dataFilePath = "config/data.yaml"
 )
 
-func serve(app *server.AppServer, logger *config.Logger) error {
-	go func(app *server.AppServer, logger *config.Logger) {
-		logger.Info.Println("Starting up the server")
-		if err := app.Start(); err != nil {
-			logger.Err.Print(err)
-		}
-	}(app, logger)
-
-	app.Wait()
-
-	logger.Info.Println("Shutting down the server")
-	if err := app.Stop(); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func main() {
 	logger := config.NewLogger()
 	option := config.NewOption()
@@ -72,9 +54,11 @@ func main() {
 		logger.Err.Fatal(err)
 	}
 
-	if err := serve(app, logger); err != nil {
+	logger.Info.Println("Hello")
+	if err := app.Serve(); err != nil {
 		logger.Err.Fatal(err)
 	}
+	logger.Info.Println("Bye Bye")
 
 	os.Exit(0)
 }

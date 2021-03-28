@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
+	"sync"
 	"syscall"
 	"time"
 )
@@ -47,25 +48,51 @@ func NewAppServer(timeout time.Duration, proto string, addr string, port int, mu
 	}, nil
 }
 
-// Start is
-func (app *AppServer) Start() error {
+// Serve is
+func (app *AppServer) Serve() error {
 	defer app.listener.Close()
-	return app.server.Serve(app.listener)
-}
 
-// Wait is
-func (app *AppServer) Wait() {
 	c := make(chan os.Signal, 1)
-	signal.Notify(c, syscall.SIGTERM, syscall.SIGINT, os.Interrupt)
-	<-c
-	signal.Stop(c)
-	close(c)
-}
+	defer close(c)
 
-// Stop is
-func (app *AppServer) Stop() error {
-	app.server.SetKeepAlivesEnabled(false)
-	ctx, cancel := context.WithTimeout(context.Background(), shutdownTimeout)
-	defer cancel()
-	return app.server.Shutdown(ctx)
+	signal.Notify(c, syscall.SIGTERM, syscall.SIGINT, os.Interrupt)
+	defer signal.Stop(c)
+
+	var (
+		wg             sync.WaitGroup
+		upErr, downErr error
+	)
+
+	wg.Add(1)
+	go func(c chan<- os.Signal) {
+		defer wg.Done()
+		upErr = app.server.Serve(app.listener)
+		if upErr == nil || upErr == http.ErrServerClosed {
+			upErr = nil
+			return
+		}
+		c <- syscall.SIGTERM
+	}(c)
+
+	wg.Add(1)
+	go func(c <-chan os.Signal) {
+		defer wg.Done()
+		<-c
+		app.server.SetKeepAlivesEnabled(false)
+		ctx, cancel := context.WithTimeout(context.Background(), shutdownTimeout)
+		defer cancel()
+		downErr = app.server.Shutdown(ctx)
+	}(c)
+
+	wg.Wait()
+
+	if upErr != nil {
+		return upErr
+	}
+
+	if downErr != nil {
+		return downErr
+	}
+
+	return nil
 }

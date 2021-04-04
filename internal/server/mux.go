@@ -25,6 +25,7 @@ func MakeServeMux(logger *config.Logger, dat *data.Data, contentDir string) (htt
 
 func setUpMiddlewares(h http.Handler, logger *config.Logger) http.Handler {
 	h = middleware.AccessLog(h, logger.Info)
+	h = middleware.CompressResponse(h)
 	return h
 }
 

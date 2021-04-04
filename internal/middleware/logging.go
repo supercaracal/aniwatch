@@ -13,15 +13,31 @@ const (
 	logFmtXFF  = "%s forwarded for %+v"
 )
 
-type responseWriterLoggable struct {
+type loggableResponseWriter struct {
 	orig   http.ResponseWriter
 	status int
+}
+
+// Header is
+func (w *loggableResponseWriter) Header() http.Header {
+	return w.orig.Header()
+}
+
+// Write is
+func (w *loggableResponseWriter) Write(b []byte) (int, error) {
+	return w.orig.Write(b)
+}
+
+// WriteHeader is
+func (w *loggableResponseWriter) WriteHeader(s int) {
+	w.status = s
+	w.orig.WriteHeader(s)
 }
 
 // AccessLog is
 func AccessLog(next http.Handler, logger *log.Logger) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		rw := newResponseWriterLoggable(w)
+		rw := &loggableResponseWriter{orig: w, status: http.StatusOK}
 		next.ServeHTTP(rw, r)
 		remoteIP := extractIP(r.RemoteAddr)
 		msg := fmt.Sprintf(logFmtBase, r.Proto, rw.status, r.Method, r.Host, r.URL, remoteIP)
@@ -30,26 +46,6 @@ func AccessLog(next http.Handler, logger *log.Logger) http.Handler {
 		}
 		logger.Print(msg)
 	})
-}
-
-func newResponseWriterLoggable(w http.ResponseWriter) *responseWriterLoggable {
-	return &responseWriterLoggable{orig: w, status: http.StatusOK}
-}
-
-// Header is
-func (w *responseWriterLoggable) Header() http.Header {
-	return w.orig.Header()
-}
-
-// Write is
-func (w *responseWriterLoggable) Write(b []byte) (int, error) {
-	return w.orig.Write(b)
-}
-
-// WriteHeader is
-func (w *responseWriterLoggable) WriteHeader(s int) {
-	w.status = s
-	w.orig.WriteHeader(s)
 }
 
 func extractIP(addr string) string {

@@ -1,7 +1,6 @@
 package config
 
 import (
-	"io/ioutil"
 	"log"
 	"os"
 )
@@ -17,13 +16,5 @@ func NewLogger() *Logger {
 	return &Logger{
 		Info: log.New(os.Stdout, "[INFO] ", log.LstdFlags),
 		Err:  log.New(os.Stderr, "[ERROR] ", log.LstdFlags),
-	}
-}
-
-// NewFakeLogger is
-func NewFakeLogger() *Logger {
-	return &Logger{
-		Info: log.New(ioutil.Discard, "", log.LstdFlags),
-		Err:  log.New(ioutil.Discard, "", log.LstdFlags),
 	}
 }

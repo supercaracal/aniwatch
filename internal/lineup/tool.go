@@ -16,12 +16,13 @@ func GetIndexHTML(dat *data.Data) (*bytes.Buffer, error) {
 		return nil, err
 	}
 
-	lineups, err := buildLineupsPerDaySlot(dat)
+	lineups, err := makeLineupsPerDaySlot(dat)
 	if err != nil {
 		return nil, err
 	}
 
 	indexData := newIndexData(dat, lineups, time.Now())
+
 	if err := tmpl.render(&buf, "index", indexData); err != nil {
 		return nil, err
 	}

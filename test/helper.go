@@ -1,7 +1,11 @@
 package test
 
 import (
+	"io/ioutil"
+	"log"
 	"os"
+
+	"github.com/supercaracal/aniwatch/internal/config"
 )
 
 // SignalOneself is
@@ -17,4 +21,12 @@ func SignalOneself(s os.Signal) error {
 	}
 
 	return nil
+}
+
+// NewFakeLogger is
+func NewFakeLogger() *config.Logger {
+	return &config.Logger{
+		Info: log.New(ioutil.Discard, "", 0),
+		Err:  log.New(ioutil.Discard, "", 0),
+	}
 }

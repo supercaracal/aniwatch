@@ -11,7 +11,7 @@ const (
 	baseDate = "2020-01-01"
 )
 
-func buildLineupsPerDaySlot(dat *data.Data) (*LineupsPerDaySlot, error) {
+func makeLineupsPerDaySlot(dat *data.Data) (*LineupsPerDaySlot, error) {
 	v := LineupsPerDaySlot{}
 
 	for _, e := range dat.DayOfWeek {

@@ -41,21 +41,17 @@ func (ctrl *Controller) Exec(w http.ResponseWriter, r *http.Request) {
 }
 
 func (ctrl *Controller) index(w http.ResponseWriter, r *http.Request) {
-	lineups, err := buildLineupsPerDaySlot(ctrl.data)
+	lineups, err := makeLineupsPerDaySlot(ctrl.data)
 	if err != nil {
-		ctrl.logger.Err.Println(fmt.Errorf("Failed to build lineups: %w", err))
-		responseInternalServerError(w)
+		ctrl.logger.Err.Println(fmt.Errorf("Failed to make lineups: %w", err))
+		http.Error(w, "Failed to make lineups", http.StatusInternalServerError)
 		return
 	}
 
 	indexData := newIndexData(ctrl.data, lineups, time.Now())
+
 	if err := ctrl.tmpl.render(w, "index", indexData); err != nil {
 		ctrl.logger.Err.Println(fmt.Errorf("Failed to render html file: index: %w", err))
-		responseInternalServerError(w)
+		http.Error(w, "Failed to render html file", http.StatusInternalServerError)
 	}
-}
-
-func responseInternalServerError(w http.ResponseWriter) {
-	msg := fmt.Sprintf("%d internal server error", http.StatusInternalServerError)
-	http.Error(w, msg, http.StatusInternalServerError)
 }

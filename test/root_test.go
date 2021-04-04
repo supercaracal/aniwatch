@@ -8,7 +8,6 @@ import (
 	"testing"
 	"time"
 
-	"github.com/supercaracal/aniwatch/internal/config"
 	"github.com/supercaracal/aniwatch/internal/data"
 	"github.com/supercaracal/aniwatch/internal/server"
 )
@@ -25,7 +24,7 @@ func TestRootPage(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	mux, err := server.MakeServeMux(config.NewFakeLogger(), dat, contentDir)
+	mux, err := server.MakeServeMux(NewFakeLogger(), dat, contentDir)
 	if err != nil {
 		t.Fatal(err)
 	}

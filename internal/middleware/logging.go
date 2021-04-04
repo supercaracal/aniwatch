@@ -38,12 +38,15 @@ func (w *loggableResponseWriter) WriteHeader(s int) {
 func AccessLog(next http.Handler, logger *log.Logger) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		rw := &loggableResponseWriter{orig: w, status: http.StatusOK}
+
 		next.ServeHTTP(rw, r)
+
 		remoteIP := extractIP(r.RemoteAddr)
 		msg := fmt.Sprintf(logFmtBase, r.Proto, rw.status, r.Method, r.Host, r.URL, remoteIP)
 		if addrs, ok := r.Header[headerXFF]; ok && len(addrs) > 0 {
 			msg = fmt.Sprintf(logFmtXFF, msg, addrs)
 		}
+
 		logger.Print(msg)
 	})
 }

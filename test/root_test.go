@@ -14,20 +14,18 @@ import (
 )
 
 const (
-	timeout      = 3 * time.Second
-	text         = "</body>"
-	rootDir      = ".."
-	contentDir   = "../docs"
-	dataFilePath = "../config/data.yaml"
+	timeout    = 3 * time.Second
+	text       = "</body>"
+	contentDir = "../docs"
 )
 
 func TestRootPage(t *testing.T) {
-	dat, err := data.Load(dataFilePath)
+	dat, err := data.Load()
 	if err != nil {
 		t.Fatal(err)
 	}
 
-	mux, err := server.MakeServeMux(config.NewFakeLogger(), dat, rootDir, contentDir)
+	mux, err := server.MakeServeMux(config.NewFakeLogger(), dat, contentDir)
 	if err != nil {
 		t.Fatal(err)
 	}

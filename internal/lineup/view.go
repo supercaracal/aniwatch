@@ -1,16 +1,17 @@
 package lineup
 
 import (
+	"embed"
 	"fmt"
 	"html/template"
 	"io"
-	"path/filepath"
 
 	"github.com/supercaracal/aniwatch/internal/data"
 )
 
-const (
-	indexTmplPath = "internal/lineup/index.html.tpl"
+var (
+	//go:embed *.html.tpl
+	tmplFS embed.FS
 )
 
 // Row is
@@ -32,24 +33,19 @@ type IndexData struct {
 	LineupsPerDaySlot *LineupsPerDaySlot
 }
 
-type viewTmpl struct {
-	tmpl *template.Template
-	path string
+type tmplobj struct {
+	parsed *template.Template
 }
 
-func newIndexTemplate(rootDir string) (*viewTmpl, error) {
-	return newTemplate(fmt.Sprintf("%s/%s", rootDir, indexTmplPath))
-}
-
-func newTemplate(tmplPath string) (*viewTmpl, error) {
-	tmpl, err := template.ParseFiles(tmplPath)
+func newTemplate() (*tmplobj, error) {
+	parsed, err := template.ParseFS(tmplFS, "*.html.tpl")
 	if err != nil {
-		return nil, fmt.Errorf("Failed to parse template file (%s): %w", tmplPath, err)
+		return nil, err
 	}
 
-	return &viewTmpl{tmpl: tmpl, path: tmplPath}, nil
+	return &tmplobj{parsed: parsed}, nil
 }
 
-func (t *viewTmpl) render(w io.Writer, dat interface{}) error {
-	return t.tmpl.ExecuteTemplate(w, filepath.Base(t.path), dat)
+func (t *tmplobj) render(w io.Writer, name string, dat interface{}) error {
+	return t.parsed.ExecuteTemplate(w, fmt.Sprintf("%s.html.tpl", name), dat)
 }

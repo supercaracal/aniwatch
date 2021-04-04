@@ -11,22 +11,22 @@ import (
 
 // Controller is
 type Controller struct {
-	data      *data.Data
-	logger    *config.Logger
-	indexTmpl *viewTmpl
+	data   *data.Data
+	logger *config.Logger
+	tmpl   *tmplobj
 }
 
 // NewController is
-func NewController(dat *data.Data, logger *config.Logger, rootDir string) (*Controller, error) {
-	indexTmpl, err := newIndexTemplate(rootDir)
+func NewController(dat *data.Data, logger *config.Logger) (*Controller, error) {
+	tmpl, err := newTemplate()
 	if err != nil {
 		return nil, err
 	}
 
 	return &Controller{
-		data:      dat,
-		logger:    logger,
-		indexTmpl: indexTmpl,
+		data:   dat,
+		logger: logger,
+		tmpl:   tmpl,
 	}, nil
 }
 
@@ -49,8 +49,8 @@ func (ctrl *Controller) index(w http.ResponseWriter, r *http.Request) {
 	}
 
 	indexData := newIndexData(ctrl.data, lineups, time.Now())
-	if err := ctrl.indexTmpl.render(w, indexData); err != nil {
-		ctrl.logger.Err.Println(fmt.Errorf("Failed to render html file (%s): %w", ctrl.indexTmpl.path, err))
+	if err := ctrl.tmpl.render(w, "index", indexData); err != nil {
+		ctrl.logger.Err.Println(fmt.Errorf("Failed to render html file: index: %w", err))
 		responseInternalServerError(w)
 	}
 }

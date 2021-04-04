@@ -1,8 +1,8 @@
 package data
 
 import (
+	_ "embed" // only import
 	"fmt"
-	"io/ioutil"
 	"time"
 
 	"gopkg.in/yaml.v2"
@@ -33,13 +33,13 @@ type Data struct {
 	} `yaml:"lineups"`
 }
 
-// Load is
-func Load(path string) (*Data, error) {
-	content, err := ioutil.ReadFile(path)
-	if err != nil {
-		return nil, fmt.Errorf("Failed to read data file: %w", err)
-	}
+var (
+	//go:embed data.yaml
+	content []byte
+)
 
+// Load is
+func Load() (*Data, error) {
 	var d Data
 	if err := yaml.UnmarshalStrict(content, &d); err != nil {
 		return nil, fmt.Errorf("Failed to unmarshal data file: %w", err)

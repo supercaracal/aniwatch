@@ -12,9 +12,7 @@ import (
 )
 
 const (
-	rootDir      = "."
-	contentDir   = "docs"
-	dataFilePath = "config/data.yaml"
+	contentDir = "docs"
 )
 
 func main() {
@@ -25,13 +23,13 @@ func main() {
 	flag.BoolVar(&option.Print, "print", option.Print, "print mode")
 	flag.Parse()
 
-	dat, err := data.Load(dataFilePath)
+	dat, err := data.Load()
 	if err != nil {
 		logger.Err.Fatal(err)
 	}
 
 	if option.Print {
-		buf, err := lineup.GetIndexHTML(dat, rootDir)
+		buf, err := lineup.GetIndexHTML(dat)
 		if err != nil {
 			logger.Err.Fatal(err)
 		}
@@ -39,7 +37,7 @@ func main() {
 		os.Exit(0)
 	}
 
-	mux, err := server.MakeServeMux(logger, dat, rootDir, contentDir)
+	mux, err := server.MakeServeMux(logger, dat, contentDir)
 	if err != nil {
 		logger.Err.Fatal(err)
 	}

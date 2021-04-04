@@ -5,10 +5,6 @@ import (
 	"time"
 )
 
-const (
-	dataFilePath = "../../config/data.yaml"
-)
-
 func TestGetSlot(t *testing.T) {
 	cases := []struct {
 		timeStr string
@@ -24,7 +20,7 @@ func TestGetSlot(t *testing.T) {
 		{"2020-01-01T23:59:59Z", "night"},
 	}
 
-	dt, err := Load(dataFilePath)
+	dt, err := Load()
 	if err != nil {
 		t.Fatal(err)
 	}

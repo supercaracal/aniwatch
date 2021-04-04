@@ -11,23 +11,25 @@ import (
 )
 
 // MakeServeMux is
-func MakeServeMux(logger *config.Logger, dat *data.Data, rootDir, contentDir string) (http.Handler, error) {
+func MakeServeMux(logger *config.Logger, dat *data.Data, contentDir string) (http.Handler, error) {
 	mux := http.NewServeMux()
 
-	if err := setUpRoot(mux, logger, dat, rootDir); err != nil {
+	if err := setUpRoot(mux, logger, dat); err != nil {
 		return nil, err
 	}
 
 	setUpStaticContents(mux, dat, contentDir)
 
-	var h http.Handler = mux
-	h = middleware.AccessLog(h, logger.Info)
-
-	return h, nil
+	return setUpMiddlewares(mux, logger), nil
 }
 
-func setUpRoot(mux *http.ServeMux, logger *config.Logger, dat *data.Data, rootDir string) error {
-	ctrl, err := lineup.NewController(dat, logger, rootDir)
+func setUpMiddlewares(h http.Handler, logger *config.Logger) http.Handler {
+	h = middleware.AccessLog(h, logger.Info)
+	return h
+}
+
+func setUpRoot(mux *http.ServeMux, logger *config.Logger, dat *data.Data) error {
+	ctrl, err := lineup.NewController(dat, logger)
 	if err != nil {
 		return err
 	}

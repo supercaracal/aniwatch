@@ -7,6 +7,7 @@ build:
 	@go build -ldflags="-s -w" -trimpath -tags timetzdata -o ${BIN_NAME}
 
 test:
+	@go clean -testcache
 	@go test ./...
 
 lint:

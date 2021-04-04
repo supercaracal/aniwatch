@@ -30,6 +30,7 @@ const (
 func TestServe(t *testing.T) {
 	readyToServe := make(chan struct{})
 	readyToRespond := make(chan struct{})
+	done := make(chan struct{})
 	var wg sync.WaitGroup
 
 	// zero port means a ephemeral port selected by the system
@@ -40,10 +41,10 @@ func TestServe(t *testing.T) {
 	app.WithServeMux(makeTestMux(t, readyToRespond))
 	app.WithReadinessNotification(readyToServe)
 
-	ctx, cancel := context.WithTimeout(context.Background(), timelimit)
-	defer cancel()
+	go func(done <-chan struct{}) {
+		ctx, cancel := context.WithTimeout(context.Background(), timelimit)
+		defer cancel()
 
-	go func() {
 		select {
 		case <-ctx.Done():
 			// trigger deadman switch
@@ -51,8 +52,10 @@ func TestServe(t *testing.T) {
 			close(readyToServe)
 			close(readyToRespond)
 			app.Die()
+		case <-done:
+			return
 		}
-	}()
+	}(done)
 
 	wg.Add(1)
 	go func() {
@@ -74,6 +77,7 @@ func TestServe(t *testing.T) {
 
 	test.SignalOneself(syscall.SIGTERM)
 	wg.Wait()
+	done <- struct{}{}
 }
 
 func makeTestMux(t *testing.T, cn chan<- struct{}) http.Handler {

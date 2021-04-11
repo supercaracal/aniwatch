@@ -64,7 +64,6 @@ lineups:
   - { title: 'シャドーハウス', start_time: '00:30', channel: ch9, day_of_week: sun }
   - { title: 'EDENS ZERO', start_time: '01:00', channel: ch4, day_of_week: sun }
   - { title: 'いじらないで長瀞さん', start_time: '01:00', channel: ch9, day_of_week: sun }
-  - { title: 'バトルアスリーテス大運動会ReSTART!', start_time: '01:30', channel: ch5, day_of_week: sun }
   - { title: '美少年探偵団', start_time: '02:00', channel: ch5, day_of_week: sun }
   - { title: 'ワンピース', start_time: '09:30', channel: ch8, day_of_week: sun }
   - { title: 'BORUTO', start_time: '17:30', channel: ch7, day_of_week: sun }

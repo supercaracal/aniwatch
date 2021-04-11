@@ -44,7 +44,7 @@ lineups:
   - { title: '七つの大罪', start_time: '18:00', channel: ch7, day_of_week: wed }
   - { title: 'MARS RED', start_time: '22:00', channel: ch9, day_of_week: wed }
   - { title: '究極進化したフルダイブRPGが現実よりもクソゲーだったら', start_time: '23:30', channel: ch9, day_of_week: wed }
-  - { title: 'セスタス', start_time: '01:00', channel: ch8, day_of_week: wed }
+  - { title: 'セスタス', start_time: '01:00', channel: ch8, day_of_week: thu }
   - { title: '幼なじみが絶対に負けないラブコメ', start_time: '01:00', channel: ch9, day_of_week: thu }
   - { title: 'スーパーカブ', start_time: '01:30', channel: ch9, day_of_week: thu }
   - { title: 'SHAMAN KING', start_time: '18:00', channel: ch7, day_of_week: thu }

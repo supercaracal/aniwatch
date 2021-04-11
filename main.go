@@ -53,11 +53,11 @@ func main() {
 	}
 	app.WithServeMux(mux)
 
-	logger.Info.Println("Hello")
+	logger.Err.Println("Hello")
 	if err := app.Serve(); err != nil {
 		logger.Err.Fatal(err)
 	}
-	logger.Info.Println("Bye Bye")
+	logger.Err.Println("Bye Bye")
 
 	os.Exit(0)
 }

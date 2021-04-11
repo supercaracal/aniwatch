@@ -14,7 +14,7 @@ type Logger struct {
 // NewLogger is
 func NewLogger() *Logger {
 	return &Logger{
-		Info: log.New(os.Stdout, "[INFO] ", log.LstdFlags),
-		Err:  log.New(os.Stderr, "[ERROR] ", log.LstdFlags),
+		Info: log.New(os.Stdout, "", 0),
+		Err:  log.New(os.Stderr, "", log.LstdFlags),
 	}
 }

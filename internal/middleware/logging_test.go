@@ -2,11 +2,12 @@ package middleware
 
 import (
 	"bytes"
+	"encoding/json"
 	"log"
 	"net/http"
 	"net/http/httptest"
 	"net/url"
-	"strings"
+	"reflect"
 	"testing"
 
 	"github.com/supercaracal/aniwatch/test"
@@ -19,38 +20,55 @@ func TestAccessLog(t *testing.T) {
 	cases := []struct {
 		req  *http.Request
 		base http.Handler
-		want string
+		want *AccessLogFmt
 	}{
 		{
 			req: &http.Request{
 				RemoteAddr: "192.168.11.1",
 				Proto:      "HTTP/1.1",
 				Method:     http.MethodGet,
+				Host:       "127.0.0.1:3000",
 				URL: &url.URL{
-					Scheme: "http",
-					Host:   "127.0.0.1:3000",
-					Path:   "/foobar",
+					Path: "/foobar",
 				},
 			},
 			base: http.NotFoundHandler(),
-			want: "HTTP/1.1 404 GET http://127.0.0.1:3000/foobar from 192.168.11.1",
+			want: &AccessLogFmt{
+				HTTPRequestMethod:      http.MethodGet,
+				HTTPResponseStatusCode: http.StatusNotFound,
+				HTTPResponseBodyBytes:  19,
+				HTTPVersion:            "HTTP/1.1",
+				HostIP:                 "127.0.0.1",
+				URLOriginal:            "/foobar",
+				SourceIP:               "192.168.11.1",
+			},
 		},
 		{
 			req: &http.Request{
 				RemoteAddr: "192.168.11.1",
 				Proto:      "HTTP/1.1",
 				Method:     http.MethodGet,
+				Host:       "127.0.0.1:3000",
 				URL: &url.URL{
-					Scheme: "http",
-					Host:   "127.0.0.1:3000",
-					Path:   "/foobar",
+					Path: "/foobar",
 				},
 				Header: http.Header{
 					"X-Forwarded-For": []string{"192.168.11.2", "192.168.11.3"},
+					"User-Agent":      []string{"test-user-bot"},
 				},
 			},
 			base: http.NotFoundHandler(),
-			want: "HTTP/1.1 404 GET http://127.0.0.1:3000/foobar from 192.168.11.1 forwarded for [192.168.11.2 192.168.11.3]",
+			want: &AccessLogFmt{
+				UserAgent:              "test-user-bot",
+				HTTPRequestMethod:      http.MethodGet,
+				HTTPRequestHeaderXFF:   []string{"192.168.11.2", "192.168.11.3"},
+				HTTPResponseStatusCode: http.StatusNotFound,
+				HTTPResponseBodyBytes:  19,
+				HTTPVersion:            "HTTP/1.1",
+				HostIP:                 "127.0.0.1",
+				URLOriginal:            "/foobar",
+				SourceIP:               "192.168.11.1",
+			},
 		},
 	}
 
@@ -58,8 +76,16 @@ func TestAccessLog(t *testing.T) {
 		recorder.Reset()
 		AccessLog(c.base, logger).ServeHTTP(httptest.NewRecorder(), c.req)
 
-		if got := strings.TrimSpace(recorder.String()); got != c.want {
-			t.Errorf("%d: want=%s got=%s", n, c.want, got)
+		var got AccessLogFmt
+		if err := json.Unmarshal(recorder.Bytes(), &got); err != nil {
+			t.Error(err)
+			continue
+		}
+
+		got.Timestamp = ""     // skip
+		got.ProcessingTime = 0 // skip
+		if !reflect.DeepEqual(&got, c.want) {
+			t.Errorf("%d: want=%+v got=%+v", n, c.want, got)
 		}
 	}
 }
@@ -71,10 +97,13 @@ func BenchmarkAccessLog(b *testing.B) {
 		RemoteAddr: "192.168.11.1",
 		Proto:      "HTTP/1.1",
 		Method:     http.MethodGet,
+		Host:       "127.0.0.1:3000",
 		URL: &url.URL{
-			Scheme: "http",
-			Host:   "127.0.0.1:3000",
-			Path:   "/foobar",
+			Path: "/foobar",
+		},
+		Header: http.Header{
+			"X-Forwarded-For": []string{"192.168.11.2", "192.168.11.3"},
+			"User-Agent":      []string{"test-user-bot"},
 		},
 	}
 

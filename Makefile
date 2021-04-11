@@ -14,10 +14,10 @@ lint:
 	@go vet ./...
 	@golint -set_exit_status ./...
 
-print:
-	@./${BIN_NAME} -print > docs/index.html
-
 clean:
 	@rm -f ${BIN_NAME} main
 
-.PHONY: all build test lint print clean
+print: clean build
+	@./${BIN_NAME} -print > docs/index.html
+
+.PHONY: all build test lint clean print

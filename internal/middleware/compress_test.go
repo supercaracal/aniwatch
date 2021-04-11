@@ -8,6 +8,8 @@ import (
 	"net/http/httptest"
 	"net/url"
 	"testing"
+
+	"github.com/supercaracal/aniwatch/test"
 )
 
 func TestCompressResponse(t *testing.T) {
@@ -139,5 +141,28 @@ func TestCompressResponse(t *testing.T) {
 				break
 			}
 		}
+	}
+}
+
+func BenchmarkCompressResponse(b *testing.B) {
+	h := CompressResponse(http.NotFoundHandler())
+	w := test.NewNullResponseWriter()
+	r := &http.Request{
+		RemoteAddr: "192.168.11.1",
+		Proto:      "HTTP/1.1",
+		Method:     http.MethodGet,
+		URL: &url.URL{
+			Scheme: "http",
+			Host:   "127.0.0.1:3000",
+			Path:   "/foobar",
+		},
+		Header: http.Header{
+			"Accept-Encoding": []string{"gzip", "deflate"},
+		},
+	}
+
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		h.ServeHTTP(w, r)
 	}
 }

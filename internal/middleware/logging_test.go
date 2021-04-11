@@ -8,6 +8,8 @@ import (
 	"net/url"
 	"strings"
 	"testing"
+
+	"github.com/supercaracal/aniwatch/test"
 )
 
 func TestAccessLog(t *testing.T) {
@@ -59,5 +61,25 @@ func TestAccessLog(t *testing.T) {
 		if got := strings.TrimSpace(recorder.String()); got != c.want {
 			t.Errorf("%d: want=%s got=%s", n, c.want, got)
 		}
+	}
+}
+
+func BenchmarkAccessLog(b *testing.B) {
+	h := AccessLog(http.NotFoundHandler(), test.NewFakeLogger().Info)
+	w := test.NewNullResponseWriter()
+	r := &http.Request{
+		RemoteAddr: "192.168.11.1",
+		Proto:      "HTTP/1.1",
+		Method:     http.MethodGet,
+		URL: &url.URL{
+			Scheme: "http",
+			Host:   "127.0.0.1:3000",
+			Path:   "/foobar",
+		},
+	}
+
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		h.ServeHTTP(w, r)
 	}
 }

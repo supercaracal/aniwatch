@@ -3,7 +3,7 @@ package server
 import (
 	"context"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"sync"
 	"syscall"
@@ -115,7 +115,7 @@ func sendTestRequest(t *testing.T, port int) error {
 		return err
 	}
 
-	bytes, err := ioutil.ReadAll(resp.Body)
+	bytes, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return err
 	}

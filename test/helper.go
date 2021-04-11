@@ -1,7 +1,7 @@
 package test
 
 import (
-	"io/ioutil"
+	"io"
 	"log"
 	"os"
 
@@ -26,7 +26,7 @@ func SignalOneself(s os.Signal) error {
 // NewFakeLogger is
 func NewFakeLogger() *config.Logger {
 	return &config.Logger{
-		Info: log.New(ioutil.Discard, "", 0),
-		Err:  log.New(ioutil.Discard, "", 0),
+		Info: log.New(io.Discard, "", 0),
+		Err:  log.New(io.Discard, "", 0),
 	}
 }

@@ -5,7 +5,6 @@ package middleware
 import (
 	"compress/gzip"
 	"io"
-	"io/ioutil"
 	"net/http"
 	"strings"
 	"sync"
@@ -20,7 +19,7 @@ const (
 
 var gzWriterPool = sync.Pool{
 	New: func() interface{} {
-		return gzip.NewWriter(ioutil.Discard)
+		return gzip.NewWriter(io.Discard)
 	},
 }
 

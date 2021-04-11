@@ -1,7 +1,7 @@
 package test
 
 import (
-	"io/ioutil"
+	"io"
 	"net/http"
 	"net/http/httptest"
 	"strings"
@@ -50,7 +50,7 @@ func TestRootPage(t *testing.T) {
 		t.Errorf("want=%d, got=%d", http.StatusOK, resp.StatusCode)
 	}
 
-	bytes, err := ioutil.ReadAll(resp.Body)
+	bytes, err := io.ReadAll(resp.Body)
 	if err != nil {
 		t.Error(err)
 		return

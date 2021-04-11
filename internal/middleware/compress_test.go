@@ -4,7 +4,6 @@ import (
 	"compress/gzip"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
 	"net/url"
@@ -123,7 +122,7 @@ func TestCompressResponse(t *testing.T) {
 			reader = res.Body
 		}
 
-		got, err := ioutil.ReadAll(reader)
+		got, err := io.ReadAll(reader)
 		if err != nil {
 			t.Error(fmt.Errorf("%d: %s: %w", n, c.desc, err))
 			continue

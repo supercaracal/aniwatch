@@ -25,10 +25,9 @@ func BenchmarkIndex(b *testing.B) {
 		RemoteAddr: "192.168.11.1",
 		Proto:      "HTTP/1.1",
 		Method:     http.MethodGet,
+		Host:       "127.0.0.1:3000",
 		URL: &url.URL{
-			Scheme: "http",
-			Host:   "127.0.0.1:3000",
-			Path:   "/",
+			Path: "/",
 		},
 	}
 

@@ -23,13 +23,12 @@ func TestCompressResponse(t *testing.T) {
 		{
 			desc: "don't compress if Accept-Encoding header don't include gzip",
 			req: &http.Request{
-				RemoteAddr: "192.168.33.10",
+				RemoteAddr: "192.168.11.1",
 				Proto:      "HTTP/1.0",
 				Method:     http.MethodGet,
+				Host:       "127.0.0.1:3000",
 				URL: &url.URL{
-					Scheme: "http",
-					Host:   "127.0.0.1:3000",
-					Path:   "/foobar",
+					Path: "/foobar",
 				},
 			},
 			base:            http.NotFoundHandler(),
@@ -39,13 +38,12 @@ func TestCompressResponse(t *testing.T) {
 		{
 			desc: "can compress if Accept-Encoding header includes gzip",
 			req: &http.Request{
-				RemoteAddr: "192.168.33.10",
+				RemoteAddr: "192.168.11.1",
 				Proto:      "HTTP/1.0",
 				Method:     http.MethodGet,
+				Host:       "127.0.0.1:3000",
 				URL: &url.URL{
-					Scheme: "http",
-					Host:   "127.0.0.1:3000",
-					Path:   "/foobar",
+					Path: "/foobar",
 				},
 				Header: http.Header{
 					"Accept-Encoding": []string{"gzip", "deflate"},
@@ -58,13 +56,12 @@ func TestCompressResponse(t *testing.T) {
 		{
 			desc: "can prevent double compression",
 			req: &http.Request{
-				RemoteAddr: "192.168.33.10",
+				RemoteAddr: "192.168.11.1",
 				Proto:      "HTTP/1.0",
 				Method:     http.MethodGet,
+				Host:       "127.0.0.1:3000",
 				URL: &url.URL{
-					Scheme: "http",
-					Host:   "127.0.0.1:3000",
-					Path:   "/foobar",
+					Path: "/foobar",
 				},
 				Header: http.Header{
 					"Accept-Encoding": []string{"gzip", "deflate"},
@@ -77,13 +74,12 @@ func TestCompressResponse(t *testing.T) {
 		{
 			desc: "can compress even if the body includes multi-byte strings",
 			req: &http.Request{
-				RemoteAddr: "192.168.33.10",
+				RemoteAddr: "192.168.11.1",
 				Proto:      "HTTP/1.0",
 				Method:     http.MethodGet,
+				Host:       "127.0.0.1:3000",
 				URL: &url.URL{
-					Scheme: "http",
-					Host:   "127.0.0.1:3000",
-					Path:   "/foobar",
+					Path: "/foobar",
 				},
 				Header: http.Header{
 					"Accept-Encoding": []string{"gzip", "deflate"},
@@ -151,10 +147,9 @@ func BenchmarkCompressResponse(b *testing.B) {
 		RemoteAddr: "192.168.11.1",
 		Proto:      "HTTP/1.1",
 		Method:     http.MethodGet,
+		Host:       "127.0.0.1:3000",
 		URL: &url.URL{
-			Scheme: "http",
-			Host:   "127.0.0.1:3000",
-			Path:   "/foobar",
+			Path: "/foobar",
 		},
 		Header: http.Header{
 			"Accept-Encoding": []string{"gzip", "deflate"},

@@ -37,3 +37,16 @@ jobs:
 
       - name: Lint
         run: make lint
+
+      - name: Bench
+        run: make bench
+
+      - name: Profiling (lineup)
+        run: make prof
+        env:
+          PKG: lineup
+
+      - name: Profiling (middleware)
+        run: make prof
+        env:
+          PKG: middleware

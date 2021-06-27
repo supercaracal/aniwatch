@@ -30,43 +30,46 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
-  - { title: 'セブンナイツ レボリューション', start_time: '00:00', channel: ch9, day_of_week: mon }
+  - { title: '', start_time: '00:00', channel: ch9, day_of_week: mon }
   - { title: 'キングダム', start_time: '00:10', channel: ch1, day_of_week: mon }
-  - { title: '戦闘員派遣します', start_time: '01:30', channel: ch9, day_of_week: mon }
-  - { title: 'やくならマグカップも', start_time: '22:30', channel: ch9, day_of_week: mon }
+  - { title: '', start_time: '01:30', channel: ch9, day_of_week: mon }
+  - { title: '', start_time: '22:30', channel: ch9, day_of_week: mon }
   - { title: '不滅のあなたへ', start_time: '22:50', channel: ch2, day_of_week: mon }
   - { title: '恋と呼ぶには気持ち悪い', start_time: '23:00', channel: ch9, day_of_week: mon }
   - { title: 'ひげを剃る。そして女子高生を拾う。', start_time: '00:00', channel: ch9, day_of_week: tue }
   - { title: 'オッドタクシー', start_time: '02:00', channel: ch7, day_of_week: tue }
-  - { title: '転生したらスライムだった件 転スラ日記', start_time: '23:00', channel: ch9, day_of_week: tue }
-  - { title: '聖女の魔力は万能です', start_time: '00:30', channel: ch9, day_of_week: wed }
-  - { title: '擾乱 THE PRINCESS OF SNOW AND BLOOD', start_time: '01:30', channel: ch4, day_of_week: wed }
-  - { title: '七つの大罪', start_time: '18:00', channel: ch7, day_of_week: wed }
+  - { title: '転生したらスライムだった件', start_time: '23:00', channel: ch9, day_of_week: tue }
+  - { title: '', start_time: '00:30', channel: ch9, day_of_week: wed }
+  - { title: '', start_time: '01:30', channel: ch4, day_of_week: wed }
+  - { title: '', start_time: '18:00', channel: ch7, day_of_week: wed }
   - { title: 'MARS RED', start_time: '22:00', channel: ch9, day_of_week: wed }
   - { title: '究極進化したフルダイブRPGが現実よりもクソゲーだったら', start_time: '23:30', channel: ch9, day_of_week: wed }
-  - { title: 'セスタス', start_time: '01:00', channel: ch8, day_of_week: thu }
+  - { title: '', start_time: '01:00', channel: ch8, day_of_week: thu }
   - { title: '幼なじみが絶対に負けないラブコメ', start_time: '01:00', channel: ch9, day_of_week: thu }
-  - { title: 'スーパーカブ', start_time: '01:30', channel: ch9, day_of_week: thu }
+  - { title: '', start_time: '01:30', channel: ch9, day_of_week: thu }
   - { title: 'SHAMAN KING', start_time: '18:00', channel: ch7, day_of_week: thu }
-  - { title: 'ゴジラS.P', start_time: '22:30', channel: ch9, day_of_week: thu }
-  - { title: '異世界魔王と召喚少女の奴隷魔術omega', start_time: '01:30', channel: ch6, day_of_week: fri }
+  - { title: 'ピーチボーイリバーサイド', start_time: '22:00', channel: ch9, day_of_week: thu }
+  - { title: 'SCARLET NEXUS', start_time: '22:30', channel: ch9, day_of_week: thu }
+  - { title: 'ひぐらしのなく頃に 卒', start_time: '23:30', channel: ch9, day_of_week: thu }
+  - { title: '', start_time: '01:30', channel: ch6, day_of_week: fri }
   - { title: 'ポケットモンスター', start_time: '19:00', channel: ch7, day_of_week: fri }
-  - { title: 'SSSS.DYNAZENON', start_time: '22:00', channel: ch9, day_of_week: fri }
+  - { title: '', start_time: '22:00', channel: ch9, day_of_week: fri }
   - { title: '蜘蛛ですが、なにか?', start_time: '22:30', channel: ch9, day_of_week: fri }
-  - { title: 'バック・アロウ', start_time: '00:00', channel: ch9, day_of_week: sat }
-  - { title: 'すばらしきこのせかい', start_time: '01:30', channel: ch6, day_of_week: sat }
+  - { title: 'ヴァニタスの手記', start_time: '00:00', channel: ch9, day_of_week: sat }
+  - { title: 'ぶらどらぶ', start_time: '01:00', channel: ch9, day_of_week: sat }
+  - { title: '乙女破滅悪役令嬢転生X', start_time: '01:30', channel: ch9, day_of_week: sat }
   - { title: 'ドラゴンクエスト ダイの大冒険', start_time: '09:30', channel: ch7, day_of_week: sat }
   - { title: '僕のヒーローアカデミア', start_time: '17:30', channel: ch4, day_of_week: sat }
   - { title: '魔入りました!入間くん', start_time: '17:30', channel: ch2, day_of_week: sat }
-  - { title: 'スライム倒して300年、知らないうちにレベルMAXになってました', start_time: '22:00', channel: ch9, day_of_week: sat }
-  - { title: "Vivy -Fluorite Eye's Song-", start_time: '23:30', channel: ch9, day_of_week: sat }
-  - { title: '86-エイティシックス-', start_time: '00:00', channel: ch9, day_of_week: sun }
+  - { title: 'ぼくたちのリメイク', start_time: '22:00', channel: ch9, day_of_week: sat }
+  - { title: "魔法科高校の優等生", start_time: '23:30', channel: ch9, day_of_week: sat }
+  - { title: 'マギアレコード 魔法少女まどかマギカ外伝', start_time: '00:00', channel: ch9, day_of_week: sun }
   - { title: 'シャドーハウス', start_time: '00:30', channel: ch9, day_of_week: sun }
   - { title: 'EDENS ZERO', start_time: '01:00', channel: ch4, day_of_week: sun }
-  - { title: 'イジらないで、長瀞さん', start_time: '01:00', channel: ch9, day_of_week: sun }
-  - { title: '美少年探偵団', start_time: '02:00', channel: ch5, day_of_week: sun }
+  - { title: 'かげきしょうじょ!!', start_time: '01:00', channel: ch9, day_of_week: sun }
+  - { title: '現実主義者の王国再建記', start_time: '01:30', channel: ch9, day_of_week: sun }
   - { title: 'ワンピース', start_time: '09:30', channel: ch8, day_of_week: sun }
   - { title: 'BORUTO', start_time: '17:30', channel: ch7, day_of_week: sun }
-  - { title: 'ドラゴン、家を買う', start_time: '22:00', channel: ch9, day_of_week: sun }
-  - { title: 'NOMADメガロボクス2', start_time: '23:00', channel: ch9, day_of_week: sun }
+  - { title: '死神坊ちゃんと黒メイド', start_time: '22:00', channel: ch9, day_of_week: sun }
+  - { title: 'ゲッターロボアーク', start_time: '23:00', channel: ch9, day_of_week: sun }
   - { title: 'SuperGT', start_time: '23:30', channel: ch7, day_of_week: sun }

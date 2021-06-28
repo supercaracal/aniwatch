@@ -30,7 +30,7 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
-  - { title: '', start_time: '00:00', channel: ch9, day_of_week: mon }
+  - { title: '探偵はもう、死んでいる。', start_time: '00:00', channel: ch9, day_of_week: mon }
   - { title: 'キングダム', start_time: '00:10', channel: ch1, day_of_week: mon }
   - { title: '', start_time: '01:30', channel: ch9, day_of_week: mon }
   - { title: '', start_time: '22:30', channel: ch9, day_of_week: mon }

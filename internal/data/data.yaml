@@ -39,7 +39,6 @@ lineups:
   - { title: '月が導く異世界道中', start_time: '23:00', channel: ch9, day_of_week: wed }
   - { title: '小林さんちのメイドラゴンS', start_time: '00:00', channel: ch9, day_of_week: thu }
   - { title: 'NIGHT HEAD 2041', start_time: '01:00', channel: ch8, day_of_week: thu }
-  - { title: '女神寮の寮母くん。', start_time: '01:00', channel: ch9, day_of_week: thu }
   - { title: 'SHAMAN KING', start_time: '18:00', channel: ch7, day_of_week: thu }
   - { title: 'ピーチボーイリバーサイド', start_time: '22:00', channel: ch9, day_of_week: thu }
   - { title: 'SCARLET NEXUS', start_time: '22:30', channel: ch9, day_of_week: thu }

@@ -45,6 +45,7 @@ lineups:
   - { title: 'ひぐらしのなく頃に 卒', start_time: '23:30', channel: ch9, day_of_week: thu }
   - { title: '白い砂のアクアトープ', start_time: '00:00', channel: ch9, day_of_week: fri }
   - { title: 'Sonny Boy', start_time: '00:30', channel: ch9, day_of_week: fri }
+  - { title: '平穏世代の韋駄天達', start_time: '01:00', channel: ch8, day_of_week: fri }
   - { title: 'ポケットモンスター', start_time: '19:00', channel: ch7, day_of_week: fri }
   - { title: '迷宮ブラックカンパニー', start_time: '22:30', channel: ch9, day_of_week: fri }
   - { title: 'ヴァニタスの手記', start_time: '00:00', channel: ch9, day_of_week: sat }

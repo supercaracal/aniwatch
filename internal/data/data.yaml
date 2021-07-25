@@ -62,6 +62,7 @@ lineups:
   - { title: 'EDENS ZERO', start_time: '01:00', channel: ch4, day_of_week: sun }
   - { title: 'かげきしょうじょ!!', start_time: '01:00', channel: ch9, day_of_week: sun }
   - { title: '現実主義者の王国再建記', start_time: '01:30', channel: ch9, day_of_week: sun }
+  - { title: 'ジャヒー様はくじけない！', start_time: '02:00', channel: ch5, day_of_week: sun }
   - { title: 'ワンピース', start_time: '09:30', channel: ch8, day_of_week: sun }
   - { title: 'BORUTO', start_time: '17:30', channel: ch7, day_of_week: sun }
   - { title: '死神坊ちゃんと黒メイド', start_time: '22:00', channel: ch9, day_of_week: sun }

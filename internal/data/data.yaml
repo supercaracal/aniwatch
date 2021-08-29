@@ -34,6 +34,7 @@ lineups:
   - { title: 'キングダム', start_time: '00:10', channel: ch1, day_of_week: mon }
   - { title: '不滅のあなたへ', start_time: '22:50', channel: ch2, day_of_week: mon }
   - { title: '出会って5秒でバトル', start_time: '00:00', channel: ch9, day_of_week: tue }
+  - { title: '極主夫道', start_time: '00:30', channel: ch9, day_of_week: tue }
   - { title: '転生したらスライムだった件', start_time: '23:00', channel: ch9, day_of_week: tue }
   - { title: 'チート薬師のスローライフ', start_time: '22:00', channel: ch9, day_of_week: wed }
   - { title: '月が導く異世界道中', start_time: '23:00', channel: ch9, day_of_week: wed }

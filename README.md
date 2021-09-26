@@ -1,4 +1,4 @@
-![](https://github.com/supercaracal/aniwatch/workflows/CI/badge.svg?branch=master)
+![](https://github.com/supercaracal/aniwatch/workflows/Test/badge.svg?branch=master)
 
 ```
 $ make print

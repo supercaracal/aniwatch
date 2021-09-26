@@ -1,6 +1,6 @@
 ---
 # @see https://help.github.com/ja/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions
-name: CI
+name: Test
 on:
   push:
     branches:
@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         os: ["ubuntu-latest"]
-        go-ver: ["1.16"]
+        go-ver: ["1.17"]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Check out code
@@ -23,20 +23,17 @@ jobs:
         with:
           go-version: ${{ matrix.go-ver }}
 
-      - name: Add $GOPATH/bin to $PATH
-        run: echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
-
       - name: Get dependencies
-        run: go get golang.org/x/lint/golint
+        run: go install golang.org/x/lint/golint@latest
 
       - name: Build
         run: make build
 
-      - name: Test
-        run: make test
-
       - name: Lint
         run: make lint
+
+      - name: Test
+        run: make test
 
       - name: Bench
         run: make bench

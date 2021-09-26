@@ -1,4 +1,4 @@
-SHELL    := /bin/bash
+SHELL    := /bin/bash -euo pipefail
 BIN_NAME := server
 
 all: build test lint

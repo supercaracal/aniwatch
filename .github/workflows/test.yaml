@@ -23,6 +23,24 @@ jobs:
         with:
           go-version: ${{ matrix.go-ver }}
 
+      - name: Check out Go cache paths
+        id: go-cache-paths
+        run: |
+          echo "::set-output name=go-cache::$(go env GOCACHE)"
+          echo "::set-output name=go-mod-cache::$(go env GOMODCACHE)"
+
+      - name: Cache GOCACHE
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.go-cache-paths.outputs.go-cache }}
+          key: ${{ runner.os }}-go-cache-${{ hashFiles('*.go', '**/*.go') }}
+
+      - name: Cache GOMODCACHE
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.go-cache-paths.outputs.go-mod-cache }}
+          key: ${{ runner.os }}-go-mod-cache-${{ hashFiles('go.sum', '**/go.sum') }}
+
       - name: Get dependencies
         run: go install golang.org/x/lint/golint@latest
 

@@ -41,9 +41,6 @@ jobs:
           path: ${{ steps.go-cache-paths.outputs.go-mod-cache }}
           key: ${{ runner.os }}-go-mod-cache-${{ hashFiles('go.sum', '**/go.sum') }}
 
-      - name: Get dependencies
-        run: go install golang.org/x/lint/golint@latest
-
       - name: Build
         run: make build
 

@@ -1,10 +1,18 @@
-SHELL    := /bin/bash -euo pipefail
-BIN_NAME := server
+MAKEFLAGS += --warn-undefined-variables
+SHELL     := /bin/bash -euo pipefail
+APP_NAME  := server
+GOBIN     ?= $(shell go env GOPATH)/bin
 
 all: build test lint
 
+build: GOOS        ?= $(shell go env GOOS)
+build: GOARCH      ?= $(shell go env GOARCH)
+build: CGO_ENABLED ?= $(shell go env CGO_ENABLED)
+build: FLAGS       += -ldflags="-s -w"
+build: FLAGS       += -trimpath
+build: FLAGS       += -tags timetzdata
 build:
-	@go build -ldflags="-s -w" -trimpath -tags timetzdata -o ${BIN_NAME}
+	GOOS=${GOOS} GOARCH=${GOARCH} CGO_ENABLED=${CGO_ENABLED} go build ${FLAGS} -o ${APP_NAME}
 
 test:
 	@go clean -testcache
@@ -29,14 +37,15 @@ else
 	done
 endif
 
-lint:
+${GOBIN}/golint:
+	go install golang.org/x/lint/golint@latest
+
+lint: ${GOBIN}/golint
 	@go vet ./...
 	@golint -set_exit_status ./...
 
 clean:
-	@rm -f ${BIN_NAME} main *.test *.out
+	@rm -f ${APP_NAME} main *.test *.out
 
 print: clean build
-	@./${BIN_NAME} -print > docs/index.html
-
-.PHONY: all build test bench prof lint clean print
+	@./${APP_NAME} -print > docs/index.html

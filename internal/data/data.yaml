@@ -30,7 +30,10 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
+  - { title: '無職転生', start_time: '00:00', channel: ch9, day_of_week: mon }
   - { title: 'キングダム', start_time: '00:10', channel: ch1, day_of_week: mon }
+  - { title: '見える子ちゃん', start_time: '00:30', channel: ch9, day_of_week: mon }
+  - { title: '月とライカと吸血姫', start_time: '01:50', channel: ch7, day_of_week: mon }
   - { title: '', start_time: '22:50', channel: ch2, day_of_week: mon }
   - { title: '', start_time: '00:00', channel: ch9, day_of_week: tue }
   - { title: '極主夫道', start_time: '00:30', channel: ch9, day_of_week: tue }
@@ -63,6 +66,6 @@ lineups:
   - { title: 'ジャヒー様はくじけない！', start_time: '02:00', channel: ch5, day_of_week: sun }
   - { title: 'ワンピース', start_time: '09:30', channel: ch8, day_of_week: sun }
   - { title: 'BORUTO', start_time: '17:30', channel: ch7, day_of_week: sun }
-  - { title: '死神坊ちゃんと黒メイド', start_time: '22:00', channel: ch9, day_of_week: sun }
-  - { title: 'ゲッターロボアーク', start_time: '23:00', channel: ch9, day_of_week: sun }
+  - { title: 'テスラノート', start_time: '23:00', channel: ch9, day_of_week: sun }
+  - { title: 'MUTEKING', start_time: '23:30', channel: ch9, day_of_week: sun }
   - { title: 'SuperGT', start_time: '23:30', channel: ch7, day_of_week: sun }

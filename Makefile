@@ -14,6 +14,7 @@ build: FLAGS       += -tags timetzdata
 build:
 	GOOS=${GOOS} GOARCH=${GOARCH} CGO_ENABLED=${CGO_ENABLED} go build ${FLAGS} -o ${APP_NAME}
 
+.PHONY: test
 test:
 	@go clean -testcache
 	@go test -race ./...

@@ -3,7 +3,7 @@ SHELL     := /bin/bash -euo pipefail
 APP_NAME  := server
 GOBIN     ?= $(shell go env GOPATH)/bin
 
-all: build test lint
+all: build test lint print
 
 build: GOOS        ?= $(shell go env GOOS)
 build: GOARCH      ?= $(shell go env GOARCH)
@@ -48,5 +48,5 @@ lint: ${GOBIN}/golint
 clean:
 	@rm -f ${APP_NAME} main *.test *.out
 
-print: clean build
+print:
 	@./${APP_NAME} -print > docs/index.html

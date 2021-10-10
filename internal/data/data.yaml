@@ -70,7 +70,6 @@ lineups:
   - { title: '半妖の夜叉姫', start_time: '17:30', channel: ch4, day_of_week: sat }
   - { title: '最果てのパラディン', start_time: '22:00', channel: ch9, day_of_week: sat }
   - { title: '86', start_time: '00:00', channel: ch9, day_of_week: sun }
-  - { title: 'ヒルディバイド', start_time: '00:30', channel: ch9, day_of_week: sun }
   - { title: 'ルパン三世6', start_time: '01:00', channel: ch4, day_of_week: sun }
   - { title: '先輩がうざい後輩の話', start_time: '01:00', channel: ch9, day_of_week: sun }
   - { title: 'ワールドトリガー3', start_time: '01:30', channel: ch5, day_of_week: sun }

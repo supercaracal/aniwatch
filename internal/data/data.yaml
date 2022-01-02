@@ -30,50 +30,27 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
-  - { title: '無職転生', start_time: '00:00', channel: ch9, day_of_week: mon }
-  - { title: 'キングダム', start_time: '00:10', channel: ch1, day_of_week: mon }
-  - { title: '見える子ちゃん', start_time: '00:30', channel: ch9, day_of_week: mon }
-  - { title: '月とライカと吸血姫', start_time: '01:50', channel: ch7, day_of_week: mon }
-  - { title: 'やくならマグカップも', start_time: '22:30', channel: ch9, day_of_week: mon }
-  - { title: '逆転世界ノ電池少女', start_time: '00:00', channel: ch9, day_of_week: tue }
-  - { title: '海賊王女', start_time: '00:30', channel: ch9, day_of_week: tue }
-  - { title: '境界戦機', start_time: '01:30', channel: ch7, day_of_week: tue }
-  - { title: '進化の実 知らないうちに勝ち組人生', start_time: '02:00', channel: ch7, day_of_week: tue }
-  - { title: 'takt op.Destiny', start_time: '00:00', channel: ch7, day_of_week: wed }
-  - { title: 'かぎなど', start_time: '01:00', channel: ch9, day_of_week: wed }
-  - { title: 'シキザクラ', start_time: '01:30', channel: ch4, day_of_week: wed }
-  - { title: '真の仲間じゃな勇者のスローライフ', start_time: '23:30', channel: ch9, day_of_week: wed }
-  - { title: '古見さんはコミュ症です', start_time: '00:00', channel: ch7, day_of_week: thu }
-  - { title: '世界最高の暗殺者、異世界帰属に転生する', start_time: '01:00', channel: ch9, day_of_week: thu }
-  - { title: 'マブラブ オルタネイティヴ', start_time: '01:00', channel: ch8, day_of_week: thu }
+  - { title: 'リアデイルの大地にて', start_time: '23:30', channel: ch9, day_of_week: wed }
+  - { title: 'ハコヅメ', start_time: '01:00', channel: ch9, day_of_week: thu }
   - { title: 'SHAMAN KING', start_time: '18:00', channel: ch7, day_of_week: thu }
-  - { title: 'SCARLET NEXUS', start_time: '22:30', channel: ch9, day_of_week: thu }
-  - { title: 'サクガン', start_time: '23:30', channel: ch9, day_of_week: thu }
-  - { title: '白い砂のアクアトープ', start_time: '00:00', channel: ch9, day_of_week: fri }
-  - { title: '180秒で君の耳を幸せにできるか？', start_time: '01:00', channel: ch9, day_of_week: fri }
-  - { title: 'プラチナエンド', start_time: '01:30', channel: ch6, day_of_week: fri }
+  - { title: '最遊記RELOAD ZEROIN', start_time: '00:30', channel: ch9, day_of_week: fri }
   - { title: '王様ランキング', start_time: '01:30', channel: ch8, day_of_week: fri }
+  - { title: 'プラチナエンド', start_time: '02:00', channel: ch6, day_of_week: fri }
   - { title: 'ポケットモンスター', start_time: '19:00', channel: ch7, day_of_week: fri }
-  - { title: 'キミとフィットボクシング', start_time: '21:54', channel: ch9, day_of_week: fri }
-  - { title: 'メガトン級ムサシ', start_time: '22:00', channel: ch9, day_of_week: fri }
-  - { title: 'SELECTION PROJECT', start_time: '22:30', channel: ch9, day_of_week: fri }
-  - { title: '終末のワルキューレ', start_time: '00:30', channel: ch9, day_of_week: sat }
-  - { title: '魔王イブロギアに身を捧げよ', start_time: '01:00', channel: ch9, day_of_week: sat }
-  - { title: 'ブルーピリオド', start_time: '01:30', channel: ch6, day_of_week: sat }
-  - { title: '異世界食堂2', start_time: '01:38', channel: ch7, day_of_week: sat }
-  - { title: 'でーじミーツガール', start_time: '01:52', channel: ch6, day_of_week: sat }
-  - { title: '大正オトメ御伽話', start_time: '01:53', channel: ch7, day_of_week: sat }
-  - { title: '舞妓さんちのまかないさん', start_time: '09:20', channel: ch2, day_of_week: sat }
+  - { title: 'スローループ', start_time: '22:30', channel: ch9, day_of_week: fri }
+  - { title: 'ジョジョの奇妙な冒険 Stone Ocean', start_time: '00:30', channel: ch9, day_of_week: sat }
+  - { title: 'ドールズフロントライン', start_time: '01:00', channel: ch9, day_of_week: sat }
+  - { title: 'からかい上手の高木さん3', start_time: '02:00', channel: ch6, day_of_week: sat }
   - { title: 'ドラゴンクエスト ダイの大冒険', start_time: '09:30', channel: ch7, day_of_week: sat }
   - { title: '半妖の夜叉姫', start_time: '17:30', channel: ch4, day_of_week: sat }
-  - { title: '最果てのパラディン', start_time: '22:00', channel: ch9, day_of_week: sat }
-  - { title: '86', start_time: '00:00', channel: ch9, day_of_week: sun }
+  - { title: '失格紋の最強賢者', start_time: '22:00', channel: ch9, day_of_week: sat }
+  - { title: 'その着せ替え人形は恋をする', start_time: '00:00', channel: ch9, day_of_week: sun }
+  - { title: '明日ちゃんのセーラー服', start_time: '00:00', channel: ch9, day_of_week: sun }
   - { title: 'ルパン三世6', start_time: '01:00', channel: ch4, day_of_week: sun }
-  - { title: '先輩がうざい後輩の話', start_time: '01:00', channel: ch9, day_of_week: sun }
+  - { title: '現実主義勇者の王国再建記 第二部', start_time: '01:30', channel: ch9, day_of_week: sun }
   - { title: 'ワールドトリガー3', start_time: '01:30', channel: ch5, day_of_week: sun }
-  - { title: 'ジャヒー様はくじけない！', start_time: '02:00', channel: ch5, day_of_week: sun }
+  - { title: '怪人開発部の黒井津さん', start_time: '02:00', channel: ch5, day_of_week: sun }
   - { title: 'ワンピース', start_time: '09:30', channel: ch8, day_of_week: sun }
   - { title: 'BORUTO', start_time: '17:30', channel: ch7, day_of_week: sun }
-  - { title: 'さんかく窓の外は夜', start_time: '22:00', channel: ch9, day_of_week: sun }
   - { title: '鬼滅の刃', start_time: '23:15', channel: ch8, day_of_week: sun }
   - { title: 'SuperGT', start_time: '23:30', channel: ch7, day_of_week: sun }

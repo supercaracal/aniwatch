@@ -53,5 +53,6 @@ lineups:
   - { title: '怪人開発部の黒井津さん', start_time: '02:00', channel: ch5, day_of_week: sun }
   - { title: 'ワンピース', start_time: '09:30', channel: ch8, day_of_week: sun }
   - { title: 'BORUTO', start_time: '17:30', channel: ch7, day_of_week: sun }
+  - { title: 'プラネテス', start_time: '19:00', channel: ch2, day_of_week: sun }
   - { title: '鬼滅の刃', start_time: '23:15', channel: ch8, day_of_week: sun }
   - { title: 'SuperGT', start_time: '23:30', channel: ch7, day_of_week: sun }

@@ -40,7 +40,6 @@ lineups:
   - { title: 'ポケットモンスター', start_time: '19:00', channel: ch7, day_of_week: fri }
   - { title: 'スローループ', start_time: '22:30', channel: ch9, day_of_week: fri }
   - { title: 'ジョジョの奇妙な冒険 Stone Ocean', start_time: '00:30', channel: ch9, day_of_week: sat }
-  - { title: 'ドールズフロントライン', start_time: '01:00', channel: ch9, day_of_week: sat }
   - { title: 'からかい上手の高木さん3', start_time: '02:00', channel: ch6, day_of_week: sat }
   - { title: 'ドラゴンクエスト ダイの大冒険', start_time: '09:30', channel: ch7, day_of_week: sat }
   - { title: '半妖の夜叉姫', start_time: '17:30', channel: ch4, day_of_week: sat }

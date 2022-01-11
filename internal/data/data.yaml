@@ -31,7 +31,6 @@ slot-of-day:
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
   - { title: '進撃の巨人', start_time: '00:00', channel: ch1, day_of_week: mon }
-  - { title: 'TRIBE NINE', start_time: '22:30', channel: ch9, day_of_week: mon }
   - { title: '範馬刃牙', start_time: '23:00', channel: ch9, day_of_week: mon }
   - { title: 'プリンセスコネクト! Re:Dive', start_time: '00:00', channel: ch9, day_of_week: tue }
   - { title: '錆喰いビスコ', start_time: '00:30', channel: ch9, day_of_week: tue }

@@ -36,7 +36,7 @@ lineups:
   - { title: '錆喰いビスコ', start_time: '00:30', channel: ch9, day_of_week: tue }
   - { title: 'オンエアできない', start_time: '02:30', channel: ch7, day_of_week: tue }
   - { title: '天才王子の赤字国家再生術', start_time: '23:00', channel: ch9, day_of_week: tue }
-  - { title: '異世界美少女受肉おじさんと', start_time: '00:00', channel: ch9, day_of_week: wed }
+  - { title: '異世界美少女受肉おじさんと', start_time: '00:00', channel: ch7, day_of_week: wed }
   - { title: '賢者の弟子を名乗る賢者', start_time: '00:30', channel: ch9, day_of_week: wed }
   - { title: 'リアデイルの大地にて', start_time: '23:30', channel: ch9, day_of_week: wed }
   - { title: '殺し愛', start_time: '00:00', channel: ch9, day_of_week: thu }

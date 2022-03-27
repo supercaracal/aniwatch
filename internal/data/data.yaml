@@ -51,12 +51,14 @@ lineups:
   - { title: 'ポケットモンスター', start_time: '19:00', channel: ch7, day_of_week: fri }
   - { title: 'スローループ', start_time: '22:30', channel: ch9, day_of_week: fri }
   - { title: 'ヴァニタスの手記', start_time: '00:00', channel: ch9, day_of_week: sat }
-  - { title: 'ジョジョの奇妙な冒険 Stone Ocean', start_time: '00:30', channel: ch9, day_of_week: sat }
-  - { title: 'からかい上手の高木さん3', start_time: '02:00', channel: ch6, day_of_week: sat }
+  - { title: '処刑少女の生きる道', start_time: '00:30', channel: ch9, day_of_week: sat }
+  - { title: '理系が恋に落ちたので証明してみた。r=1-sinθ', start_time: '01:30', channel: ch9, day_of_week: sat }
+  - { title: 'じゃんたまPONG', start_time: '01:50', channel: ch6, day_of_week: sat }
+  - { title: '阿波連さんははかれない', start_time: '02:30', channel: ch6, day_of_week: sat }
   - { title: '舞妓さんちのまかないさん', start_time: '09:20', channel: ch2, day_of_week: sat }
   - { title: 'ドラゴンクエスト ダイの大冒険', start_time: '09:30', channel: ch7, day_of_week: sat }
-  - { title: '半妖の夜叉姫', start_time: '17:30', channel: ch4, day_of_week: sat }
-  - { title: '失格紋の最強賢者', start_time: '22:00', channel: ch9, day_of_week: sat }
+  - { title: 'ラブオールプレー', start_time: '17:30', channel: ch4, day_of_week: sat }
+  - { title: '群青のファンファーレ', start_time: '23:30', channel: ch9, day_of_week: sat }
   - { title: 'その着せ替え人形は恋をする', start_time: '00:00', channel: ch9, day_of_week: sun }
   - { title: '明日ちゃんのセーラー服', start_time: '00:00', channel: ch9, day_of_week: sun }
   - { title: 'ルパン三世6', start_time: '01:00', channel: ch4, day_of_week: sun }

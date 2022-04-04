@@ -32,7 +32,6 @@ slot-of-day:
 lineups:
   - { title: '進撃の巨人', start_time: '00:00', channel: ch1, day_of_week: mon }
   - { title: '乙女ゲー世界はモブに厳しい世界です', start_time: '00:30', channel: ch9, day_of_week: mon }
-  - { title: '其れ、則ちスケッチ。', start_time: '01:00', channel: ch9, day_of_week: mon }
   - { title: 'ヒーラー・ガール', start_time: '23:00', channel: ch9, day_of_week: mon }
   - { title: '名探偵コナン ゼロの日常', start_time: '01:20', channel: ch9, day_of_week: tue }
   - { title: 'パリピ孔明', start_time: '23:00', channel: ch9, day_of_week: tue }

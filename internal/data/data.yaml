@@ -75,4 +75,3 @@ lineups:
   - { title: 'プラネテス', start_time: '19:00', channel: ch2, day_of_week: sun }
   - { title: 'このヒーラー、めんどくさい', start_time: '22:00', channel: ch9, day_of_week: sun }
   - { title: 'ブラックロックシューター', start_time: '23:00', channel: ch9, day_of_week: sun }
-  - { title: 'SuperGT', start_time: '23:30', channel: ch7, day_of_week: sun }

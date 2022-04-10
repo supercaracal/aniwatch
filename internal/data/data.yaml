@@ -30,23 +30,25 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
-  - { title: '進撃の巨人', start_time: '00:00', channel: ch1, day_of_week: mon }
   - { title: '乙女ゲー世界はモブに厳しい世界です', start_time: '00:30', channel: ch9, day_of_week: mon }
+  - { title: '極道主夫', start_time: '22:00', channel: ch9, day_of_week: mon }
+  - { title: '境界戦機', start_time: '00:00', channel: ch7, day_of_week: tue }
   - { title: '名探偵コナン ゼロの日常', start_time: '01:20', channel: ch9, day_of_week: tue }
   - { title: 'パリピ孔明', start_time: '23:00', channel: ch9, day_of_week: tue }
   - { title: "BIRDIE WING Golf Girls' Story", start_time: '00:00', channel: ch7, day_of_week: wed }
   - { title: '勇者、辞めます', start_time: '00:30', channel: ch9, day_of_week: wed }
+  - { title: 'かぎなど', start_time: '01:00', channel: ch9, day_of_week: wed }
   - { title: 'トモダチゲーム', start_time: '01:30', channel: ch4, day_of_week: wed }
   - { title: 'RPG不動産', start_time: '23:00', channel: ch9, day_of_week: wed }
   - { title: '史上最強の大魔王、村人Aに転生する', start_time: '23:30', channel: ch9, day_of_week: wed }
   - { title: '古見さんは、コミュ症です。', start_time: '00:00', channel: ch7, day_of_week: thu }
-  - { title: '東京24区', start_time: '00:30', channel: ch9, day_of_week: thu }
-  - { title: 'エスタブライフ グレイトエスケープ', start_time: '00:30', channel: ch8, day_of_week: thu }
   - { title: '盾の勇者の成り上がり', start_time: '01:00', channel: ch9, day_of_week: thu }
+  - { title: 'エスタブライフ グレイトエスケープ', start_time: '01:20', channel: ch8, day_of_week: thu }
   - { title: 'であいもん', start_time: '01:30', channel: ch9, day_of_week: thu }
   - { title: 'SHAMAN KING', start_time: '18:00', channel: ch7, day_of_week: thu }
   - { title: '社畜さんは幼女幽霊に癒されたい。', start_time: '22:00', channel: ch9, day_of_week: thu }
   - { title: 'ヒロインたるもの！嫌われヒロインと内緒のお仕事', start_time: '23:00', channel: ch9, day_of_week: thu }
+  - { title: 'サマータイムレンダ', start_time: '00:00', channel: ch9, day_of_week: fri }
   - { title: '骸骨騎士様、只今異世界へお出掛け中', start_time: '00:30', channel: ch9, day_of_week: fri }
   - { title: 'まちカドまぞく', start_time: '01:30', channel: ch6, day_of_week: fri }
   - { title: '魔法使い黎明期', start_time: '02:00', channel: ch6, day_of_week: fri }

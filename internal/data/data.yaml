@@ -31,20 +31,35 @@ slot-of-day:
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
   - { day_of_week: mon, start_time: '00:30', title: '連盟空軍航空魔法音楽隊ルミナスウィッチーズ', channel: ch9 }
-  - { day_of_week: tue, start_time: '00:00', title: '境界戦機', channel: ch7 }
-  - { day_of_week: wed, start_time: '00:00', title: "BIRDIE WING Golf Girls' Story", channel: ch7 }
-  - { day_of_week: wed, start_time: '01:00', title: 'かぎなど', channel: ch9 }
-  - { day_of_week: thu, start_time: '01:00', title: '盾の勇者の成り上がり', channel: ch9 }
+  - { day_of_week: mon, start_time: '22:30', title: 'ようこそ実力至上主義の教室へ2', channel: ch9 }
+  - { day_of_week: tue, start_time: '00:00', title: '転生賢者の異世界ライフ', channel: ch9 }
+  - { day_of_week: tue, start_time: '23:00', title: '金装のヴェルメイユ', channel: ch9 }
+  - { day_of_week: wed, start_time: '00:00', title: '東京ミュウミュウ にゅ～', channel: ch7 }
+  - { day_of_week: wed, start_time: '00:30', title: 'オーバーロードIV', channel: ch9 }
+  - { day_of_week: wed, start_time: '02:00', title: '邪神ちゃんドロップキックX', channel: ch7 }
+  - { day_of_week: wed, start_time: '23:00', title: '咲う アルスノトリア すんっ！', channel: ch9 }
+  - { day_of_week: wed, start_time: '23:30', title: '異世界おじさん', channel: ch9 }
+  - { day_of_week: thu, start_time: '00:00', title: '新テニスの王子様 U-17 WORLD CUP', channel: ch7 }
+  - { day_of_week: thu, start_time: '00:00', title: '継母の連れ子が元カノだった', channel: ch9 }
+  - { day_of_week: thu, start_time: '01:00', title: 'メイドインアビス 烈日の黄金郷', channel: ch9 }
+  - { day_of_week: thu, start_time: '01:30', title: '異世界迷宮でハーレムを', channel: ch9 }
+  - { day_of_week: thu, start_time: '22:30', title: '組長娘と世話係', channel: ch9 }
+  - { day_of_week: thu, start_time: '23:30', title: 'はたらく魔王さま！！', channel: ch9 }
   - { day_of_week: fri, start_time: '00:00', title: 'サマータイムレンダ', channel: ch9 }
-  - { day_of_week: fri, start_time: '01:30', title: 'まちカドまぞく', channel: ch6 }
-  - { day_of_week: fri, start_time: '02:00', title: '魔法使い黎明期', channel: ch6 }
+  - { day_of_week: fri, start_time: '01:00', title: 'よふかしのうた', channel: ch8 }
+  - { day_of_week: fri, start_time: '01:30', title: 'それでも歩は寄せてくる', channel: ch6 }
   - { day_of_week: fri, start_time: '19:00', title: 'ポケットモンスター', channel: ch7 }
+  - { day_of_week: fri, start_time: '22:30', title: 'ブッチギレ！一番光れ！', channel: ch9 }
+  - { day_of_week: sat, start_time: '00:00', title: 'シャドーハウス2', channel: ch9 }
+  - { day_of_week: sat, start_time: '00:30', title: 'プリマドール', channel: ch9 }
+  - { day_of_week: sat, start_time: '01:00', title: 'ダンジョンに出会いを求めるのは間違っているだろうかIV', channel: ch9 }
   - { day_of_week: sat, start_time: '02:00', title: '神クズアイドル', channel: ch7 }
+  - { day_of_week: sat, start_time: '02:00', title: '惑星のさみだれ', channel: ch6 }
   - { day_of_week: sat, start_time: '09:30', title: 'ドラゴンクエスト ダイの大冒険', channel: ch7 }
   - { day_of_week: sat, start_time: '17:30', title: 'ラブオールプレー', channel: ch4 }
+  - { day_of_week: sat, start_time: '22:00', title: '黒の召喚士', channel: ch9 }
   - { day_of_week: sat, start_time: '22:30', title: 'てっぺん!', channel: ch9 }
   - { day_of_week: sat, start_time: '23:30', title: 'リコリス・リコイル', channel: ch9 }
-  - { day_of_week: sun, start_time: '00:00', title: 'くノ一ツバキの胸の内', channel: ch9 }
   - { day_of_week: sun, start_time: '00:00', title: 'キングダム', channel: ch1 }
   - { day_of_week: sun, start_time: '00:30', title: 'Engage Kiss', channel: ch9 }
   - { day_of_week: sun, start_time: '01:00', title: 'うたわれるもの', channel: ch9 }

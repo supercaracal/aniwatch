@@ -35,7 +35,6 @@ lineups:
   - { day_of_week: mon, start_time: '22:30', title: 'ようこそ実力至上主義の教室へ2', channel: ch9 }
   - { day_of_week: tue, start_time: '00:00', title: '転生賢者の異世界ライフ', channel: ch9 }
   - { day_of_week: tue, start_time: '23:00', title: '金装のヴェルメイユ', channel: ch9 }
-  - { day_of_week: wed, start_time: '00:00', title: '東京ミュウミュウ にゅ～', channel: ch7 }
   - { day_of_week: wed, start_time: '00:30', title: 'オーバーロードIV', channel: ch9 }
   - { day_of_week: wed, start_time: '02:00', title: '邪神ちゃんドロップキックX', channel: ch7 }
   - { day_of_week: wed, start_time: '23:00', title: '咲う アルスノトリア すんっ！', channel: ch9 }

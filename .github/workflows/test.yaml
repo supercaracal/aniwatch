@@ -13,9 +13,10 @@ jobs:
     name: Test
     timeout-minutes: 5
     strategy:
+      fail-fast: false
       matrix:
         os: ["ubuntu-latest"]
-        go-ver: ["1.18"]
+        go-ver: ["1.19"]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Check out code
@@ -33,13 +34,13 @@ jobs:
           echo "::set-output name=go-mod-cache::$(go env GOMODCACHE)"
 
       - name: Cache GOCACHE
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ${{ steps.go-cache-paths.outputs.go-cache }}
           key: ${{ runner.os }}-go-cache-${{ hashFiles('*.go', '**/*.go') }}
 
       - name: Cache GOMODCACHE
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ${{ steps.go-cache-paths.outputs.go-mod-cache }}
           key: ${{ runner.os }}-go-mod-cache-${{ hashFiles('go.sum', '**/go.sum') }}

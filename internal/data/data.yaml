@@ -31,7 +31,6 @@ slot-of-day:
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
   - { day_of_week: mon, start_time: '00:00', title: '宇崎ちゃんは遊びたい！ω', channel: ch9 }
-  - { day_of_week: mon, start_time: '00:30', title: '連盟空軍航空魔法音楽隊ルミナスウィッチーズ', channel: ch9 }
   - { day_of_week: mon, start_time: '22:00', title: '風都探偵', channel: ch9 }
   - { day_of_week: mon, start_time: '22:30', title: '新米錬金術師の店舗経営', channel: ch9 }
   - { day_of_week: mon, start_time: '23:00', title: 'ゴールデンカムイ', channel: ch9 }

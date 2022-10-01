@@ -30,29 +30,37 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
-  - { day_of_week: mon, start_time: '00:00', title: '異世界薬局', channel: ch9 }
+  - { day_of_week: mon, start_time: '00:00', title: '宇崎ちゃんは遊びたい！ω', channel: ch9 }
   - { day_of_week: mon, start_time: '00:30', title: '連盟空軍航空魔法音楽隊ルミナスウィッチーズ', channel: ch9 }
   - { day_of_week: mon, start_time: '22:00', title: '風都探偵', channel: ch9 }
-  - { day_of_week: mon, start_time: '22:30', title: 'ようこそ実力至上主義の教室へ2', channel: ch9 }
-  - { day_of_week: wed, start_time: '00:30', title: 'オーバーロードIV', channel: ch9 }
+  - { day_of_week: mon, start_time: '22:30', title: '新米錬金術師の店舗経営', channel: ch9 }
+  - { day_of_week: mon, start_time: '23:00', title: 'ゴールデンカムイ', channel: ch9 }
+  - { day_of_week: tue, start_time: '01:00', title: '名探偵コナン 犯人の犯沢さん', channel: ch9 }
+  - { day_of_week: tue, start_time: '23:00', title: '忍の一時', channel: ch9 }
   - { day_of_week: wed, start_time: '01:30', title: 'シャインポスト', channel: ch4 }
-  - { day_of_week: wed, start_time: '23:30', title: '異世界おじさん', channel: ch9 }
-  - { day_of_week: thu, start_time: '00:00', title: '新テニスの王子様 U-17 WORLD CUP', channel: ch7 }
-  - { day_of_week: thu, start_time: '01:00', title: 'メイドインアビス 烈日の黄金郷', channel: ch9 }
-  - { day_of_week: thu, start_time: '23:30', title: 'はたらく魔王さま！！', channel: ch9 }
-  - { day_of_week: fri, start_time: '00:00', title: 'サマータイムレンダ', channel: ch9 }
-  - { day_of_week: fri, start_time: '00:30', title: '5億年ボタン', channel: ch9 }
-  - { day_of_week: fri, start_time: '01:00', title: 'よふかしのうた', channel: ch8 }
+  - { day_of_week: wed, start_time: '22:00', title: 'ヒューマンバグ大学 不死学部不幸学科', channel: ch9 }
+  - { day_of_week: wed, start_time: '23:00', title: '転生したら剣でした', channel: ch9 }
+  - { day_of_week: wed, start_time: '23:30', title: '陰の実力者になりたくて！', channel: ch9 }
+  - { day_of_week: thu, start_time: '00:00', title: 'モブサイコ100III', channel: ch9 }
+  - { day_of_week: thu, start_time: '00:30', title: 'Do It Yourself!!', channel: ch7 }
+  - { day_of_week: thu, start_time: '01:30', title: 'マブラヴ オルタネイティヴ', channel: ch8 }
+  - { day_of_week: thu, start_time: '23:30', title: '虫かぶり姫', channel: ch9 }
+  - { day_of_week: fri, start_time: '00:00', title: 'アキバ冥途戦争', channel: ch9 }
   - { day_of_week: fri, start_time: '19:00', title: 'ポケットモンスター', channel: ch7 }
-  - { day_of_week: sat, start_time: '01:00', title: 'ダンジョンに出会いを求めるのは間違っているだろうかIV', channel: ch9 }
+  - { day_of_week: fri, start_time: '22:00', title: 'メガトン級ムサシ', channel: ch9 }
+  - { day_of_week: sat, start_time: '00:00', title: '羅小黒戦記 ぼくが選ぶ未来', channel: ch9 }
+  - { day_of_week: sat, start_time: '00:30', title: 'ジョジョの奇妙な冒険 ストーンオーシャン', channel: ch9 }
+  - { day_of_week: sat, start_time: '01:30', title: '聖剣伝説 Legend of Mana The Teardrop Crystal', channel: ch6 }
+  - { day_of_week: sat, start_time: '01:30', title: '異世界おじさん', channel: ch9 }
   - { day_of_week: sat, start_time: '02:00', title: '惑星のさみだれ', channel: ch6 }
   - { day_of_week: sat, start_time: '09:30', title: 'ドラゴンクエスト ダイの大冒険', channel: ch7 }
   - { day_of_week: sat, start_time: '17:30', title: '僕のヒーローアカデミア', channel: ch4 }
   - { day_of_week: sat, start_time: '22:00', title: '農民関連のスキルばっか上げてたら何故か強くなった。', channel: ch9 }
   - { day_of_week: sat, start_time: '22:30', title: '悪役令嬢なのでラスボスを飼ってみました', channel: ch9 }
   - { day_of_week: sat, start_time: '23:00', title: 'SPY×FAMILY', channel: ch9 }
-  - { day_of_week: sun, start_time: '00:00', title: 'キングダム', channel: ch1 }
+  - { day_of_week: sun, start_time: '00:30', title: 'ベルセルク', channel: ch9 }
   - { day_of_week: sun, start_time: '02:00', title: '最近雇ったメイドが怪しい', channel: ch5 }
   - { day_of_week: sun, start_time: '09:30', title: 'ワンピース', channel: ch8 }
   - { day_of_week: sun, start_time: '17:00', title: '起動戦士ガンダム 水星の魔女', channel: ch6 }
   - { day_of_week: sun, start_time: '17:30', title: 'BORUTO', channel: ch7 }
+  - { day_of_week: sun, start_time: '22:00', title: '勇者パーティーを追放されたビーストテイマー、最強種の猫耳少女と出会う', channel: ch9 }

@@ -55,7 +55,6 @@ lineups:
   - { day_of_week: fri, start_time: '22:00', title: 'メガトン級ムサシ', channel: ch9 }
   - { day_of_week: sat, start_time: '00:00', title: '羅小黒戦記 ぼくが選ぶ未来', channel: ch9 }
   - { day_of_week: sat, start_time: '00:30', title: 'ジョジョの奇妙な冒険 ストーンオーシャン', channel: ch9 }
-  - { day_of_week: sat, start_time: '01:30', title: '聖剣伝説 Legend of Mana The Teardrop Crystal', channel: ch6 }
   - { day_of_week: sat, start_time: '01:30', title: '異世界おじさん', channel: ch9 }
   - { day_of_week: sat, start_time: '02:00', title: '惑星のさみだれ', channel: ch6 }
   - { day_of_week: sat, start_time: '09:30', title: 'ドラゴンクエスト ダイの大冒険', channel: ch7 }

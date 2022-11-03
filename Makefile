@@ -22,21 +22,14 @@ test:
 bench:
 	@go test -bench=. -benchmem -run=NONE ./...
 
+prof: PKG ?= middleware
+prof: TYPE ?= mem
 prof:
-ifndef PKG 
-	@echo 'missing environment variables: PKG'
-	@exit 1
-else
-	@if [ ! -d "./internal/${PKG}" ]; then\
-		echo 'not found: PKG';\
-		exit 1;\
-	fi
-
-	@for t in cpu block mem; do\
-		go test -bench=. -run=NONE -$${t}profile=$${t}.out ./internal/${PKG};\
-		go tool pprof -text -nodecount=10 ./${PKG}.test $${t}.out;\
-	done
-endif
+	@if [[ -z "${PKG}" ]]; then echo 'empty variable: PKG'; exit 1; fi
+	@if [[ -z "${TYPE}" ]]; then echo 'empty variable: TYPE'; exit 1; fi
+	@if [[ ! -d "./internal/${PKG}" ]]; then echo 'package not found: ${PKG}'; exit 1; fi
+	@go test -bench=. -run=NONE -${TYPE}profile=${TYPE}.out ./internal/${PKG}
+	@go tool pprof -text -nodecount=10 ./${PKG}.test ${TYPE}.out
 
 ${GOBIN}/golint:
 	go install golang.org/x/lint/golint@latest

@@ -9,10 +9,17 @@ on:
     branches:
       - master
 jobs:
-  lint:
-    name: Lint
+  main:
+    name: Main
     timeout-minutes: 5
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        task:
+          - lint
+          - test
+          - bench
     steps:
       - name: Check out code
         uses: actions/checkout@v3
@@ -25,41 +32,7 @@ jobs:
       - name: Download modules
         run: go mod download
       - name: Run
-        run: make lint
-  test:
-    name: Test
-    timeout-minutes: 5
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v3
-      - name: Set up Go
-        uses: actions/setup-go@v3
-        with:
-          go-version-file: go.mod
-          check-latest: true
-          cache: true
-      - name: Download modules
-        run: go mod download
-      - name: Run
-        run: make test
-  benchmark:
-    name: Benchmark
-    timeout-minutes: 5
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v3
-      - name: Set up Go
-        uses: actions/setup-go@v3
-        with:
-          go-version-file: go.mod
-          check-latest: true
-          cache: true
-      - name: Download modules
-        run: go mod download
-      - name: Run
-        run: make bench
+        run: make ${{ matrix.task }}
   profiling:
     name: Profiling
     timeout-minutes: 5

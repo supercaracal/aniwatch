@@ -34,10 +34,19 @@ lineups:
   - { day_of_week: mon, start_time: '00:30', title: '便利屋斎藤さん、異世界に行く', channel: ch9 }
   - { day_of_week: mon, start_time: '01:00', title: '虚構推理 Season2', channel: ch9 }
   - { day_of_week: mon, start_time: '01:30', title: 'もういっぽん！', channel: ch7 }
+  - { day_of_week: mon, start_time: '22:30', title: 'HIGH CARD', channel: ch9 }
+  - { day_of_week: tue, start_time: '00:00', title: 'もののがたり', channel: ch9 }
+  - { day_of_week: tue, start_time: '00:30', title: 'ヴィンランド・サガ2', channel: ch9 }
+  - { day_of_week: tue, start_time: '01:45', title: '英雄王、武を極めるため転生す', channel: ch7 }
+  - { day_of_week: tue, start_time: '23:00', title: '人間不信の冒険者たちが世界を救うようです', channel: ch9 }
+  - { day_of_week: wed, start_time: '00:00', title: 'とんでもスキルで異世界放浪メシ', channel: ch7 }
+  - { day_of_week: wed, start_time: '00:30', title: '久保さんは僕を許さない', channel: ch9 }
   - { day_of_week: wed, start_time: '22:30', title: '氷属性男子とクールな同僚女子', channel: ch9 }
   - { day_of_week: wed, start_time: '23:30', title: '陰の実力者になりたくて！', channel: ch9 }
   - { day_of_week: thu, start_time: '00:30', title: 'トモちゃんは女の子！', channel: ch9 }
   - { day_of_week: thu, start_time: '01:00', title: '転生王女と天才令嬢の魔法革命', channel: ch9 }
+  - { day_of_week: thu, start_time: '01:00', title: '大雪海のカイナ', channel: ch8 }
+  - { day_of_week: thu, start_time: '01:30', title: '痛いのは嫌なので防御力に極振りしたいと思います。2', channel: ch9 }
   - { day_of_week: thu, start_time: '22:30', title: 'REVENGER', channel: ch9 }
   - { day_of_week: thu, start_time: '23:30', title: 'スパイ教室', channel: ch9 }
   - { day_of_week: fri, start_time: '00:00', title: 'お兄ちゃんはおしまい！', channel: ch9 }
@@ -48,9 +57,10 @@ lineups:
   - { day_of_week: sat, start_time: '00:00', title: 'Buddy Daddies', channel: ch9 }
   - { day_of_week: sat, start_time: '00:30', title: 'ジョジョの奇妙な冒険 ストーンオーシャン', channel: ch9 }
   - { day_of_week: sat, start_time: '01:00', title: 'ダンジョンに出会いを求めるのは間違っているだろうかIV', channel: ch9 }
-  - { day_of_week: sat, start_time: '01:30', title: '犬になったら好きな人に拾われた。', channel: ch9 }
+  - { day_of_week: sat, start_time: '01:30', title: '真・進化の実', channel: ch7 }
   - { day_of_week: sat, start_time: '02:00', title: '齢5000年の草食ドラゴン、いわれなき邪竜認定', channel: ch9 }
   - { day_of_week: sat, start_time: '02:00', title: '異世界のんびり農家', channel: ch7 }
+  - { day_of_week: sat, start_time: '02:00', title: 'ツンデレ悪役令嬢リーゼロッテと実況の遠藤くんと解説の小林さん', channel: ch6 }
   - { day_of_week: sat, start_time: '02:00', title: 'アルスの巨獣', channel: ch6 }
   - { day_of_week: sat, start_time: '17:30', title: '僕のヒーローアカデミア', channel: ch4 }
   - { day_of_week: sat, start_time: '18:30', title: '魔入りました！入間くん', channel: ch2 }

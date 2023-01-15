@@ -56,9 +56,8 @@ lineups:
   - { day_of_week: sat, start_time: '00:00', title: 'Buddy Daddies', channel: ch9 }
   - { day_of_week: sat, start_time: '00:30', title: 'ジョジョの奇妙な冒険 ストーンオーシャン', channel: ch9 }
   - { day_of_week: sat, start_time: '01:00', title: 'ダンジョンに出会いを求めるのは間違っているだろうかIV', channel: ch9 }
-  - { day_of_week: sat, start_time: '01:30', title: '真・進化の実', channel: ch7 }
+  - { day_of_week: sat, start_time: '01:30', title: 'アルスの巨獣', channel: ch6 }
   - { day_of_week: sat, start_time: '02:00', title: 'ツンデレ悪役令嬢リーゼロッテと実況の遠藤くんと解説の小林さん', channel: ch6 }
-  - { day_of_week: sat, start_time: '02:00', title: 'アルスの巨獣', channel: ch6 }
   - { day_of_week: sat, start_time: '17:30', title: '僕のヒーローアカデミア', channel: ch4 }
   - { day_of_week: sat, start_time: '18:30', title: '魔入りました！入間くん', channel: ch2 }
   - { day_of_week: sat, start_time: '22:00', title: '解雇された暗黒兵士(30代)のスローなセカンドライフ', channel: ch9 }

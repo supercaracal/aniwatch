@@ -40,6 +40,7 @@ lineups:
   - { day_of_week: tue, start_time: '01:45', title: '英雄王、武を極めるため転生す', channel: ch7 }
   - { day_of_week: tue, start_time: '23:00', title: '人間不信の冒険者たちが世界を救うようです', channel: ch9 }
   - { day_of_week: wed, start_time: '00:00', title: 'とんでもスキルで異世界放浪メシ', channel: ch7 }
+  - { day_of_week: wed, start_time: '22:00', title: '魔術士オーフェンはぐれ旅 アーバンラマ編', channel: ch9 }
   - { day_of_week: wed, start_time: '23:30', title: '陰の実力者になりたくて！', channel: ch9 }
   - { day_of_week: thu, start_time: '00:30', title: 'トモちゃんは女の子！', channel: ch9 }
   - { day_of_week: thu, start_time: '01:00', title: '転生王女と天才令嬢の魔法革命', channel: ch9 }

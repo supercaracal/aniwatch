@@ -30,7 +30,7 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
-  - { day_of_week: mon, start_time: '00:00', title: '神達に拾われた男2', channel: ch9 }
+  - { day_of_week: mon, start_time: '00:00', title: '転生貴族の異世界冒険録', channel: ch9 }
   - { day_of_week: mon, start_time: '00:30', title: '便利屋斎藤さん、異世界に行く', channel: ch9 }
   - { day_of_week: mon, start_time: '01:00', title: '虚構推理 Season2', channel: ch9 }
   - { day_of_week: mon, start_time: '01:30', title: 'もういっぽん！', channel: ch7 }
@@ -69,3 +69,4 @@ lineups:
   - { day_of_week: sun, start_time: '17:30', title: 'BORUTO', channel: ch7 }
   - { day_of_week: sun, start_time: '19:00', title: '不滅のあなたへ', channel: ch2 }
   - { day_of_week: sun, start_time: '22:00', title: 'ノケモノたちの夜', channel: ch9 }
+  - { day_of_week: sun, start_time: '23:30', title: 'マイホームヒーロー', channel: ch9 }

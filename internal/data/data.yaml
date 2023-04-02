@@ -66,5 +66,6 @@ lineups:
   - { day_of_week: sun, start_time: '02:00', title: '異世界召喚は二度目です', channel: ch5 }
   - { day_of_week: sun, start_time: '09:30', title: 'ワンピース', channel: ch8 }
   - { day_of_week: sun, start_time: '17:00', title: '機動戦士ガンダム 水星の魔女', channel: ch6 }
-  - { day_of_week: sun, start_time: '17:30', title: 'BORUTO', channel: ch7 }
+  - { day_of_week: sun, start_time: '22:00', title: '事情を知らない転校生がグイグイくる。', channel: ch9 }
+  - { day_of_week: sun, start_time: '23:15', title: '鬼滅の刃 刀鍛冶の里編', channel: ch8 }
   - { day_of_week: sun, start_time: '23:30', title: 'マイホームヒーロー', channel: ch9 }

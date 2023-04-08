@@ -33,9 +33,13 @@ lineups:
   - { day_of_week: mon, start_time: '00:00', title: '転生貴族の異世界冒険録', channel: ch9 }
   - { day_of_week: mon, start_time: '22:30', title: 'くまクマ熊ベアーぱーんち！', channel: ch9 }
   - { day_of_week: mon, start_time: '23:00', title: 'ゴールデンカムイ4', channel: ch9 }
+  - { day_of_week: tue, start_time: '00:00', title: 'デッドマウント・デスプレイ', channel: ch9 }
+  - { day_of_week: tue, start_time: '00:00', title: '君は放課後インソムニア', channel: ch7 }
   - { day_of_week: tue, start_time: '00:30', title: 'ヴィンランド・サガ2', channel: ch9 }
   - { day_of_week: tue, start_time: '23:00', title: 'スキップとローファー', channel: ch9 }
-  - { day_of_week: wed, start_time: '22:00', title: '魔術士オーフェンはぐれ旅 アーバンラマ編', channel: ch9 }
+  - { day_of_week: wed, start_time: '01:30', title: 'THE MARGINAL SERVICE', channel: ch4 }
+  - { day_of_week: wed, start_time: '22:00', title: '魔術士オーフェンはぐれ旅 聖域編', channel: ch9 }
+  - { day_of_week: wed, start_time: '23:00', title: '【推しの子】', channel: ch9 }
   - { day_of_week: thu, start_time: '01:00', title: 'この素晴らしい世界に爆焔を！', channel: ch9 }
   - { day_of_week: thu, start_time: '01:30', title: '神無き世界のカミサマ活動', channel: ch9 }
   - { day_of_week: thu, start_time: '02:00', title: '痛いのは嫌なので防御力に極振りしたいと思います。2', channel: ch9 }
@@ -43,15 +47,14 @@ lineups:
   - { day_of_week: thu, start_time: '22:30', title: 'Dr.STONE NEW WORLD', channel: ch9 }
   - { day_of_week: thu, start_time: '23:30', title: '私の百合はお仕事です！', channel: ch9 }
   - { day_of_week: fri, start_time: '00:30', title: '異世界チート現実無双', channel: ch9 }
-  - { day_of_week: fri, start_time: '01:00', title: '勇者が死んだ！', channel: ch8 }
+  - { day_of_week: fri, start_time: '01:00', title: '勇者が死んだ！', channel: ch9 }
+  - { day_of_week: fri, start_time: '01:00', title: '王様ランキング 勇気の宝箱', channel: ch8 }
   - { day_of_week: fri, start_time: '19:00', title: 'ポケットモンスター', channel: ch7 }
   - { day_of_week: fri, start_time: '22:30', title: 'カワイスギクライシス', channel: ch9 }
   - { day_of_week: sat, start_time: '00:00', title: 'マッシュル MASHLE', channel: ch9 }
-  - { day_of_week: sat, start_time: '00:30', title: 'ジョジョの奇妙な冒険 ストーンオーシャン', channel: ch9 }
   - { day_of_week: sat, start_time: '01:00', title: 'トニカクカワイイ2', channel: ch9 }
   - { day_of_week: sat, start_time: '01:30', title: 'BIRDIE WING 2', channel: ch7 }
   - { day_of_week: sat, start_time: '01:30', title: '六道の悪女たち', channel: ch9 }
-  - { day_of_week: sat, start_time: '02:30', title: '魔法少女マジカルデストロイヤーズ', channel: ch6 }
   - { day_of_week: sat, start_time: '03:00', title: '江戸前エルフ', channel: ch6 }
   - { day_of_week: sat, start_time: '22:00', title: '天国大魔境', channel: ch9 }
   - { day_of_week: sat, start_time: '22:30', title: '異世界ワンターンキル姉さん', channel: ch9 }

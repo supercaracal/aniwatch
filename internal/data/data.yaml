@@ -40,6 +40,7 @@ lineups:
   - { day_of_week: wed, start_time: '01:30', title: 'THE MARGINAL SERVICE', channel: ch4 }
   - { day_of_week: wed, start_time: '22:00', title: '魔術士オーフェンはぐれ旅 聖域編', channel: ch9 }
   - { day_of_week: wed, start_time: '23:00', title: '【推しの子】', channel: ch9 }
+  - { day_of_week: thu, start_time: '00:00', title: '贄姫と獣の王', channel: ch9 }
   - { day_of_week: thu, start_time: '01:00', title: 'この素晴らしい世界に爆焔を！', channel: ch9 }
   - { day_of_week: thu, start_time: '01:30', title: '神無き世界のカミサマ活動', channel: ch9 }
   - { day_of_week: thu, start_time: '02:00', title: '痛いのは嫌なので防御力に極振りしたいと思います。2', channel: ch9 }

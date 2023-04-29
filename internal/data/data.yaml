@@ -43,7 +43,6 @@ lineups:
   - { day_of_week: thu, start_time: '00:00', title: '贄姫と獣の王', channel: ch9 }
   - { day_of_week: thu, start_time: '01:00', title: 'この素晴らしい世界に爆焔を！', channel: ch9 }
   - { day_of_week: thu, start_time: '01:30', title: '神無き世界のカミサマ活動', channel: ch9 }
-  - { day_of_week: thu, start_time: '02:00', title: '痛いのは嫌なので防御力に極振りしたいと思います。2', channel: ch9 }
   - { day_of_week: thu, start_time: '22:00', title: '魔法使いの嫁2', channel: ch9 }
   - { day_of_week: thu, start_time: '22:30', title: 'Dr.STONE NEW WORLD', channel: ch9 }
   - { day_of_week: thu, start_time: '23:30', title: '私の百合はお仕事です！', channel: ch9 }

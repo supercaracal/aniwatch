@@ -31,6 +31,7 @@ slot-of-day:
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
   - { day_of_week: mon, start_time: '00:00', title: '無職転生II', channel: ch9 }
+  - { day_of_week: mon, start_time: '01:00', title: 'ダークギャザリング', channel: ch9 }
   - { day_of_week: mon, start_time: '22:30', title: 'Lv1魔王とワンルーム勇者', channel: ch9 }
   - { day_of_week: mon, start_time: '23:00', title: '政宗くんのリベンジR', channel: ch9 }
   - { day_of_week: mon, start_time: '23:30', title: 'もののがたり2', channel: ch9 }
@@ -61,4 +62,7 @@ lineups:
   - { day_of_week: sun, start_time: '01:30', title: 'てんぷる', channel: ch9 }
   - { day_of_week: sun, start_time: '02:00', title: '実は俺、最強でした？', channel: ch5 }
   - { day_of_week: sun, start_time: '09:30', title: 'ワンピース', channel: ch8 }
+  - { day_of_week: sun, start_time: '17:00', title: 'ゾン100', channel: ch6 }
+  - { day_of_week: sun, start_time: '22:00', title: '死神坊ちゃんと黒メイド', channel: ch9 }
   - { day_of_week: sun, start_time: '22:30', title: '幻日のヨハネ', channel: ch9 }
+  - { day_of_week: sun, start_time: '23:00', title: '英雄教室', channel: ch9 }

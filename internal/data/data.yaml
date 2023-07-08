@@ -34,25 +34,29 @@ lineups:
   - { day_of_week: mon, start_time: '01:00', title: 'ダークギャザリング', channel: ch9 }
   - { day_of_week: mon, start_time: '22:30', title: 'Lv1魔王とワンルーム勇者', channel: ch9 }
   - { day_of_week: mon, start_time: '23:00', title: '政宗くんのリベンジR', channel: ch9 }
-  - { day_of_week: mon, start_time: '23:30', title: 'もののがたり2', channel: ch9 }
-  - { day_of_week: tue, start_time: '00:00', title: '君は放課後インソムニア', channel: ch7 }
+  - { day_of_week: tue, start_time: '00:00', title: 'SYNDUALITY Noir', channel: ch7 }
+  - { day_of_week: tue, start_time: '00:00', title: 'もののがたり2', channel: ch9 }
   - { day_of_week: tue, start_time: '01:30', title: 'おかしな転生', channel: ch7 }
   - { day_of_week: tue, start_time: '02:00', title: '夢見る男子は現実主義者', channel: ch7 }
   - { day_of_week: tue, start_time: '23:00', title: '好きな子がめがねを忘れた', channel: ch9 }
-  - { day_of_week: wed, start_time: '22:00', title: '自動販売機に生まれ変わった俺は迷宮を彷徨う', channel: ch9 }
+  - { day_of_week: wed, start_time: '01:30', title: 'Helck', channel: ch4 }
+  - { day_of_week: wed, start_time: '22:00', title: '自動販売機迷宮', channel: ch9 }
   - { day_of_week: thu, start_time: '00:00', title: '贄姫と獣の王', channel: ch9 }
+  - { day_of_week: thu, start_time: '00:30', title: '白聖女と黒牧師', channel: ch9 }
   - { day_of_week: thu, start_time: '01:00', title: 'アンデッドガール・マーダーファルス', channel: ch8 }
-  - { day_of_week: thu, start_time: '01:30', title: '神無き世界のカミサマ活動', channel: ch9 }
+  - { day_of_week: thu, start_time: '23:30', title: 'はたらく魔王さま!!2', channel: ch9 }
   - { day_of_week: fri, start_time: '00:00', title: '呪術廻戦2', channel: ch6 }
-  - { day_of_week: fri, start_time: '00:00', title: '悲劇の元凶となる最強外道ラスボス女王は民の為に尽くします', channel: ch9 }
+  - { day_of_week: fri, start_time: '00:00', title: '悲劇の最強外道ラスボス女王', channel: ch9 }
+  - { day_of_week: fri, start_time: '00:30', title: 'スパイ教室2', channel: ch9 }
   - { day_of_week: fri, start_time: '01:00', title: 'るろうに剣心2023', channel: ch8 }
+  - { day_of_week: fri, start_time: '01:30', title: '聖者無双', channel: ch6 }
   - { day_of_week: fri, start_time: '19:00', title: 'ポケットモンスター', channel: ch7 }
   - { day_of_week: fri, start_time: '21:54', title: '百姓貴族', channel: ch9 }
   - { day_of_week: sat, start_time: '00:30', title: '七つの魔剣が支配する', channel: ch9 }
   - { day_of_week: sat, start_time: '01:00', title: 'スプリガン', channel: ch9 }
   - { day_of_week: sat, start_time: '02:00', title: 'AIの遺電子', channel: ch6 }
   - { day_of_week: sat, start_time: '02:30', title: 'デキる猫は今日も憂鬱', channel: ch6 }
-  - { day_of_week: sat, start_time: '22:00', title: 'レベル1だけどユニークスキルで最強です', channel: ch9 }
+  - { day_of_week: sat, start_time: '22:00', title: 'レベル1だけど最強', channel: ch9 }
   - { day_of_week: sat, start_time: '22:30', title: 'ライアー・ライアー', channel: ch9 }
   - { day_of_week: sat, start_time: '23:00', title: 'BLEACH 千年血戦篇 訣別譚', channel: ch7 }
   - { day_of_week: sun, start_time: '00:00', title: 'TIGER & BUNNY 2', channel: ch1 }

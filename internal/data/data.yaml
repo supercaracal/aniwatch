@@ -33,7 +33,6 @@ lineups:
   - { day_of_week: mon, start_time: '00:00', title: 'MFゴースト', channel: ch9 }
   - { day_of_week: mon, start_time: '00:30', title: 'オーバーテイク！', channel: ch9 }
   - { day_of_week: mon, start_time: '01:00', title: 'ダークギャザリング', channel: ch9 }
-  - { day_of_week: mon, start_time: '22:00', title: '好きな子がめがねを忘れた', channel: ch9 }
   - { day_of_week: tue, start_time: '00:00', title: 'SHY', channel: ch7 }
   - { day_of_week: tue, start_time: '00:30', title: '私の推しは悪役令嬢', channel: ch9 }
   - { day_of_week: tue, start_time: '01:00', title: 'とあるおっさんのVRMMO活動記', channel: ch9 }
@@ -71,6 +70,7 @@ lineups:
   - { day_of_week: sun, start_time: '00:00', title: 'オチビサン', channel: ch1 }
   - { day_of_week: sun, start_time: '00:00', title: '帰還者の魔法は特別です', channel: ch9 }
   - { day_of_week: sun, start_time: '00:30', title: '豚のレバーは加熱しろ', channel: ch9 }
+  - { day_of_week: sun, start_time: '01:00', title: 'EDENS ZERO 2', channel: ch4 }
   - { day_of_week: sun, start_time: '01:00', title: 'ティアムーン帝国物語', channel: ch9 }
   - { day_of_week: sun, start_time: '01:30', title: 'ラグナクリムゾン', channel: ch9 }
   - { day_of_week: sun, start_time: '01:30', title: '僕らの雨いろプロトコル', channel: ch5 }

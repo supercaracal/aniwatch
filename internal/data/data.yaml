@@ -49,7 +49,6 @@ lineups:
   - { day_of_week: thu, start_time: '01:00', title: 'カミエラビGOD.app', channel: ch8 }
   - { day_of_week: thu, start_time: '01:30', title: '暴食のベルセルク', channel: ch9 }
   - { day_of_week: thu, start_time: '22:00', title: '魔法使いの嫁2-2', channel: ch9 }
-  - { day_of_week: thu, start_time: '22:30', title: 'ビックリメン', channel: ch9 }
   - { day_of_week: fri, start_time: '00:00', title: '呪術廻戦2', channel: ch6 }
   - { day_of_week: fri, start_time: '01:00', title: 'るろうに剣心2023', channel: ch8 }
   - { day_of_week: fri, start_time: '01:00', title: '冒険者娘がSランク', channel: ch9 }

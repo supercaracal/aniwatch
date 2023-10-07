@@ -33,22 +33,24 @@ lineups:
   - { day_of_week: mon, start_time: '00:00', title: 'MFゴースト', channel: ch9 }
   - { day_of_week: mon, start_time: '00:30', title: 'オーバーテイク！', channel: ch9 }
   - { day_of_week: mon, start_time: '01:00', title: 'ダークギャザリング', channel: ch9 }
-  - { day_of_week: mon, start_time: '22:30', title: '鴨乃橋ロンの禁断推理', channel: ch9 }
+  - { day_of_week: mon, start_time: '22:00', title: '星屑テレパス', channel: ch9 } # TODO: triage
+  - { day_of_week: mon, start_time: '22:30', title: '鴨乃橋ロンの禁断推理', channel: ch9 } # TODO: triage
   - { day_of_week: tue, start_time: '00:00', title: 'SHY', channel: ch7 }
   - { day_of_week: tue, start_time: '00:30', title: '私の推しは悪役令嬢', channel: ch9 }
-  - { day_of_week: tue, start_time: '01:00', title: 'とあるおっさんのVRMMO活動記', channel: ch9 }
+  - { day_of_week: tue, start_time: '01:00', title: 'とあるおっさんのVRMMO活動記', channel: ch9 } # TODO: triage
   - { day_of_week: tue, start_time: '01:30', title: '聖剣学院の魔剣使い', channel: ch7 }
   - { day_of_week: tue, start_time: '01:30', title: 'ミギとダリ', channel: ch9 }
   - { day_of_week: wed, start_time: '00:30', title: '聖女の魔力は万能です2', channel: ch9 }
   - { day_of_week: wed, start_time: '02:00', title: 'Helck', channel: ch4 }
-  - { day_of_week: wed, start_time: '22:00', title: '婚約破棄令嬢イケナイ', channel: ch9 }
-  - { day_of_week: wed, start_time: '23:00', title: 'ブルバスター', channel: ch9 }
+  - { day_of_week: wed, start_time: '22:00', title: '婚約破棄令嬢イケナイ', channel: ch9 } # TODO: triage
+  - { day_of_week: wed, start_time: '23:00', title: 'ブルバスター', channel: ch9 } # TODO: triage
   - { day_of_week: wed, start_time: '23:30', title: '陰の実力者になりたくて2', channel: ch9 }
   - { day_of_week: thu, start_time: '00:00', title: 'ウマ娘プリティーダービー3', channel: ch9 }
   - { day_of_week: thu, start_time: '00:30', title: '16bitセンセーション', channel: ch9 }
   - { day_of_week: thu, start_time: '01:00', title: 'カミエラビGOD.app', channel: ch8 }
   - { day_of_week: thu, start_time: '01:30', title: '暴食のベルセルク', channel: ch9 }
   - { day_of_week: thu, start_time: '22:00', title: '魔法使いの嫁2-2', channel: ch9 }
+  - { day_of_week: thu, start_time: '22:30', title: 'Dr.STONE2', channel: ch9 }
   - { day_of_week: fri, start_time: '00:00', title: '呪術廻戦2', channel: ch6 }
   - { day_of_week: fri, start_time: '01:00', title: 'るろうに剣心2023', channel: ch8 }
   - { day_of_week: fri, start_time: '01:00', title: '冒険者娘がSランク', channel: ch9 }
@@ -60,17 +62,16 @@ lineups:
   - { day_of_week: sat, start_time: '00:30', title: '七つの魔剣が支配する', channel: ch9 }
   - { day_of_week: sat, start_time: '01:00', title: 'ゴブリンスレイヤーII', channel: ch9 }
   - { day_of_week: sat, start_time: '01:30', title: 'アークナイツ冬隠帰路', channel: ch7 }
-  - { day_of_week: sat, start_time: '01:30', title: '経験済みと経験ゼロ', channel: ch9 }
+  - { day_of_week: sat, start_time: '01:30', title: '経験済みと経験ゼロ', channel: ch9 } # TODO: triage
   - { day_of_week: sat, start_time: '02:00', title: 'はめつのおうこく', channel: ch6 }
   - { day_of_week: sat, start_time: '17:30', title: 'め組の大吾', channel: ch4 }
-  - { day_of_week: sat, start_time: '18:30', title: 'キボウノチカラ', channel: ch2 }
+  - { day_of_week: sat, start_time: '18:30', title: 'キボウノチカラ', channel: ch2 } # TODO: triage
   - { day_of_week: sat, start_time: '22:00', title: '最果てのパラディン 鉄錆の山の王', channel: ch9 }
   - { day_of_week: sat, start_time: '22:30', title: 'ひきこまり吸血姫の悶々', channel: ch9 }
   - { day_of_week: sat, start_time: '23:00', title: 'SPYxFAMILY 2', channel: ch7 }
-  - { day_of_week: sun, start_time: '00:00', title: 'オチビサン', channel: ch1 }
+  - { day_of_week: sun, start_time: '00:00', title: 'オチビサン', channel: ch1 } # TODO: triage
   - { day_of_week: sun, start_time: '00:00', title: '帰還者の魔法は特別です', channel: ch9 }
   - { day_of_week: sun, start_time: '00:30', title: '豚のレバーは加熱しろ', channel: ch9 }
-  - { day_of_week: sun, start_time: '01:00', title: 'EDENS ZERO 2', channel: ch4 }
   - { day_of_week: sun, start_time: '01:00', title: 'ティアムーン帝国物語', channel: ch9 }
   - { day_of_week: sun, start_time: '01:30', title: 'ラグナクリムゾン', channel: ch9 }
   - { day_of_week: sun, start_time: '01:30', title: '僕らの雨いろプロトコル', channel: ch5 }
@@ -79,5 +80,5 @@ lineups:
   - { day_of_week: sun, start_time: '16:30', title: '七つの大罪 黙示録の四騎士', channel: ch6 }
   - { day_of_week: sun, start_time: '17:00', title: 'シャングリラ・フロンティア', channel: ch6 }
   - { day_of_week: sun, start_time: '22:00', title: 'でこぼこ魔女の親子事情', channel: ch9 }
-  - { day_of_week: sun, start_time: '22:30', title: '君のことが大大大大大好きな100人の彼女', channel: ch9 }
+  - { day_of_week: sun, start_time: '22:30', title: '君のことが大大大大大好きな100人の彼女', channel: ch9 } # TODO: triage
   - { day_of_week: sun, start_time: '23:30', title: '範馬刃牙', channel: ch9 }

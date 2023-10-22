@@ -76,6 +76,7 @@ lineups:
   - { day_of_week: sun, start_time: '09:30', title: 'ワンピース', channel: ch8 }
   - { day_of_week: sun, start_time: '16:30', title: '七つの大罪 黙示録の四騎士', channel: ch6 }
   - { day_of_week: sun, start_time: '17:00', title: 'シャングリラ・フロンティア', channel: ch6 }
+  - { day_of_week: sun, start_time: '17:00', title: 'ドッグシグナル', channel: ch2 }
   - { day_of_week: sun, start_time: '22:00', title: 'でこぼこ魔女の親子事情', channel: ch9 }
   - { day_of_week: sun, start_time: '22:30', title: '君のことが大大大大大好きな100人の彼女', channel: ch9 }
   - { day_of_week: sun, start_time: '23:30', title: '範馬刃牙', channel: ch9 }

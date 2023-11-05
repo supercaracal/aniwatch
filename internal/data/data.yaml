@@ -66,6 +66,7 @@ lineups:
   - { day_of_week: sat, start_time: '22:30', title: 'ひきこまり吸血姫の悶々', channel: ch9 }
   - { day_of_week: sat, start_time: '23:00', title: 'SPYxFAMILY 2', channel: ch7 }
   - { day_of_week: sun, start_time: '00:00', title: 'オチビサン', channel: ch1 }
+  - { day_of_week: sun, start_time: '00:00', title: '地球外少年少女', channel: ch1 }
   - { day_of_week: sun, start_time: '00:00', title: '帰還者の魔法は特別です', channel: ch9 }
   - { day_of_week: sun, start_time: '00:30', title: '豚のレバーは加熱しろ', channel: ch9 }
   - { day_of_week: sun, start_time: '01:00', title: 'ティアムーン帝国物語', channel: ch9 }

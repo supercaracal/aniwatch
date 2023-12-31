@@ -30,6 +30,8 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
+  - { day_of_week: mon, start_time: '00:00', title: 'ループ7回目の悪役令嬢', channel: ch9 }
+  - { day_of_week: mon, start_time: '00:30', title: '真の仲間じゃない勇者の辺境スローライフ2', channel: ch9 }
   - { day_of_week: wed, start_time: '23:00', title: '異修羅', channel: ch9 }
   - { day_of_week: wed, start_time: '23:30', title: 'ようこそ実力至上主義の教室へ3', channel: ch9 }
   - { day_of_week: thu, start_time: '01:30', title: '魔法少女にあこがれて', channel: ch9 }
@@ -57,4 +59,5 @@ lineups:
   - { day_of_week: sun, start_time: '16:30', title: '七つの大罪 黙示録の四騎士', channel: ch6 }
   - { day_of_week: sun, start_time: '17:00', title: 'シャングリラ・フロンティア', channel: ch6 }
   - { day_of_week: sun, start_time: '17:00', title: 'ドッグシグナル', channel: ch2 }
+  - { day_of_week: sun, start_time: '22:00', title: '異世界もふなで', channel: ch9 }
   - { day_of_week: sun, start_time: '23:30', title: '範馬刃牙', channel: ch9 }

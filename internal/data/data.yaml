@@ -32,18 +32,38 @@ slot-of-day:
 lineups:
   - { day_of_week: mon, start_time: '00:00', title: 'ループ7回目の悪役令嬢', channel: ch9 }
   - { day_of_week: mon, start_time: '00:30', title: '真の仲間じゃない勇者の辺境スローライフ2', channel: ch9 }
+  - { day_of_week: mon, start_time: '22:30', title: 'HIGH CARD 2', channel: ch9 }
+  - { day_of_week: mon, start_time: '23:00', title: '月が導く異世界道中2', channel: ch9 }
+  - { day_of_week: tue, start_time: '00:00', title: 'SYNDUALITY Noir 2', channel: ch7 }
+  - { day_of_week: tue, start_time: '00:00', title: '姫様拷問の時間です', channel: ch9 }
+  - { day_of_week: tue, start_time: '00:30', title: '道産子ギャルはなまらめんこい', channel: ch7 }
+  - { day_of_week: tue, start_time: '00:30', title: '望まぬ不死の冒険者', channel: ch9 }
+  - { day_of_week: tue, start_time: '01:30', title: '愚かな天使は悪魔と踊る', channel: ch7 }
+  - { day_of_week: wed, start_time: '00:00', title: 'SHAMAN KING FLOWERS', channel: ch7 }
+  - { day_of_week: wed, start_time: '00:30', title: '悪役令嬢レベル99', channel: ch9 }
   - { day_of_week: wed, start_time: '23:00', title: '異修羅', channel: ch9 }
   - { day_of_week: wed, start_time: '23:30', title: 'ようこそ実力至上主義の教室へ3', channel: ch9 }
+  - { day_of_week: thu, start_time: '00:00', title: '戦国妖狐', channel: ch9 }
+  - { day_of_week: thu, start_time: '01:00', title: '外科医エリーゼ', channel: ch9 }
+  - { day_of_week: thu, start_time: '01:30', title: 'メタリックルージュ', channel: ch8 }
   - { day_of_week: thu, start_time: '01:30', title: '魔法少女にあこがれて', channel: ch9 }
-  - { day_of_week: thu, start_time: '23:30', title: 'ダンジョン飯', channel: ch9 }
+  - { day_of_week: thu, start_time: '02:00', title: '百妖譜', channel: ch8 }
+  - { day_of_week: thu, start_time: '22:30', title: 'ダンジョン飯', channel: ch9 }
+  - { day_of_week: fri, start_time: '00:00', title: '勇気爆発バーンブレイバーン', channel: ch6 }
   - { day_of_week: fri, start_time: '00:30', title: '即死チート最強異世界相手にならん', channel: ch9 }
+  - { day_of_week: fri, start_time: '01:00', title: 'うる星やつら 2022 2', channel: ch8 }
+  - { day_of_week: fri, start_time: '01:00', title: '名湯 異世界の湯 開拓記', channel: ch9 }
+  - { day_of_week: fri, start_time: '01:30', title: '魔女と野獣', channel: ch6 }
   - { day_of_week: fri, start_time: '19:00', title: 'ポケットモンスター', channel: ch7 }
   - { day_of_week: fri, start_time: '22:30', title: '佐々木とピーちゃん', channel: ch9 }
+  - { day_of_week: fri, start_time: '23:00', title: '最弱テイマーゴミ拾い', channel: ch9 }
   - { day_of_week: fri, start_time: '23:00', title: '葬送のフリーレン', channel: ch4 }
   - { day_of_week: sat, start_time: '00:30', title: '治癒魔法の間違った使い方', channel: ch9 }
+  - { day_of_week: sat, start_time: '01:00', title: 'スナックバス江', channel: ch9 }
   - { day_of_week: sat, start_time: '02:00', title: 'ぽんのみち', channel: ch6 }
   - { day_of_week: sat, start_time: '17:30', title: 'め組の大吾', channel: ch4 }
   - { day_of_week: sat, start_time: '22:00', title: '結婚指輪物語', channel: ch9 }
+  - { day_of_week: sat, start_time: '23:00', title: 'ぶっちぎり?!', channel: ch7 }
   - { day_of_week: sat, start_time: '23:30', title: 'マッシュル MASHLE 2', channel: ch9 }
   - { day_of_week: sun, start_time: '00:00', title: 'キングダム5', channel: ch1 }
   - { day_of_week: sun, start_time: '00:00', title: '俺だけレベルアップな件', channel: ch9 }

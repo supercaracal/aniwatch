@@ -46,8 +46,6 @@ lineups:
   - { day_of_week: thu, start_time: '00:00', title: '戦国妖狐', channel: ch9 }
   - { day_of_week: thu, start_time: '01:00', title: '外科医エリーゼ', channel: ch9 }
   - { day_of_week: thu, start_time: '01:30', title: 'メタリックルージュ', channel: ch8 }
-  - { day_of_week: thu, start_time: '01:30', title: '魔法少女にあこがれて', channel: ch9 }
-  - { day_of_week: thu, start_time: '02:00', title: '百妖譜', channel: ch8 }
   - { day_of_week: thu, start_time: '22:30', title: 'ダンジョン飯', channel: ch9 }
   - { day_of_week: fri, start_time: '00:00', title: '勇気爆発バーンブレイバーン', channel: ch6 }
   - { day_of_week: fri, start_time: '00:30', title: '即死チート最強異世界相手にならん', channel: ch9 }

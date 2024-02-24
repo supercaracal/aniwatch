@@ -56,6 +56,7 @@ lineups:
   - { day_of_week: fri, start_time: '23:00', title: '最弱テイマーゴミ拾い', channel: ch9 }
   - { day_of_week: fri, start_time: '23:00', title: '葬送のフリーレン', channel: ch4 }
   - { day_of_week: sat, start_time: '00:30', title: '治癒魔法の間違った使い方', channel: ch9 }
+  - { day_of_week: sat, start_time: '01:50', title: 'オオクニヌシとスクナビコナ', channel: ch6 }
   - { day_of_week: sat, start_time: '02:00', title: 'ぽんのみち', channel: ch6 }
   - { day_of_week: sat, start_time: '17:30', title: 'め組の大吾', channel: ch4 }
   - { day_of_week: sat, start_time: '22:00', title: '結婚指輪物語', channel: ch9 }

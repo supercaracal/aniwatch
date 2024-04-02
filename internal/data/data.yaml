@@ -32,12 +32,10 @@ slot-of-day:
 lineups:
   - { day_of_week: mon, start_time: '00:00', title: '無職転生II 2', channel: ch9 }
   - { day_of_week: mon, start_time: '00:30', title: 'じいさんばあさん若返る', channel: ch9 }
-  - { day_of_week: mon, start_time: '22:30', title: '神は遊戯に飢えている', channel: ch9 }
   - { day_of_week: mon, start_time: '23:00', title: '月が導く異世界道中2', channel: ch9 }
   - { day_of_week: mon, start_time: '23:30', title: '終末トレインどこへいく?', channel: ch9 }
   - { day_of_week: tue, start_time: '00:00', title: '転生したら第七王子だった', channel: ch7 }
   - { day_of_week: tue, start_time: '01:30', title: '狼と香辛料', channel: ch7 }
-  - { day_of_week: tue, start_time: '02:00', title: '出来損ない元英雄は実家から追放', channel: ch7 }
   - { day_of_week: wed, start_time: '00:00', title: 'SHAMAN KING FLOWERS', channel: ch7 }
   - { day_of_week: thu, start_time: '00:00', title: 'バーテンダー神のグラス', channel: ch7 }
   - { day_of_week: thu, start_time: '00:00', title: '戦国妖狐', channel: ch9 }

@@ -37,7 +37,6 @@ lineups:
   - { day_of_week: tue, start_time: '00:00', title: '転生したら第七王子だった', channel: ch7 }
   - { day_of_week: tue, start_time: '00:00', title: 'Lv2元勇者候補まったり', channel: ch9 }
   - { day_of_week: tue, start_time: '01:30', title: '狼と香辛料', channel: ch7 }
-  - { day_of_week: tue, start_time: '23:30', title: 'リンカイ！', channel: ch9 }
   - { day_of_week: wed, start_time: '00:30', title: 'Unnamed Memory', channel: ch9 }
   - { day_of_week: wed, start_time: '22:00', title: '声優ラジオのウラオモテ', channel: ch9 }
   - { day_of_week: wed, start_time: '23:30', title: 'この素晴らしい世界に祝福を！3', channel: ch9 }
@@ -72,4 +71,3 @@ lineups:
   - { day_of_week: sun, start_time: '17:00', title: '響け！ユーフォニアム3', channel: ch2 }
   - { day_of_week: sun, start_time: '22:00', title: '死神坊ちゃんと黒メイド3', channel: ch9 }
   - { day_of_week: sun, start_time: '23:30', title: '転生貴族、鑑定スキルで成り上がる', channel: ch6 }
-  - { day_of_week: sun, start_time: '23:45', title: 'ブルーアーカイブ', channel: ch7 }

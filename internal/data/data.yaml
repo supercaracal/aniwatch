@@ -49,7 +49,6 @@ lineups:
   - { day_of_week: fri, start_time: '00:00', title: 'Re:Monster', channel: ch9 }
   - { day_of_week: fri, start_time: '00:30', title: '魔王の俺が奴隷エルフを嫁に', channel: ch9 }
   - { day_of_week: fri, start_time: '01:00', title: 'うる星やつら', channel: ch8 }
-  - { day_of_week: fri, start_time: '02:00', title: 'WIND BREAKER', channel: ch6 }
   - { day_of_week: fri, start_time: '02:30', title: '変人のサラダボウル', channel: ch6 }
   - { day_of_week: fri, start_time: '19:00', title: 'ポケットモンスター', channel: ch7 }
   - { day_of_week: fri, start_time: '22:30', title: 'アストロノオト', channel: ch9 }

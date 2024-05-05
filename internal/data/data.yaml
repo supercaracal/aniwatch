@@ -69,4 +69,5 @@ lineups:
   - { day_of_week: sun, start_time: '16:30', title: '戦隊大失格', channel: ch6 }
   - { day_of_week: sun, start_time: '17:00', title: '響け！ユーフォニアム3', channel: ch2 }
   - { day_of_week: sun, start_time: '22:00', title: '死神坊ちゃんと黒メイド3', channel: ch9 }
+  - { day_of_week: sun, start_time: '23:15', title: '鬼滅の刃 柱稽古編', channel: ch8 }
   - { day_of_week: sun, start_time: '23:30', title: '転生貴族、鑑定スキルで成り上がる', channel: ch6 }

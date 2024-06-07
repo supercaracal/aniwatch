@@ -14,6 +14,7 @@ import (
 const (
 	maxHeaderBytes  = 1 << 20
 	shutdownTimeout = 5 * time.Second
+	connIdleTimeout = 61 * time.Second
 )
 
 // AppServer is
@@ -39,6 +40,7 @@ func NewAppServer(timeout time.Duration, proto string, addr string, port int) (*
 	httpServer := &http.Server{
 		ReadTimeout:    timeout,
 		WriteTimeout:   timeout,
+		IdleTimeout:    connIdleTimeout,
 		MaxHeaderBytes: maxHeaderBytes,
 	}
 

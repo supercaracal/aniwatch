@@ -61,7 +61,6 @@ lineups:
   - { day_of_week: sat, start_time: '23:30', title: '逃げ上手の若君', channel: ch9 }
   - { day_of_week: sun, start_time: '00:00', title: '烏は主を選ばない', channel: ch1 }
   - { day_of_week: sun, start_time: '01:00', title: 'ザ・ファブル', channel: ch4 }
-  - { day_of_week: sun, start_time: '01:30', title: 'ささやくように恋を唄う', channel: ch5 }
+  - { day_of_week: sun, start_time: '01:30', title: '小市民シリーズ', channel: ch5 }
   - { day_of_week: sun, start_time: '01:30', title: 'エルフさんは痩せられない', channel: ch9 }
-  - { day_of_week: sun, start_time: '02:00', title: '小市民シリーズ', channel: ch5 }
   - { day_of_week: sun, start_time: '09:30', title: 'ワンピース', channel: ch8 }

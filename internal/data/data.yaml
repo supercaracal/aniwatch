@@ -30,6 +30,9 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
+  - { day_of_week: mon, start_time: '00:00', title: '魔導具師ダリヤはうつむかない', channel: ch9 }
+  - { day_of_week: mon, start_time: '00:30', title: 'VTuber配信切り忘れ伝説', channel: ch9 }
+  - { day_of_week: mon, start_time: '02:00', title: '異世界ゆるり紀行', channel: ch7 }
   - { day_of_week: tue, start_time: '00:00', title: 'NINJA KAMUI', channel: ch9 }
   - { day_of_week: tue, start_time: '00:00', title: 'SHY 東京奪還編', channel: ch7 }
   - { day_of_week: tue, start_time: '01:30', title: '狼と香辛料', channel: ch7 }
@@ -64,3 +67,8 @@ lineups:
   - { day_of_week: sun, start_time: '01:30', title: '小市民シリーズ', channel: ch5 }
   - { day_of_week: sun, start_time: '01:30', title: 'エルフさんは痩せられない', channel: ch9 }
   - { day_of_week: sun, start_time: '09:30', title: 'ワンピース', channel: ch8 }
+  - { day_of_week: sun, start_time: '16:30', title: '杖と剣のウィストリア', channel: ch6 }
+  - { day_of_week: sun, start_time: '17:30', title: 'FAIRY TAIL 100年クエスト', channel: ch7 }
+  - { day_of_week: sun, start_time: '23:00', title: '神之塔 王子の帰還', channel: ch9 }
+  - { day_of_week: sun, start_time: '23:30', title: 'しかのこのこのここしたんたん', channel: ch9 }
+  - { day_of_week: sun, start_time: '23:45', title: '菜なれ花なれ', channel: ch7 }

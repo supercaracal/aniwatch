@@ -45,9 +45,7 @@ lineups:
   - { day_of_week: wed, start_time: '23:30', title: '時々ボソッとロシアーリャさん', channel: ch9 }
   - { day_of_week: thu, start_time: '01:30', title: '下の階には澪がいる', channel: ch8 }
   - { day_of_week: thu, start_time: '22:30', title: '義妹生活', channel: ch9 }
-  - { day_of_week: fri, start_time: '00:00', title: 'ラーメン赤猫', channel: ch6 }
   - { day_of_week: fri, start_time: '00:00', title: '俺は全てをパリイする', channel: ch9 }
-  - { day_of_week: fri, start_time: '00:30', title: '疑似ハーレム', channel: ch9 }
   - { day_of_week: fri, start_time: '01:00', title: 'ハズレ状態異常スキル最強俺蹂躙', channel: ch6 }
   - { day_of_week: fri, start_time: '01:00', title: '先輩はおとこのこ', channel: ch8 }
   - { day_of_week: fri, start_time: '19:00', title: 'ポケットモンスター', channel: ch7 }

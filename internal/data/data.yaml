@@ -33,17 +33,19 @@ lineups:
   - { day_of_week: mon, start_time: '00:00', title: '魔導具師ダリヤはうつむかない', channel: ch9 }
   - { day_of_week: mon, start_time: '00:30', title: 'VTuber配信切り忘れ伝説', channel: ch9 }
   - { day_of_week: mon, start_time: '02:00', title: '異世界ゆるり紀行', channel: ch7 }
+  - { day_of_week: mon, start_time: '22:30', title: '真夜中ぱんチ', channel: ch9 }
   - { day_of_week: tue, start_time: '00:00', title: 'NINJA KAMUI', channel: ch9 }
   - { day_of_week: tue, start_time: '00:00', title: 'SHY 東京奪還編', channel: ch7 }
   - { day_of_week: tue, start_time: '01:30', title: '狼と香辛料', channel: ch7 }
   - { day_of_week: tue, start_time: '02:00', title: '新米オッサン冒険者最強無敵', channel: ch7 }
-  - { day_of_week: tue, start_time: '23:00', title: '僕の妻は感情がない', channel: ch9 }
+  - { day_of_week: tue, start_time: '23:30', title: 'かつて魔法少女と悪は敵対していた', channel: ch9 }
+  - { day_of_week: wed, start_time: '00:30', title: '異世界失格', channel: ch9 }
   - { day_of_week: wed, start_time: '01:30', title: '銀河英雄伝説 Die Neue These', channel: ch4 }
-  - { day_of_week: wed, start_time: '02:00', title: '多数欠', channel: ch4 }
   - { day_of_week: wed, start_time: '22:00', title: '魔王軍最強の魔術師は人間だった', channel: ch9 }
   - { day_of_week: wed, start_time: '23:00', title: '推しの子2', channel: ch9 }
   - { day_of_week: wed, start_time: '23:30', title: '時々ボソッとロシアーリャさん', channel: ch9 }
-  - { day_of_week: thu, start_time: '01:30', title: '下の階には澪がいる', channel: ch8 }
+  - { day_of_week: thu, start_time: '01:00', title: '恋は双子で割り切れない', channel: ch9 }
+  - { day_of_week: thu, start_time: '01:30', title: 'キミと僕の最後の聖戦II', channel: ch9 }
   - { day_of_week: thu, start_time: '22:30', title: '義妹生活', channel: ch9 }
   - { day_of_week: fri, start_time: '00:00', title: '俺は全てをパリイする', channel: ch9 }
   - { day_of_week: fri, start_time: '01:00', title: 'ハズレ状態異常スキル最強俺蹂躙', channel: ch6 }
@@ -56,9 +58,12 @@ lineups:
   - { day_of_week: sat, start_time: '02:30', title: 'この世界は不完全すぎる', channel: ch6 }
   - { day_of_week: sat, start_time: '17:30', title: '僕のヒーローアカデミア7', channel: ch4 }
   - { day_of_week: sat, start_time: '22:00', title: 'モブから始まる探索英雄譚', channel: ch9 }
+  - { day_of_week: sat, start_time: '22:30', title: 'なぜ僕の世界を誰も覚えていないのか？', channel: ch9 }
   - { day_of_week: sat, start_time: '23:00', title: '天穂のサクナヒメ', channel: ch7 }
   - { day_of_week: sat, start_time: '23:30', title: '逃げ上手の若君', channel: ch9 }
   - { day_of_week: sun, start_time: '00:00', title: '烏は主を選ばない', channel: ch1 }
+  - { day_of_week: sun, start_time: '00:00', title: 'ATRI', channel: ch9 }
+  - { day_of_week: sun, start_time: '00:30', title: '負けヒロインが多すぎる！', channel: ch9 }
   - { day_of_week: sun, start_time: '01:00', title: 'ザ・ファブル', channel: ch4 }
   - { day_of_week: sun, start_time: '01:30', title: '小市民シリーズ', channel: ch5 }
   - { day_of_week: sun, start_time: '01:30', title: 'エルフさんは痩せられない', channel: ch9 }

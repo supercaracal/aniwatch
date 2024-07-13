@@ -44,6 +44,7 @@ lineups:
   - { day_of_week: wed, start_time: '22:00', title: '魔王軍最強の魔術師は人間だった', channel: ch9 }
   - { day_of_week: wed, start_time: '23:00', title: '推しの子2', channel: ch9 }
   - { day_of_week: wed, start_time: '23:30', title: '時々ボソッとロシアーリャさん', channel: ch9 }
+  - { day_of_week: thu, start_time: '00:00', title: '戦国妖狐 千魔混沌編', channel: ch9 }
   - { day_of_week: thu, start_time: '01:00', title: '恋は双子で割り切れない', channel: ch9 }
   - { day_of_week: thu, start_time: '01:30', title: 'キミと僕の最後の聖戦II', channel: ch9 }
   - { day_of_week: thu, start_time: '22:30', title: '義妹生活', channel: ch9 }
@@ -66,7 +67,6 @@ lineups:
   - { day_of_week: sun, start_time: '00:30', title: '負けヒロインが多すぎる！', channel: ch9 }
   - { day_of_week: sun, start_time: '01:00', title: 'ザ・ファブル', channel: ch4 }
   - { day_of_week: sun, start_time: '01:30', title: '小市民シリーズ', channel: ch5 }
-  - { day_of_week: sun, start_time: '01:30', title: 'エルフさんは痩せられない', channel: ch9 }
   - { day_of_week: sun, start_time: '09:30', title: 'ワンピース', channel: ch8 }
   - { day_of_week: sun, start_time: '16:30', title: '杖と剣のウィストリア', channel: ch6 }
   - { day_of_week: sun, start_time: '17:30', title: 'FAIRY TAIL 100年クエスト', channel: ch7 }

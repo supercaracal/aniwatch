@@ -64,6 +64,7 @@ lineups:
   - { day_of_week: sun, start_time: '01:30', title: '君は冥土様', channel: ch5 }
   - { day_of_week: sun, start_time: '02:00', title: 'パーティー追放治癒師最強', channel: ch5 }
   - { day_of_week: sun, start_time: '09:30', title: 'ワンピース', channel: ch8 }
+  - { day_of_week: sun, start_time: '16:30', title: '七つの大罪 黙示録の四騎士', channel: ch6 }
   - { day_of_week: sun, start_time: '17:30', title: 'FAIRY TAIL 100年クエスト', channel: ch7 }
   - { day_of_week: sun, start_time: '21:30', title: '愚物語', channel: ch9 }
   - { day_of_week: sun, start_time: '23:00', title: '神之塔 王子の帰還', channel: ch9 }

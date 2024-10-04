@@ -36,16 +36,13 @@ lineups:
   - { day_of_week: wed, start_time: '01:30', title: '銀河英雄伝説 Die Neue These', channel: ch4 }
   - { day_of_week: wed, start_time: '22:00', title: 'アクロトリップ', channel: ch9 }
   - { day_of_week: wed, start_time: '23:00', title: 'Re:ゼロから始める異世界生活3', channel: ch9 }
+  - { day_of_week: thu, start_time: '00:00', title: '新テニスの王子様', channel: ch7 }
   - { day_of_week: thu, start_time: '01:30', title: 'カミエラビ2', channel: ch8 }
   - { day_of_week: thu, start_time: '21:30', title: 'きのこいぬ', channel: ch9 }
   - { day_of_week: thu, start_time: '22:30', title: 'ネガポジアングラー', channel: ch9 }
-  - { day_of_week: thu, start_time: '23:30', title: '結婚するって本当ですか', channel: ch9 }
-  - { day_of_week: fri, start_time: '00:00', title: 'アオのハコ', channel: ch6 }
-  - { day_of_week: fri, start_time: '00:00', title: 'ひとりぼっちの異世界攻略', channel: ch9 }
   - { day_of_week: fri, start_time: '00:30', title: 'ダンダダン', channel: ch6 }
   - { day_of_week: fri, start_time: '00:30', title: 'メカウデ', channel: ch9 }
   - { day_of_week: fri, start_time: '01:00', title: 'るろうに剣心 京都動乱', channel: ch9 }
-  - { day_of_week: fri, start_time: '01:00', title: 'ハミダシクリエイティブ', channel: ch9 }
   - { day_of_week: fri, start_time: '01:30', title: 'トリリオンゲーム', channel: ch6 }
   - { day_of_week: fri, start_time: '19:00', title: 'ポケットモンスター', channel: ch7 }
   - { day_of_week: fri, start_time: '21:54', title: '百姓貴族2', channel: ch9 }

@@ -32,7 +32,6 @@ slot-of-day:
 lineups:
   - { day_of_week: mon, start_time: '00:00', title: 'MFゴースト2', channel: ch9 }
   - { day_of_week: mon, start_time: '22:30', title: '鴨乃橋ロンの禁断推理', channel: ch9 }
-  - { day_of_week: mon, start_time: '23:30', title: '最凶話術士俺世界最強', channel: ch9 }
   - { day_of_week: tue, start_time: '23:00', title: '妖怪学校の先生はじめました', channel: ch9 }
   - { day_of_week: tue, start_time: '23:30', title: '嘆きの亡霊は引退したい', channel: ch9 }
   - { day_of_week: wed, start_time: '00:30', title: '歴史に残る悪女になるぞ', channel: ch9 }

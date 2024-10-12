@@ -46,7 +46,8 @@ lineups:
   - { day_of_week: fri, start_time: '00:30', title: 'ダンダダン', channel: ch6 }
   - { day_of_week: fri, start_time: '00:30', title: 'メカウデ', channel: ch9 }
   - { day_of_week: fri, start_time: '01:00', title: 'るろうに剣心 京都動乱', channel: ch9 }
-  - { day_of_week: fri, start_time: '01:30', title: 'トリリオンゲーム', channel: ch6 }
+  - { day_of_week: fri, start_time: '01:30', title: 'さようなら竜生、こんにちは人生', channel: ch6 }
+  - { day_of_week: fri, start_time: '02:00', title: 'トリリオンゲーム', channel: ch6 }
   - { day_of_week: fri, start_time: '19:00', title: 'ポケットモンスター', channel: ch7 }
   - { day_of_week: fri, start_time: '21:54', title: '百姓貴族2', channel: ch9 }
   - { day_of_week: fri, start_time: '23:00', title: '株式会社マジルミエ', channel: ch4 }
@@ -56,7 +57,7 @@ lineups:
   - { day_of_week: sat, start_time: '01:00', title: 'ケンガンアシュラ2', channel: ch9 }
   - { day_of_week: sat, start_time: '02:00', title: '魔法使いになれなかった女の子の話', channel: ch6 }
   - { day_of_week: sat, start_time: '02:30', title: '凍牌 裏レート麻雀闘牌録', channel: ch6 }
-  - { day_of_week: sat, start_time: '17:30', title: '僕のヒーローアカデミア7', channel: ch4 }
+  - { day_of_week: sat, start_time: '17:30', title: '青のミブロ', channel: ch4 }
   - { day_of_week: sat, start_time: '22:30', title: '魔王様リトライ!R', channel: ch9 }
   - { day_of_week: sat, start_time: '23:00', title: 'BLEACH 相剋譚', channel: ch7 }
   - { day_of_week: sat, start_time: '23:45', title: 'チ。地球の運動について', channel: ch1 }

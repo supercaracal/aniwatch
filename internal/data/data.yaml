@@ -41,7 +41,6 @@ lineups:
   - { day_of_week: thu, start_time: '00:00', title: '戦国妖狐', channel: ch9 }
   - { day_of_week: thu, start_time: '00:00', title: '新テニスの王子様', channel: ch7 }
   - { day_of_week: thu, start_time: '01:30', title: 'カミエラビ2', channel: ch8 }
-  - { day_of_week: thu, start_time: '21:30', title: 'きのこいぬ', channel: ch9 }
   - { day_of_week: thu, start_time: '22:00', title: '星降る王国のニナ', channel: ch9 }
   - { day_of_week: thu, start_time: '22:30', title: 'ネガポジアングラー', channel: ch9 }
   - { day_of_week: fri, start_time: '00:30', title: 'ダンダダン', channel: ch6 }

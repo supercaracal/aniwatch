@@ -30,6 +30,7 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
+  - { day_of_week: tue, start_time: '00:00', title: 'ありふれた職業で世界最強', channel: ch9 }
   - { day_of_week: wed, start_time: '00:30', title: 'Unnamed Memory', channel: ch9 }
   - { day_of_week: wed, start_time: '01:30', title: '花は咲く、修羅の如く', channel: ch4 }
   - { day_of_week: wed, start_time: '22:30', title: '誰ソ彼ホテル', channel: ch9 }

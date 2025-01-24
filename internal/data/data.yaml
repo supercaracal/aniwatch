@@ -38,7 +38,6 @@ lineups:
   - { day_of_week: thu, start_time: '00:00', title: 'グリザイア:ファントムトリガー', channel: ch9 }
   - { day_of_week: thu, start_time: '00:30', title: '天久鷹央の推理カルテ', channel: ch9 }
   - { day_of_week: thu, start_time: '22:00', title: 'Dr.STONE', channel: ch9 }
-  - { day_of_week: fri, start_time: '00:00', title: 'もめんたりー・リリィ', channel: ch9 }
   - { day_of_week: fri, start_time: '00:30', title: '想星のアクエリオン', channel: ch9 }
   - { day_of_week: fri, start_time: '01:00', title: 'るろうに剣心', channel: ch8 }
   - { day_of_week: fri, start_time: '02:00', title: 'トリリオンゲーム', channel: ch6 }

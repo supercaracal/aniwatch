@@ -35,6 +35,7 @@ lineups:
   - { day_of_week: wed, start_time: '01:30', title: '花は咲く、修羅の如く', channel: ch4 }
   - { day_of_week: wed, start_time: '22:30', title: '誰ソ彼ホテル', channel: ch9 }
   - { day_of_week: wed, start_time: '23:00', title: '異修羅', channel: ch9 }
+  - { day_of_week: wed, start_time: '23:30', title: 'Re:ゼロから始める異世界生活', channel: ch9 }
   - { day_of_week: thu, start_time: '00:00', title: 'グリザイア:ファントムトリガー', channel: ch9 }
   - { day_of_week: thu, start_time: '00:30', title: '天久鷹央の推理カルテ', channel: ch9 }
   - { day_of_week: thu, start_time: '22:00', title: 'Dr.STONE', channel: ch9 }

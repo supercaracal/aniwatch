@@ -29,12 +29,12 @@ type AppServer struct {
 func NewAppServer(timeout time.Duration, proto string, addr string, port int) (*AppServer, error) {
 	tcpAddr, err := net.ResolveTCPAddr(proto, fmt.Sprintf("%s:%d", addr, port))
 	if err != nil {
-		return nil, fmt.Errorf("Failed to resolve addr: %w", err)
+		return nil, fmt.Errorf("failed to resolve addr: %w", err)
 	}
 
 	listener, err := net.ListenTCP(proto, tcpAddr)
 	if err != nil {
-		return nil, fmt.Errorf("Failed to listen port: %w", err)
+		return nil, fmt.Errorf("failed to listen port: %w", err)
 	}
 
 	httpServer := &http.Server{

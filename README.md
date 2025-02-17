@@ -1,4 +1,4 @@
-![](https://github.com/supercaracal/aniwatch/workflows/Test/badge.svg?branch=master)
+![](https://github.com/supercaracal/aniwatch/workflows/test.yaml/badge.svg?branch=master)
 
 # Aniwatch
 

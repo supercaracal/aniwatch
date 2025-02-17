@@ -78,7 +78,7 @@ func (alf *AccessLogFmt) reset(r *http.Request, statusCode int, bodySize int, st
 	alf.HostIP = hostIP
 	alf.URLOriginal = r.URL.String()
 	alf.SourceIP = remoteIP
-	alf.ProcessingTime = time.Now().Sub(*start).Microseconds()
+	alf.ProcessingTime = time.Since(*start).Microseconds()
 }
 
 type loggableResponseWriter struct {

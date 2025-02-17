@@ -31,12 +31,8 @@ prof:
 	@go test -bench=. -run=NONE -${TYPE}profile=${TYPE}.out ./internal/${PKG}
 	@go tool pprof -text -nodecount=10 ./${PKG}.test ${TYPE}.out
 
-${GOBIN}/golint:
-	go install golang.org/x/lint/golint@latest
-
-lint: ${GOBIN}/golint
+lint:
 	@go vet ./...
-	@golint -set_exit_status ./...
 
 clean:
 	@rm -f ${APP_NAME} main *.test *.out

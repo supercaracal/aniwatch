@@ -58,3 +58,22 @@ jobs:
         env:
           PKG: ${{ matrix.package }}
           TYPE: ${{ matrix.type }}
+  staticcheck:
+    name: StaticCheck
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          check-latest: true
+          cache: true
+      - name: Download modules
+        run: go mod download
+      - uses: dominikh/staticcheck-action@v1
+        with:
+          version: "latest"
+          install-go: false

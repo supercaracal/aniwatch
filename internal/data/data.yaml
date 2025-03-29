@@ -30,31 +30,27 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
-  - { day_of_week: tue, start_time: '00:00', title: 'ありふれた職業で世界最強', channel: ch9 }
-  - { day_of_week: wed, start_time: '00:30', title: 'Unnamed Memory', channel: ch9 }
-  - { day_of_week: wed, start_time: '01:30', title: '花は咲く、修羅の如く', channel: ch4 }
-  - { day_of_week: wed, start_time: '22:30', title: '誰ソ彼ホテル', channel: ch9 }
-  - { day_of_week: wed, start_time: '23:00', title: '異修羅', channel: ch9 }
-  - { day_of_week: wed, start_time: '23:30', title: 'Re:ゼロから始める異世界生活', channel: ch9 }
-  - { day_of_week: thu, start_time: '00:00', title: 'グリザイア:ファントムトリガー', channel: ch9 }
-  - { day_of_week: thu, start_time: '00:30', title: '天久鷹央の推理カルテ', channel: ch9 }
-  - { day_of_week: thu, start_time: '22:00', title: 'Dr.STONE', channel: ch9 }
-  - { day_of_week: fri, start_time: '00:30', title: '想星のアクエリオン', channel: ch9 }
-  - { day_of_week: fri, start_time: '01:00', title: 'るろうに剣心', channel: ch8 }
-  - { day_of_week: fri, start_time: '02:00', title: 'トリリオンゲーム', channel: ch6 }
+  - { day_of_week: mon, start_time: '21:30', title: '鬼人幻燈抄', channel: ch9 }
+  - { day_of_week: tue, start_time: '00:00', title: 'ボールパークでつかまえて!', channel: ch9 }
+  - { day_of_week: tue, start_time: '00:30', title: 'ある魔女が死ぬまで', channel: ch9 }
+  - { day_of_week: tue, start_time: '23:45', title: 'ユア・フォルマ', channel: ch5 }
+  - { day_of_week: wed, start_time: '00:30', title: '天久鷹央の推理カルテ', channel: ch9 }
+  - { day_of_week: thu, start_time: '01:15', title: 'この恋で鼻血を止めて', channel: ch8 }
+  - { day_of_week: thu, start_time: '22:00', title: '未ル わたしのみらい', channel: ch9 }
+  - { day_of_week: fri, start_time: '00:00', title: 'ロックは淑女の嗜みでして', channel: ch6 }
   - { day_of_week: fri, start_time: '19:00', title: 'ポケットモンスター', channel: ch7 }
-  - { day_of_week: fri, start_time: '23:40', title: 'ドラゴンボールDAIMA', channel: ch8 }
-  - { day_of_week: fri, start_time: '23:40', title: '薬屋のひとりごと', channel: ch4 }
-  - { day_of_week: sat, start_time: '00:30', title: 'Ubel Blatt', channel: ch9 }
+  - { day_of_week: fri, start_time: '23:00', title: '薬屋のひとりごと', channel: ch4 }
+  - { day_of_week: fri, start_time: '23:30', title: '謎解きはディナーのあとで', channel: ch8 }
+  - { day_of_week: sat, start_time: '02:00', title: '炎炎ノ消防隊', channel: ch6 }
   - { day_of_week: sat, start_time: '02:30', title: '凍牌', channel: ch6 }
-  - { day_of_week: sat, start_time: '23:30', title: 'ババンババンバンバンパイア', channel: ch5 }
-  - { day_of_week: sat, start_time: '23:45', title: 'チ。地球の運動について', channel: ch1 }
-  - { day_of_week: sun, start_time: '00:00', title: '俺だけレベルアップな件', channel: ch9 }
-  - { day_of_week: sun, start_time: '00:30', title: '青の祓魔師', channel: ch9 }
-  - { day_of_week: sun, start_time: '01:00', title: '沖縄で好きになった子が方言ツラ', channel: ch9 }
+  - { day_of_week: sat, start_time: '19:30', title: '真・侍伝 YAIBA', channel: ch4 }
+  - { day_of_week: sat, start_time: '22:00', title: 'スライム300年レベルMAX', channel: ch9 }
+  - { day_of_week: sat, start_time: '22:30', title: 'GUILTY GEAR', channel: ch9 }
+  - { day_of_week: sat, start_time: '23:00', title: '九龍ジェネリックロマンス', channel: ch7 }
+  - { day_of_week: sat, start_time: '23:30', title: '黒執事', channel: ch9 }
+  - { day_of_week: sat, start_time: '23:45', title: 'GAMERA Rebirth', channel: ch1 }
   - { day_of_week: sun, start_time: '01:30', title: 'ニートくノ一となぜか同棲', channel: ch9 }
-  - { day_of_week: sun, start_time: '01:30', title: 'メダリスト', channel: ch5 }
+  - { day_of_week: sun, start_time: '01:30', title: '小市民シリーズ', channel: ch5 }
   - { day_of_week: sun, start_time: '09:30', title: 'ワンピース', channel: ch8 }
-  - { day_of_week: sun, start_time: '17:00', title: 'シャングリラ・フロンティア', channel: ch6 }
-  - { day_of_week: sun, start_time: '22:30', title: '君のことが大好きな100人の彼女', channel: ch9 }
-  - { day_of_week: sun, start_time: '23:45', title: '全修', channel: ch7 }
+  - { day_of_week: sun, start_time: '16:30', title: 'ウマ娘 シンデレラグレイ', channel: ch6 }
+  - { day_of_week: sun, start_time: '23:45', title: 'LAZARUS ラザロ', channel: ch7 }

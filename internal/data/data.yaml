@@ -51,6 +51,6 @@ lineups:
   - { day_of_week: sat, start_time: '23:45', title: 'GAMERA Rebirth', channel: ch1 }
   - { day_of_week: sun, start_time: '01:30', title: 'ニートくノ一となぜか同棲', channel: ch9 }
   - { day_of_week: sun, start_time: '01:30', title: '小市民シリーズ', channel: ch5 }
-  - { day_of_week: sun, start_time: '09:30', title: 'ワンピース', channel: ch8 }
   - { day_of_week: sun, start_time: '16:30', title: 'ウマ娘 シンデレラグレイ', channel: ch6 }
   - { day_of_week: sun, start_time: '23:45', title: 'LAZARUS ラザロ', channel: ch7 }
+  - { day_of_week: sun, start_time: '23:45', title: 'ワンピース', channel: ch8 }

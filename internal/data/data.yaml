@@ -32,8 +32,6 @@ slot-of-day:
 lineups:
   - { day_of_week: mon, start_time: '21:30', title: '鬼人幻燈抄', channel: ch9 }
   - { day_of_week: wed, start_time: '23:45', title: 'ユア・フォルマ', channel: ch5 }
-  - { day_of_week: thu, start_time: '00:30', title: '天久鷹央の推理カルテ', channel: ch9 }
-  - { day_of_week: thu, start_time: '01:15', title: 'この恋で鼻血を止めて', channel: ch8 }
   - { day_of_week: thu, start_time: '22:00', title: '未ル わたしのみらい', channel: ch9 }
   - { day_of_week: fri, start_time: '00:00', title: 'ロックは淑女の嗜みでして', channel: ch6 }
   - { day_of_week: fri, start_time: '19:00', title: 'ポケットモンスター', channel: ch7 }

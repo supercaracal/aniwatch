@@ -31,8 +31,6 @@ slot-of-day:
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
   - { day_of_week: mon, start_time: '21:30', title: '鬼人幻燈抄', channel: ch9 }
-  - { day_of_week: wed, start_time: '00:00', title: 'ボールパークでつかまえて!', channel: ch9 }
-  - { day_of_week: wed, start_time: '00:30', title: 'ある魔女が死ぬまで', channel: ch9 }
   - { day_of_week: wed, start_time: '23:45', title: 'ユア・フォルマ', channel: ch5 }
   - { day_of_week: thu, start_time: '00:30', title: '天久鷹央の推理カルテ', channel: ch9 }
   - { day_of_week: thu, start_time: '01:15', title: 'この恋で鼻血を止めて', channel: ch8 }

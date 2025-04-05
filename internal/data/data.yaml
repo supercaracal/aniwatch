@@ -30,23 +30,36 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
-  - { day_of_week: mon, start_time: '21:30', title: '鬼人幻燈抄', channel: ch9 }
+  - { day_of_week: mon, start_time: '21:54', title: 'ギャグマンガ日和GO', channel: ch9 }
+  - { day_of_week: mon, start_time: '22:00', title: '阿波連さんははかれない', channel: ch9 }
+  - { day_of_week: mon, start_time: '23:00', title: 'ヴィジランテ', channel: ch9 }
+  - { day_of_week: tue, start_time: '00:00', title: 'コンパス2.0', channel: ch7 }
+  - { day_of_week: tue, start_time: '00:00', title: '鬼人幻燈抄', channel: ch9 }
+  - { day_of_week: tue, start_time: '00:30', title: '中禅寺先生物怪講義録', channel: ch7 }
+  - { day_of_week: tue, start_time: '23:30', title: '紫雲寺家の子供たち', channel: ch9 }
+  - { day_of_week: wed, start_time: '00:30', title: '機動戦士Gundam GQuuuuuuX', channel: ch4 }
+  - { day_of_week: wed, start_time: '01:40', title: 'アポカリプスホテル', channel: ch4 }
   - { day_of_week: wed, start_time: '23:45', title: 'ユア・フォルマ', channel: ch5 }
+  - { day_of_week: thu, start_time: '00:00', title: '宇宙人ムームー', channel: ch9 }
   - { day_of_week: thu, start_time: '22:00', title: '未ル わたしのみらい', channel: ch9 }
-  - { day_of_week: fri, start_time: '00:00', title: 'ロックは淑女の嗜みでして', channel: ch6 }
+  - { day_of_week: thu, start_time: '22:30', title: '忍者と殺し屋のふたりぐらし', channel: ch9 }
+  - { day_of_week: fri, start_time: '00:00', title: 'キミ僕最後戦場世界聖戦', channel: ch9 }
+  - { day_of_week: fri, start_time: '02:00', title: 'ロックは淑女の嗜みでして', channel: ch6 }
   - { day_of_week: fri, start_time: '19:00', title: 'ポケットモンスター', channel: ch7 }
   - { day_of_week: fri, start_time: '23:00', title: '薬屋のひとりごと', channel: ch4 }
   - { day_of_week: fri, start_time: '23:30', title: '謎解きはディナーのあとで', channel: ch8 }
+  - { day_of_week: sat, start_time: '00:30', title: '神統記', channel: ch9 }
   - { day_of_week: sat, start_time: '02:00', title: '炎炎ノ消防隊', channel: ch6 }
-  - { day_of_week: sat, start_time: '02:30', title: '凍牌', channel: ch6 }
   - { day_of_week: sat, start_time: '17:30', title: '真・侍伝 YAIBA', channel: ch4 }
   - { day_of_week: sat, start_time: '22:00', title: 'スライム300年レベルMAX', channel: ch9 }
   - { day_of_week: sat, start_time: '22:30', title: 'GUILTY GEAR', channel: ch9 }
   - { day_of_week: sat, start_time: '23:00', title: '九龍ジェネリックロマンス', channel: ch7 }
   - { day_of_week: sat, start_time: '23:30', title: '黒執事', channel: ch9 }
   - { day_of_week: sat, start_time: '23:45', title: 'GAMERA Rebirth', channel: ch1 }
+  - { day_of_week: sun, start_time: '00:30', title: '日々は過ぎれど飯うまし', channel: ch9 }
   - { day_of_week: sun, start_time: '01:30', title: 'ニートくノ一となぜか同棲', channel: ch9 }
   - { day_of_week: sun, start_time: '01:30', title: '小市民シリーズ', channel: ch5 }
   - { day_of_week: sun, start_time: '16:30', title: 'ウマ娘 シンデレラグレイ', channel: ch6 }
   - { day_of_week: sun, start_time: '23:45', title: 'LAZARUS ラザロ', channel: ch7 }
   - { day_of_week: sun, start_time: '23:45', title: 'ワンピース', channel: ch8 }
+  - { day_of_week: sun, start_time: '23:55', title: '戦隊大失格', channel: ch6 }

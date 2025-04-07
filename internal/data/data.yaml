@@ -30,7 +30,6 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
-  - { day_of_week: mon, start_time: '21:54', title: 'ギャグマンガ日和GO', channel: ch9 }
   - { day_of_week: mon, start_time: '22:00', title: '阿波連さんははかれない', channel: ch9 }
   - { day_of_week: mon, start_time: '23:00', title: 'ヴィジランテ', channel: ch9 }
   - { day_of_week: tue, start_time: '00:00', title: '鬼人幻燈抄', channel: ch9 }

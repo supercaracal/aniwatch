@@ -33,7 +33,6 @@ lineups:
   - { day_of_week: mon, start_time: '21:54', title: 'ギャグマンガ日和GO', channel: ch9 }
   - { day_of_week: mon, start_time: '22:00', title: '阿波連さんははかれない', channel: ch9 }
   - { day_of_week: mon, start_time: '23:00', title: 'ヴィジランテ', channel: ch9 }
-  - { day_of_week: tue, start_time: '00:00', title: 'コンパス2.0', channel: ch7 }
   - { day_of_week: tue, start_time: '00:00', title: '鬼人幻燈抄', channel: ch9 }
   - { day_of_week: tue, start_time: '00:30', title: '中禅寺先生物怪講義録', channel: ch7 }
   - { day_of_week: tue, start_time: '23:30', title: '紫雲寺家の子供たち', channel: ch9 }

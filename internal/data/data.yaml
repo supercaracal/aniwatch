@@ -33,7 +33,6 @@ lineups:
   - { day_of_week: mon, start_time: '00:00', title: 'CITY THE ANIMATION', channel: ch9 }
   - { day_of_week: mon, start_time: '23:00', title: 'ヴィジランテ', channel: ch9 }
   - { day_of_week: tue, start_time: '00:00', title: '鬼人幻燈抄', channel: ch9 }
-  - { day_of_week: tue, start_time: '23:30', title: 'ネクロノミ子のコズミックホラーショウ', channel: ch9 }
   - { day_of_week: wed, start_time: '00:30', title: 'まったく最近の探偵ときたら', channel: ch9 }
   - { day_of_week: wed, start_time: '23:00', title: 'クレバテス', channel: ch9 }
   - { day_of_week: wed, start_time: '23:15', title: '地獄先生ぬ～べ～', channel: ch5 }

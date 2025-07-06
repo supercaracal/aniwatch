@@ -58,6 +58,4 @@ lineups:
   - { day_of_week: sun, start_time: '01:00', title: '光が死んだ夏', channel: ch4 }
   - { day_of_week: sun, start_time: '17:30', title: 'ぷにるはかわいいスライム', channel: ch7 }
   - { day_of_week: sun, start_time: '21:30', title: '瑠璃の宝石', channel: ch9 }
-  - { day_of_week: sun, start_time: '22:30', title: '異世界黙示録マイノグーラ', channel: ch9 }
   - { day_of_week: sun, start_time: '23:15', title: 'ワンピース', channel: ch8 }
-  - { day_of_week: sun, start_time: '23:45', title: 'ホテル・インヒューマンズ', channel: ch7 }

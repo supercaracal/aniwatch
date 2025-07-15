@@ -34,7 +34,6 @@ lineups:
   - { day_of_week: tue, start_time: '00:00', title: '鬼人幻燈抄', channel: ch9 }
   - { day_of_week: tue, start_time: '00:30', title: 'ぐらんぶる', channel: ch9 }
   - { day_of_week: tue, start_time: '02:00', title: 'ニャイト・オブ・ザ・リビングキャット', channel: ch7 }
-  - { day_of_week: wed, start_time: '00:30', title: 'まったく最近の探偵ときたら', channel: ch9 }
   - { day_of_week: wed, start_time: '01:30', title: 'Turkey!', channel: ch4 }
   - { day_of_week: wed, start_time: '23:00', title: 'クレバテス', channel: ch9 }
   - { day_of_week: wed, start_time: '23:30', title: '盾の勇者の成り上がり', channel: ch9 }

@@ -50,6 +50,7 @@ lineups:
   - { day_of_week: fri, start_time: '23:30', title: 'よふかしのうた', channel: ch8 }
   - { day_of_week: fri, start_time: '23:30', title: 'アークナイツ', channel: ch9 }
   - { day_of_week: sat, start_time: '00:00', title: 'サイレント・ウィッチ', channel: ch9 }
+  - { day_of_week: sat, start_time: '01:30', title: 'ケンガンアシュラ', channel: ch9 }
   - { day_of_week: sat, start_time: '17:30', title: '真・侍伝 YAIBA', channel: ch4 }
   - { day_of_week: sat, start_time: '23:00', title: '怪獣8号', channel: ch7 }
   - { day_of_week: sat, start_time: '23:30', title: '青春ブタ野郎はサンタクロースの夢を見ない', channel: ch9 }

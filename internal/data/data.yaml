@@ -42,6 +42,7 @@ lineups:
   - { day_of_week: thu, start_time: '01:00', title: 'PANTY & STOCKING with GARTERBELT', channel: ch9 }
   - { day_of_week: thu, start_time: '02:00', title: '陰陽廻天Re:バース', channel: ch8 }
   - { day_of_week: thu, start_time: '22:00', title: 'Dr.STONE', channel: ch9 }
+  - { day_of_week: thu, start_time: '22:30', title: '永久のユウグレ', channel: ch6 }
   - { day_of_week: thu, start_time: '23:00', title: '強くてニューサーガ', channel: ch9 }
   - { day_of_week: fri, start_time: '00:00', title: '追放者食堂へようこそ', channel: ch9 }
   - { day_of_week: fri, start_time: '00:30', title: 'ダンダダン', channel: ch6 }

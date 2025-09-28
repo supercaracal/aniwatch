@@ -14,7 +14,7 @@
     </div>
   </nav>
   <div class="container-fluid">
-    <div class="row my-5 pt-4 pb-3">
+    <div class="row my-5 pt-4 pb-3 px-2">
       <div class="col-md-12">
         <table class="table table-bordered">
           <thead>

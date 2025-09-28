@@ -5,32 +5,32 @@ import (
 	"fmt"
 	"time"
 
-	"gopkg.in/yaml.v2"
+	"sigs.k8s.io/yaml"
 )
 
 // Data is
 type Data struct {
-	AppName    string            `yaml:"app-name"`
-	AuthorID   string            `yaml:"author-id"`
-	AuthorName string            `yaml:"author-name"`
-	TvChannel  map[string]string `yaml:"tv-channel"`
+	AppName    string            `json:"app-name"`
+	AuthorID   string            `json:"author-id"`
+	AuthorName string            `json:"author-name"`
+	TvChannel  map[string]string `json:"tv-channel"`
 	DayOfWeek  []struct {
-		ID   string `yaml:"id"`
-		Name string `yaml:"name"`
-	} `yaml:"day-of-week"`
+		ID   string `json:"id"`
+		Name string `json:"name"`
+	} `json:"day-of-week"`
 	SlotOfDay []struct {
-		ID    string `yaml:"id"`
-		Name  string `yaml:"name"`
-		Color string `yaml:"color"`
-		From  int    `yaml:"from"`
-		To    int    `yaml:"to"`
-	} `yaml:"slot-of-day"`
+		ID    string `json:"id"`
+		Name  string `json:"name"`
+		Color string `json:"color"`
+		From  int    `json:"from"`
+		To    int    `json:"to"`
+	} `json:"slot-of-day"`
 	Lineups []struct {
-		Title         string `yaml:"title"`
-		StartTime     string `yaml:"start_time"`
-		ChannelCode   string `yaml:"channel"`
-		DayOfWeekCode string `yaml:"day_of_week"`
-	} `yaml:"lineups"`
+		Title         string `json:"title"`
+		StartTime     string `json:"start_time"`
+		ChannelCode   string `json:"channel"`
+		DayOfWeekCode string `json:"day_of_week"`
+	} `json:"lineups"`
 }
 
 var (

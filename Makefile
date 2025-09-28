@@ -1,28 +1,32 @@
 MAKEFLAGS += --warn-undefined-variables
 SHELL     := /bin/bash -euo pipefail
-APP_NAME  := server
-GOBIN     ?= $(shell go env GOPATH)/bin
 
 all: build test lint print
 
-build: GOOS        ?= $(shell go env GOOS)
-build: GOARCH      ?= $(shell go env GOARCH)
-build: CGO_ENABLED ?= $(shell go env CGO_ENABLED)
-build: FLAGS       += -ldflags="-s -w"
-build: FLAGS       += -trimpath
-build: FLAGS       += -tags timetzdata
-build:
-	GOOS=${GOOS} GOARCH=${GOARCH} CGO_ENABLED=${CGO_ENABLED} go build ${FLAGS} -o ${APP_NAME}
+.PHONY: build
+build: server
+
+.PHONY: server
+server: GOOS        ?= $(shell go env GOOS)
+server: GOARCH      ?= $(shell go env GOARCH)
+server: CGO_ENABLED ?= $(shell go env CGO_ENABLED)
+server: FLAGS       += -ldflags="-s -w"
+server: FLAGS       += -trimpath
+server: FLAGS       += -tags timetzdata
+server:
+	GOOS=${GOOS} GOARCH=${GOARCH} CGO_ENABLED=${CGO_ENABLED} go build ${FLAGS} -o $@
 
 .PHONY: test
 test:
 	@go clean -testcache
 	@go test -race ./...
 
+.PHONY: bench
 bench:
 	@go test -bench=. -benchmem -run=NONE ./...
 
-prof: PKG ?= middleware
+.PHONY: prof
+prof: PKG  ?= middleware
 prof: TYPE ?= mem
 prof:
 	@if [[ -z "${PKG}" ]]; then echo 'empty variable: PKG'; exit 1; fi
@@ -31,11 +35,18 @@ prof:
 	@go test -bench=. -run=NONE -${TYPE}profile=${TYPE}.out ./internal/${PKG}
 	@go tool pprof -text -nodecount=10 ./${PKG}.test ${TYPE}.out
 
+.PHONY: lint
 lint:
 	@go vet ./...
 
+.PHONY: clean
 clean:
-	@rm -f ${APP_NAME} main *.test *.out
+	@rm -f server *.test *.out
 
-print:
-	@./${APP_NAME} -print > docs/index.html
+.PHONY: print
+print: server
+	@./server -print > docs/index.html
+
+.PHONY: run
+run: server
+	@./server

@@ -6,14 +6,13 @@ all: build test lint print
 .PHONY: build
 build: server
 
-.PHONY: server
 server: GOOS        ?= $(shell go env GOOS)
 server: GOARCH      ?= $(shell go env GOARCH)
 server: CGO_ENABLED ?= $(shell go env CGO_ENABLED)
 server: FLAGS       += -ldflags="-s -w"
 server: FLAGS       += -trimpath
 server: FLAGS       += -tags timetzdata
-server:
+server: $(shell find . -type f \( -name '*.go' -o -name 'go.*' -o -name '*.tpl' \))
 	GOOS=${GOOS} GOARCH=${GOARCH} CGO_ENABLED=${CGO_ENABLED} go build ${FLAGS} -o $@
 
 .PHONY: test
@@ -45,8 +44,8 @@ clean:
 
 .PHONY: print
 print: server
-	@./server -print > docs/index.html
+	@./$^ -print > docs/index.html
 
 .PHONY: run
 run: server
-	@./server
+	@./$^

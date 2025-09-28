@@ -6,6 +6,7 @@
   <title>{{.Title}}</title>
   <link rel="shortcut icon" type="image/x-icon" href="/{{.Data.AppName}}/favicon.ico" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="/aniwatch/script.js"></script>
 </head>
 <body>
   <nav class="navbar fixed-top bg-body-tertiary">
@@ -19,16 +20,25 @@
         <table class="table table-bordered">
           <thead>
             <tr>
-              <th><span>&#10004;{{.LineupCount}}</span></th>
+              <th>
+                <button type="button" class="btn btn-dark btn-sm position-relative" id="counter">
+                  Like
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-light">
+                    {{.LineupCount}}
+                  </span>
+                </button>
+              </th>
               {{range .Data.SlotOfDay}}
-                <th scope="col"><span class="badge text-bg-{{.Color}}">{{.Name}}</span></th>
+                <th scope="col">
+                  <span class="badge text-bg-{{.Color}}">{{.Name}}</span>
+                </th>
               {{end}}
             </tr>
           </thead>
           <tbody>
             {{range .Data.DayOfWeek}}
               <tr>
-                <th scope="row"><span class="badge rounded-pill text-bg-light">{{.Name}}</span></th>
+                <th scope="row"><span class="badge text-bg-secondary">{{.Name}}</span></th>
                 {{with $slots := index $.LineupsPerDaySlot .ID}}
                   {{range $.Data.SlotOfDay}}
                     <td>

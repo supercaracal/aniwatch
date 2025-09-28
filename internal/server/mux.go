@@ -41,7 +41,7 @@ func setUpRoot(mux *http.ServeMux, logger *config.Logger, dat *data.Data) error 
 }
 
 func setUpStaticContents(mux *http.ServeMux, dat *data.Data, contentDir string) {
-	files := []string{"favicon.ico", "style.css"}
+	files := []string{"favicon.ico", "script.js"}
 
 	for _, f := range files {
 		mux.HandleFunc(

@@ -6,6 +6,7 @@
   <title>Aniwatch</title>
   <link rel="shortcut icon" type="image/x-icon" href="/aniwatch/favicon.ico" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="/aniwatch/script.js"></script>
 </head>
 <body>
   <nav class="navbar fixed-top bg-body-tertiary">
@@ -19,22 +20,37 @@
         <table class="table table-bordered">
           <thead>
             <tr>
-              <th><span>&#10004;24</span></th>
+              <th>
+                <button type="button" class="btn btn-dark btn-sm position-relative" id="counter">
+                  Like
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-light">
+                    24
+                  </span>
+                </button>
+              </th>
               
-                <th scope="col"><span class="badge text-bg-danger">深夜</span></th>
+                <th scope="col">
+                  <span class="badge text-bg-danger">深夜</span>
+                </th>
               
-                <th scope="col"><span class="badge text-bg-info">日中</span></th>
+                <th scope="col">
+                  <span class="badge text-bg-info">日中</span>
+                </th>
               
-                <th scope="col"><span class="badge text-bg-success">夕方</span></th>
+                <th scope="col">
+                  <span class="badge text-bg-success">夕方</span>
+                </th>
               
-                <th scope="col"><span class="badge text-bg-warning">夜</span></th>
+                <th scope="col">
+                  <span class="badge text-bg-warning">夜</span>
+                </th>
               
             </tr>
           </thead>
           <tbody>
             
               <tr>
-                <th scope="row"><span class="badge rounded-pill text-bg-light">月</span></th>
+                <th scope="row"><span class="badge text-bg-secondary">月</span></th>
                 
                   
                     <td>
@@ -74,7 +90,7 @@
               </tr>
             
               <tr>
-                <th scope="row"><span class="badge rounded-pill text-bg-light">火</span></th>
+                <th scope="row"><span class="badge text-bg-secondary">火</span></th>
                 
                   
                     <td>
@@ -105,7 +121,7 @@
               </tr>
             
               <tr>
-                <th scope="row"><span class="badge rounded-pill text-bg-light">水</span></th>
+                <th scope="row"><span class="badge text-bg-secondary">水</span></th>
                 
                   
                     <td>
@@ -136,7 +152,7 @@
               </tr>
             
               <tr>
-                <th scope="row"><span class="badge rounded-pill text-bg-light">木</span></th>
+                <th scope="row"><span class="badge text-bg-secondary">木</span></th>
                 
                   
                     <td>
@@ -192,7 +208,7 @@
               </tr>
             
               <tr>
-                <th scope="row"><span class="badge rounded-pill text-bg-light">金</span></th>
+                <th scope="row"><span class="badge text-bg-secondary">金</span></th>
                 
                   
                     <td>
@@ -262,7 +278,7 @@
               </tr>
             
               <tr>
-                <th scope="row"><span class="badge rounded-pill text-bg-light">土</span></th>
+                <th scope="row"><span class="badge text-bg-secondary">土</span></th>
                 
                   
                     <td>
@@ -362,7 +378,7 @@
               </tr>
             
               <tr>
-                <th scope="row"><span class="badge rounded-pill text-bg-light">日</span></th>
+                <th scope="row"><span class="badge text-bg-secondary">日</span></th>
                 
                   
                     <td>

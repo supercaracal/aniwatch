@@ -1,66 +1,68 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html lang="ja" data-bs-theme="dark">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="shortcut icon" type="image/x-icon" href="/{{.Data.AppName}}/favicon.ico" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" media="all" href="/{{.Data.AppName}}/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{.Title}}</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/{{.Data.AppName}}/favicon.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-  <div class="content-wrap">
-    <div class="navbar navbar-dark bg-dark global-header">
-      <a class="navbar-brand" href="javascript:;">{{.Title}}</a>
-    </div>
+  <nav class="navbar fixed-top bg-body-tertiary">
     <div class="container-fluid">
-      <div class="row mt-3">
-        <div class="col-md-12">
-          <table class="table table-bordered">
-            <thead>
+      <span class="navbar-brand mb-0 h1">{{.Title}}</span>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row my-5 pt-4 pb-3">
+      <div class="col-md-12">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th><span>&#10004;{{.LineupCount}}</span></th>
+              {{range .Data.SlotOfDay}}
+                <th scope="col"><span class="badge text-bg-{{.Color}}">{{.Name}}</span></th>
+              {{end}}
+            </tr>
+          </thead>
+          <tbody>
+            {{range .Data.DayOfWeek}}
               <tr>
-                <th><span>&#10004;{{.LineupCount}}</span></th>
-                {{range .Data.SlotOfDay}}
-                  <th scope="col"><span class="badge badge-{{.Color}}">{{.Name}}</span></th>
+                <th scope="row"><span class="badge rounded-pill text-bg-light">{{.Name}}</span></th>
+                {{with $slots := index $.LineupsPerDaySlot .ID}}
+                  {{range $.Data.SlotOfDay}}
+                    <td>
+                      {{with $lineups := index $slots .ID}}
+                        <ul class="list-unstyled">
+                          {{range $lineups}}
+                            <li>
+                              <strong>{{.Title}}</strong>
+                              <span class="text-body-secondary">
+                                {{.Start}}&nbsp;{{.Channel}}
+                              </span>
+                            </li>
+                          {{end}}
+                        </ul>
+                      {{else}}
+                        <span class="text-body-secondary">--</span>
+                      {{end}}
+                    </td>
+                  {{end}}
                 {{end}}
               </tr>
-            </thead>
-            <tbody>
-              {{range .Data.DayOfWeek}}
-                <tr>
-                  <th scope="row"><span class="badge badge-pill badge-light">{{.Name}}</span></th>
-                  {{with $slots := index $.LineupsPerDaySlot .ID}}
-                    {{range $.Data.SlotOfDay}}
-                      <td>
-                        {{with $lineups := index $slots .ID}}
-                          <ul class="list-unstyled">
-                            {{range $lineups}}
-                              <li>
-                                <strong>{{.Title}}</strong>
-                                <span class="text-muted">
-                                  {{.Start}}&nbsp;{{.Channel}}
-                                </span>
-                              </li>
-                            {{end}}
-                          </ul>
-                        {{else}}
-                          <span class="text-muted">--</span>
-                        {{end}}
-                      </td>
-                    {{end}}
-                  {{end}}
-                </tr>
-              {{end}}
-            </tbody>
-          </table>
-        </div>
+            {{end}}
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
-  <div class="global-footer">
-    <p class="text-md-center text-muted">
-      <span>{{.Quarter}}</span>
-      <a class="ml-1" href="https://github.com/{{.Data.AuthorID}}/{{.Data.AppName}}">{{.Data.AuthorName}}</a>
-    </p>
-  </div>
+  <nav class="navbar fixed-bottom bg-body-tertiary">
+    <div class="container-fluid justify-content-center">
+      <span class="navbar-text">
+        {{.Quarter}}
+        &nbsp;
+        <a href="https://github.com/{{.Data.AuthorID}}/{{.Data.AppName}}">{{.Data.AuthorName}}</a>
+      </span>
+    </div>
+  </nav>
 </body>

@@ -31,8 +31,6 @@ slot-of-day:
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
   - { day_of_week: mon, start_time: '00:30', title: 'アルマちゃんは家族になりたい', channel: ch9 }
-  - { day_of_week: thu, start_time: '00:45', title: "Let's Play", channel: ch8 }
-  - { day_of_week: thu, start_time: '22:00', title: '不器用な先輩', channel: ch9 }
   - { day_of_week: thu, start_time: '23:30', title: '私を喰べたい ひとでなし', channel: ch9 }
   - { day_of_week: fri, start_time: '00:30', title: '永久のユウグレ', channel: ch6 }
   - { day_of_week: fri, start_time: '19:00', title: 'ポケットモンスター', channel: ch7 }

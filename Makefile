@@ -12,7 +12,7 @@ server: CGO_ENABLED ?= $(shell go env CGO_ENABLED)
 server: FLAGS       += -ldflags="-s -w"
 server: FLAGS       += -trimpath
 server: FLAGS       += -tags timetzdata
-server: $(shell find . -type f \( -name '*.go' -o -name 'go.*' -o -name '*.tpl' \))
+server: $(shell find . -type f \( -name '*.go' -o -name 'go.*' -o -name '*.tpl' -o -name '*.yaml' \))
 	GOOS=${GOOS} GOARCH=${GOARCH} CGO_ENABLED=${CGO_ENABLED} go build ${FLAGS} -o $@
 
 .PHONY: test

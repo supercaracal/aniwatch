@@ -67,7 +67,7 @@
     </div>
   </div>
   <nav class="navbar fixed-bottom bg-body-tertiary">
-    <div class="container-fluid justify-content-center">
+    <div class="container-fluid justify-content-end">
       <span class="navbar-text">
         {{.Quarter}}
         &nbsp;

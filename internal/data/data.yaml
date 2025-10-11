@@ -33,9 +33,11 @@ lineups:
   - { day_of_week: mon, start_time: '00:00', title: 'ちゃんと吸えない吸血鬼ちゃん', channel: ch9 }
   - { day_of_week: mon, start_time: '00:30', title: 'アルマちゃんは家族になりたい', channel: ch9 }
   - { day_of_week: mon, start_time: '22:00', title: '笑顔のたえない職場です', channel: ch9 }
+  - { day_of_week: mon, start_time: '22:30', title: '異世界かるてっと3', channel: ch9 }
   - { day_of_week: mon, start_time: '23:30', title: '嘆きの亡霊は引退したい2', channel: ch9 }
   - { day_of_week: tue, start_time: '00:00', title: '3年Z組銀八先生', channel: ch7 }
   - { day_of_week: tue, start_time: '01:30', title: '暗殺者が勇者よりも強い', channel: ch7 }
+  - { day_of_week: tue, start_time: '23:30', title: 'キミと越えて恋になる', channel: ch9 }
   - { day_of_week: wed, start_time: '00:00', title: 'とんでもスキルで異世界放浪メシ2', channel: ch9 }
   - { day_of_week: wed, start_time: '02:00', title: '忍者と極道', channel: ch4 }
   - { day_of_week: wed, start_time: '23:45', title: 'ワンダンス', channel: ch5 }

@@ -30,35 +30,30 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
-  - { day_of_week: mon, start_time: '00:00', title: 'ちゃんと吸えない吸血鬼ちゃん', channel: ch9 }
-  - { day_of_week: mon, start_time: '00:30', title: 'アルマちゃんは家族になりたい', channel: ch9 }
-  - { day_of_week: mon, start_time: '22:00', title: '笑顔のたえない職場です', channel: ch9 }
-  - { day_of_week: mon, start_time: '22:30', title: '異世界かるてっと3', channel: ch9 }
-  - { day_of_week: mon, start_time: '23:30', title: '嘆きの亡霊は引退したい2', channel: ch9 }
-  - { day_of_week: tue, start_time: '00:00', title: '3年Z組銀八先生', channel: ch7 }
-  - { day_of_week: tue, start_time: '01:30', title: '暗殺者が勇者よりも強い', channel: ch7 }
-  - { day_of_week: tue, start_time: '23:30', title: 'キミと越えて恋になる', channel: ch9 }
-  - { day_of_week: wed, start_time: '00:00', title: 'とんでもスキルで異世界放浪メシ2', channel: ch9 }
-  - { day_of_week: wed, start_time: '02:00', title: '忍者と極道', channel: ch4 }
-  - { day_of_week: wed, start_time: '23:45', title: 'ワンダンス', channel: ch5 }
+  - { day_of_week: mon, start_time: '00:00', title: '火喰鳥', channel: ch6 }
+  - { day_of_week: mon, start_time: '21:54', title: '北斗の拳 拳王軍ザコたちの挽歌', channel: ch9 }
+  - { day_of_week: mon, start_time: '22:00', title: 'ヴィジランテ', channel: ch9 }
+  - { day_of_week: mon, start_time: '23:00', title: 'ゴールデンカムイ', channel: ch9 }
+  - { day_of_week: tue, start_time: '23:30', title: '鎧真伝サムライトルーパー', channel: ch9 }
+  - { day_of_week: wed, start_time: '00:00', title: 'ダーウィン事変', channel: ch7 }
+  - { day_of_week: wed, start_time: '01:30', title: 'アルネの事件簿', channel: ch4 }
   - { day_of_week: thu, start_time: '00:30', title: '龍族II', channel: ch9 }
-  - { day_of_week: thu, start_time: '23:30', title: '私を喰べたい ひとでなし', channel: ch9 }
-  - { day_of_week: fri, start_time: '00:30', title: '永久のユウグレ', channel: ch6 }
+  - { day_of_week: thu, start_time: '22:30', title: '勇者刑に処す', channel: ch9 }
+  - { day_of_week: thu, start_time: '23:30', title: '透明男と人間女', channel: ch9 }
+  - { day_of_week: fri, start_time: '00:30', title: '呪術廻戦', channel: ch6 }
+  - { day_of_week: fri, start_time: '00:30', title: 'お前ごときが王都で気ままに', channel: ch9 }
+  - { day_of_week: fri, start_time: '02:00', title: 'シャンピニオンの魔女', channel: ch6 }
   - { day_of_week: fri, start_time: '19:00', title: 'ポケットモンスター', channel: ch7 }
-  - { day_of_week: fri, start_time: '19:26', title: 'エンジョー予備校', channel: ch9 }
-  - { day_of_week: fri, start_time: '21:54', title: '百姓貴族', channel: ch9 }
-  - { day_of_week: fri, start_time: '23:00', title: '桃源暗鬼', channel: ch4 }
-  - { day_of_week: fri, start_time: '23:30', title: 'しゃばけ', channel: ch8 }
-  - { day_of_week: sat, start_time: '01:30', title: 'ケンガンアシュラ', channel: ch9 }
-  - { day_of_week: sat, start_time: '02:00', title: 'SANDA', channel: ch6 }
-  - { day_of_week: sat, start_time: '17:30', title: '僕のヒーローアカデミア', channel: ch4 }
-  - { day_of_week: sat, start_time: '22:00', title: '勇者刑に処す', channel: ch9 }
-  - { day_of_week: sat, start_time: '22:30', title: '野生のラスボスが現れた', channel: ch9 }
+  - { day_of_week: fri, start_time: '22:30', title: '悪魔くん2023', channel: ch9 }
+  - { day_of_week: fri, start_time: '23:30', title: 'ハイスクール奇面組2023', channel: ch8 }
+  - { day_of_week: sat, start_time: '01:00', title: 'ヘルモード', channel: ch9 }
+  - { day_of_week: sat, start_time: '02:00', title: '炎炎ノ消防隊', channel: ch6 }
+  - { day_of_week: sat, start_time: '22:30', title: '転生したらドラゴンの卵だった', channel: ch9 }
+  - { day_of_week: sat, start_time: '23:00', title: 'TRIGUN STARGAZE', channel: ch7 }
   - { day_of_week: sat, start_time: '23:30', title: 'Fate/strange Fake', channel: ch9 }
   - { day_of_week: sun, start_time: '00:00', title: 'グノーシア', channel: ch9 }
-  - { day_of_week: sun, start_time: '00:10', title: 'キングダム', channel: ch1 }
   - { day_of_week: sun, start_time: '00:30', title: '東島丹三郎は仮面ライダーになりたい', channel: ch9 }
-  - { day_of_week: sun, start_time: '01:00', title: 'らんま1/2', channel: ch4 }
-  - { day_of_week: sun, start_time: '16:30', title: 'ウマ娘 シンデレラグレイ', channel: ch6 }
+  - { day_of_week: sun, start_time: '01:00', title: '勇者のクズ', channel: ch4 }
+  - { day_of_week: sun, start_time: '17:30', title: 'カヤちゃんはコワくない', channel: ch7 }
   - { day_of_week: sun, start_time: '23:30', title: 'MFゴースト', channel: ch9 }
-  - { day_of_week: sun, start_time: '23:45', title: 'ワンパンマン', channel: ch7 }
+  - { day_of_week: sun, start_time: '23:45', title: '地獄楽', channel: ch7 }

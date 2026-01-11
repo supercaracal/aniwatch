@@ -47,7 +47,6 @@ lineups:
   - { day_of_week: fri, start_time: '22:30', title: '悪魔くん2023', channel: ch9 }
   - { day_of_week: fri, start_time: '23:00', title: '葬送のフリーレン', channel: ch4 }
   - { day_of_week: sat, start_time: '02:00', title: '炎炎ノ消防隊', channel: ch6 }
-  - { day_of_week: sat, start_time: '22:30', title: '転生したらドラゴンの卵だった', channel: ch9 }
   - { day_of_week: sat, start_time: '23:00', title: 'TRIGUN STARGAZE', channel: ch7 }
   - { day_of_week: sat, start_time: '23:30', title: 'Fate/strange Fake', channel: ch9 }
   - { day_of_week: sun, start_time: '00:00', title: 'グノーシア', channel: ch9 }

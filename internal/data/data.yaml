@@ -30,7 +30,6 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
-  - { day_of_week: mon, start_time: '00:00', title: '火喰鳥', channel: ch6 }
   - { day_of_week: mon, start_time: '21:54', title: '北斗の拳 拳王軍ザコたちの挽歌', channel: ch9 }
   - { day_of_week: mon, start_time: '22:00', title: 'ヴィジランテ', channel: ch9 }
   - { day_of_week: mon, start_time: '23:00', title: 'ゴールデンカムイ', channel: ch9 }

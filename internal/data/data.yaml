@@ -51,6 +51,7 @@ lineups:
   - { day_of_week: sun, start_time: '00:00', title: 'グノーシア', channel: ch9 }
   - { day_of_week: sun, start_time: '00:30', title: '東島丹三郎は仮面ライダーになりたい', channel: ch9 }
   - { day_of_week: sun, start_time: '01:00', title: '勇者のクズ', channel: ch4 }
+  - { day_of_week: sun, start_time: '01:30', title: 'メダリスト', channel: ch5 }
   - { day_of_week: sun, start_time: '17:30', title: 'カヤちゃんはコワくない', channel: ch7 }
   - { day_of_week: sun, start_time: '23:30', title: 'MFゴースト', channel: ch9 }
   - { day_of_week: sun, start_time: '23:45', title: '地獄楽', channel: ch7 }

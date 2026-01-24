@@ -69,7 +69,7 @@ func (app *AppServer) Serve() error {
 	defer stop()
 
 	go func(ctx context.Context) {
-		_ = <-ctx.Done()
+		<-ctx.Done()
 		app.server.SetKeepAlivesEnabled(false)
 		ctx, cancel := context.WithTimeout(context.Background(), shutdownTimeout)
 		defer cancel()

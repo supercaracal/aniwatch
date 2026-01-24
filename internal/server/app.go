@@ -65,20 +65,16 @@ func (app *AppServer) WithReadinessNotification(c chan<- struct{}) {
 func (app *AppServer) Serve() error {
 	defer app.listener.Close()
 
-	c := make(chan os.Signal, 1)
-	defer close(c)
+	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
+	defer stop()
 
-	signal.Notify(c, syscall.SIGTERM, syscall.SIGINT, os.Interrupt)
-	defer signal.Stop(c)
-
-	go func(c <-chan os.Signal) {
-		if _, ok := <-c; ok {
-			app.server.SetKeepAlivesEnabled(false)
-			ctx, cancel := context.WithTimeout(context.Background(), shutdownTimeout)
-			defer cancel()
-			_ = app.server.Shutdown(ctx)
-		}
-	}(c)
+	go func(ctx context.Context) {
+		_ = <-ctx.Done()
+		app.server.SetKeepAlivesEnabled(false)
+		ctx, cancel := context.WithTimeout(context.Background(), shutdownTimeout)
+		defer cancel()
+		_ = app.server.Shutdown(ctx)
+	}(ctx)
 
 	if app.ready != nil {
 		app.ready <- struct{}{}

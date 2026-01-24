@@ -57,22 +57,18 @@ func TestServe(t *testing.T) {
 		}
 	}(done)
 
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
+	wg.Go(func() {
 		if err := app.Serve(); err != nil {
 			t.Error(err)
 		}
-	}()
+	})
 	<-readyToServe
 
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
+	wg.Go(func() {
 		if err := sendTestRequest(t, app.GetPort()); err != nil {
 			t.Error(err)
 		}
-	}()
+	})
 	<-readyToRespond
 
 	test.SignalOneself(syscall.SIGTERM)

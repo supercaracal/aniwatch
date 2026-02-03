@@ -34,7 +34,6 @@ lineups:
   - { day_of_week: mon, start_time: '22:00', title: 'ヴィジランテ', channel: ch9 }
   - { day_of_week: mon, start_time: '23:00', title: 'ゴールデンカムイ', channel: ch9 }
   - { day_of_week: mon, start_time: '23:30', title: '姫様拷問の時間です', channel: ch9 }
-  - { day_of_week: tue, start_time: '23:30', title: '鎧真伝サムライトルーパー', channel: ch9 }
   - { day_of_week: wed, start_time: '00:00', title: 'ダーウィン事変', channel: ch7 }
   - { day_of_week: wed, start_time: '01:30', title: 'アルネの事件簿', channel: ch4 }
   - { day_of_week: wed, start_time: '23:30', title: '推しの子', channel: ch9 }

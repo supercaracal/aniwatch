@@ -1,6 +1,6 @@
 module github.com/supercaracal/aniwatch
 
-go 1.25.1
+go 1.26.1
 
 require sigs.k8s.io/yaml v1.6.0
 

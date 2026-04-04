@@ -36,7 +36,6 @@ lineups:
   - { day_of_week: tue, start_time: '00:00', title: '日本三國', channel: ch9 }
   - { day_of_week: tue, start_time: '23:00', title: 'マリッジトキシン', channel: ch8 }
   - { day_of_week: wed, start_time: '00:00', title: '左ききのエレン', channel: ch7 }
-  - { day_of_week: wed, start_time: '01:00', title: 'インゴクダンチ', channel: ch9 }
   - { day_of_week: wed, start_time: '22:30', title: 'ようこそ実力至上主義の教室へ', channel: ch9 }
   - { day_of_week: wed, start_time: '23:00', title: 'Re:ゼロから始める異世界生活', channel: ch9 }
   - { day_of_week: thu, start_time: '22:00', title: 'Dr.STONE', channel: ch9 }
@@ -53,3 +52,4 @@ lineups:
   - { day_of_week: sun, start_time: '00:30', title: 'NEEDY GIRL OVERDOSE', channel: ch9 }
   - { day_of_week: sun, start_time: '01:00', title: '勇者のクズ', channel: ch9 }
   - { day_of_week: sun, start_time: '16:30', title: '杖と剣のウィストリア', channel: ch6 }
+  - { day_of_week: sun, start_time: '23:15', title: 'ワンピース', channel: ch8 }

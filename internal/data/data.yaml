@@ -31,7 +31,6 @@ slot-of-day:
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
   - { day_of_week: mon, start_time: '00:00', title: 'ニワトリ・ファイター', channel: ch9 }
-  - { day_of_week: mon, start_time: '00:30', title: 'ゴーストコンサート', channel: ch9 }
   - { day_of_week: mon, start_time: '23:00', title: 'とんがり帽子のアトリエ', channel: ch9 }
   - { day_of_week: tue, start_time: '00:00', title: 'LIAR GAME', channel: ch7 }
   - { day_of_week: tue, start_time: '00:00', title: '日本三國', channel: ch9 }

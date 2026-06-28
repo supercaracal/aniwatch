@@ -56,3 +56,4 @@ lineups:
   - { day_of_week: sun, start_time: '22:30', title: '君のことが大大大大大好きな100人の彼女', channel: ch9 }
   - { day_of_week: sun, start_time: '23:00', title: '二十世紀電氣目録', channel: ch9 }
   - { day_of_week: sun, start_time: '23:15', title: 'ワンピース', channel: ch8 }
+  - { day_of_week: sun, start_time: '23:30', title: '刃牙道', channel: ch9 }

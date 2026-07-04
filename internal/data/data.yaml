@@ -30,19 +30,26 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
+  - { day_of_week: mon, start_time: '00:00', title: '無職転生', channel: ch9 }
   - { day_of_week: mon, start_time: '00:30', title: 'さよならララ', channel: ch9 }
-  - { day_of_week: mon, start_time: '23:00', title: 'とんがり帽子のアトリエ', channel: ch9 }
+  - { day_of_week: mon, start_time: '21:54', title: '北斗の拳 拳王軍ザコたちの挽歌', channel: ch9 }
   - { day_of_week: tue, start_time: '00:00', title: 'LIAR GAME', channel: ch7 }
-  - { day_of_week: tue, start_time: '23:00', title: 'マリッジトキシン', channel: ch8 }
-  - { day_of_week: wed, start_time: '00:00', title: '左ききのエレン', channel: ch7 }
-  - { day_of_week: wed, start_time: '23:00', title: 'Re:ゼロから始める異世界生活', channel: ch9 }
+  - { day_of_week: tue, start_time: '00:00', title: 'ぐらんぶる', channel: ch9 }
+  - { day_of_week: tue, start_time: '22:00', title: '対ありでした', channel: ch9 }
+  - { day_of_week: tue, start_time: '23:00', title: '攻殻機動隊', channel: ch8 }
+  - { day_of_week: wed, start_time: '00:30', title: 'きみが死ぬまで恋をしたい', channel: ch9 }
+  - { day_of_week: wed, start_time: '22:30', title: 'クレバテス', channel: ch9 }
+  - { day_of_week: wed, start_time: '23:30', title: '幼女戦記', channel: ch9 }
+  - { day_of_week: wed, start_time: '23:45', title: '片田舎のおっさん剣聖になる', channel: ch5 }
   - { day_of_week: thu, start_time: '22:00', title: 'World is dancing', channel: ch9 }
   - { day_of_week: thu, start_time: '22:30', title: '令和のダラさん', channel: ch9 }
+  - { day_of_week: thu, start_time: '23:30', title: 'メビウス・ダスト', channel: ch9 }
+  - { day_of_week: fri, start_time: '00:00', title: '骸骨騎士様、只今異世界へお出掛け中', channel: ch9 }
   - { day_of_week: fri, start_time: '00:30', title: 'ヤニねこ', channel: ch9 }
   - { day_of_week: fri, start_time: '19:00', title: 'ポケットモンスター', channel: ch7 }
   - { day_of_week: fri, start_time: '23:00', title: '転生したらスライムだった件', channel: ch4 }
+  - { day_of_week: sat, start_time: '02:00', title: 'コードギアス 奪還のロゼ', channel: ch6 }
   - { day_of_week: sat, start_time: '18:30', title: '魔入りました！入間くん', channel: ch2 }
-  - { day_of_week: sat, start_time: '20:00', title: '無職転生', channel: ch9 }
   - { day_of_week: sat, start_time: '22:00', title: 'BLACK TORCH', channel: ch9 }
   - { day_of_week: sat, start_time: '23:00', title: '天幕のジャードゥーガル', channel: ch5 }
   - { day_of_week: sat, start_time: '23:30', title: '黄泉のツガイ', channel: ch9 }

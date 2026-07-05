@@ -54,9 +54,7 @@ lineups:
   - { day_of_week: sat, start_time: '23:00', title: '天幕のジャードゥーガル', channel: ch5 }
   - { day_of_week: sat, start_time: '23:30', title: '黄泉のツガイ', channel: ch9 }
   - { day_of_week: sat, start_time: '23:45', title: 'MAO', channel: ch1 }
-  - { day_of_week: sun, start_time: '00:00', title: 'グロウアップショウ', channel: ch9 }
   - { day_of_week: sun, start_time: '01:00', title: 'リリカルなのはEXGV', channel: ch9 }
-  - { day_of_week: sun, start_time: '01:00', title: '株式会社マジルミエ', channel: ch4 }
   - { day_of_week: sun, start_time: '16:30', title: 'レッツゴー怪奇組', channel: ch6 }
   - { day_of_week: sun, start_time: '17:30', title: '鉄鍋のジャン', channel: ch7 }
   - { day_of_week: sun, start_time: '22:30', title: '君のことが大大大大大好きな100人の彼女', channel: ch9 }

@@ -42,7 +42,6 @@ lineups:
   - { day_of_week: wed, start_time: '23:30', title: '幼女戦記', channel: ch9 }
   - { day_of_week: wed, start_time: '23:45', title: '片田舎のおっさん剣聖になる', channel: ch5 }
   - { day_of_week: thu, start_time: '22:00', title: 'World is dancing', channel: ch9 }
-  - { day_of_week: thu, start_time: '23:30', title: 'メビウス・ダスト', channel: ch9 }
   - { day_of_week: fri, start_time: '00:00', title: '骸骨騎士様、只今異世界へお出掛け中', channel: ch9 }
   - { day_of_week: fri, start_time: '00:30', title: 'ヤニねこ', channel: ch9 }
   - { day_of_week: fri, start_time: '19:00', title: 'ポケットモンスター', channel: ch7 }

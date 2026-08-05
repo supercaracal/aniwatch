@@ -39,6 +39,7 @@ lineups:
   - { day_of_week: tue, start_time: '23:00', title: '攻殻機動隊', channel: ch8 }
   - { day_of_week: wed, start_time: '00:30', title: 'きみが死ぬまで恋をしたい', channel: ch9 }
   - { day_of_week: wed, start_time: '22:30', title: 'クレバテス', channel: ch9 }
+  - { day_of_week: wed, start_time: '23:00', title: 'Re:ゼロから始める異世界生活', channel: ch9 }
   - { day_of_week: wed, start_time: '23:30', title: '幼女戦記', channel: ch9 }
   - { day_of_week: wed, start_time: '23:45', title: '片田舎のおっさん剣聖になる', channel: ch5 }
   - { day_of_week: thu, start_time: '22:00', title: 'World is dancing', channel: ch9 }

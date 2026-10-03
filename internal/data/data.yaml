@@ -53,4 +53,5 @@ lineups:
   - { day_of_week: sat, start_time: '23:45', title: '恐怖コレクター', channel: ch1 }
   - { day_of_week: sun, start_time: '01:00', title: 'らんま1/2', channel: ch4 }
   - { day_of_week: sun, start_time: '23:00', title: 'TANK CHAIR', channel: ch9 }
+  - { day_of_week: sun, start_time: '23:30', title: '刃牙道', channel: ch9 }
   - { day_of_week: sun, start_time: '23:30', title: '転生貴族', channel: ch6 }

@@ -30,7 +30,6 @@ slot-of-day:
   - { id: 'sunset',   name: '夕方', color: 'success', from: 16, to: 19 }
   - { id: 'night',    name: '夜',   color: 'warning', from: 19, to: 24 }
 lineups:
-  - { day_of_week: mon, start_time: '22:00', title: '転生ゴブリンだけど質問ある', channel: ch9 }
   - { day_of_week: mon, start_time: '23:00', title: 'PSYREN', channel: ch9 }
   - { day_of_week: mon, start_time: '23:30', title: 'ロメリア戦記', channel: ch9 }
   - { day_of_week: tue, start_time: '02:00', title: '魔法少女育成計画restart', channel: ch7 }
@@ -54,4 +53,3 @@ lineups:
   - { day_of_week: sun, start_time: '01:00', title: 'らんま1/2', channel: ch4 }
   - { day_of_week: sun, start_time: '23:00', title: 'TANK CHAIR', channel: ch9 }
   - { day_of_week: sun, start_time: '23:30', title: '刃牙道', channel: ch9 }
-  - { day_of_week: sun, start_time: '23:30', title: '転生貴族', channel: ch6 }
